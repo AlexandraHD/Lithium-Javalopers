@@ -1,0 +1,95 @@
+body{
+    background-color: #000000 ;
+}
+/*Buscador */
+.search--div{
+  display: flex;
+  width: 100%;
+  height: 2.4rem;
+  justify-content: center;
+  align-items: center;
+  font-family: verdana;
+  color: #FF4533;
+}
+.search--bar{
+  display: flex;
+  border-radius: 1rem;
+  height: 2rem;
+  width: 21.8rem;
+  position: absolute;
+  background-color: transparent;
+}
+.icon-search{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-color: white;
+  border-radius: 1rem;
+  height: 2rem;
+  width: 22rem;
+}
+.space-search{
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  height: 2rem;
+  width: 0.6rem;
+}
+
+.container-card {
+    display: flex;
+    width: 100%;
+    /*height: 100vh;*/
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+   
+  }
+  .card {
+    position: relative;
+    width: 4.5rem;
+    height: 4.5rem;
+    margin: 0.5rem;
+    text-align: center;
+    line-height: 4.5rem;
+    color: #ecf0f1;
+    font-family: verdana;
+    border-radius: 4rem;
+    transform-style: preserve-3d;
+  }
+  .face {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 4rem;
+    background-size: cover;
+    backface-visibility: hidden;
+    background-position: center center;
+    transition: transform 0.5s ease-in-out;
+  }
+  .face--front {
+    background: #FF4533;
+    font-size: 2rem;
+  }
+  .face--back {
+    background: #FF4533;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transform: rotateX(180deg);
+  }
+  .card:hover .face--front {
+    transform: rotateX(-180deg);
+  }
+  .card:hover .face--back {
+    transform: rotateX(0deg);
+  }
+
+#text-headphones {
+        font-size: 0.7rem;
+  }
+  #text-mobile{
+     font-size: 0.8rem;
+  }
