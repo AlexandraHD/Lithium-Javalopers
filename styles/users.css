@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+.button-add{
+    font-size: 16px;
+    text-align: center;
+    background-color: rgb(171, 50, 50);
+    color: beige;
+    border: 2px solid rgb(171, 50, 50);
+    border-radius: 6px;
+    padding: 2px 6px;
+    position: absolute;
+    right: 15px;
+    bottom: 10px;
+}
+.button-ver{
+    font-size: 14px;
+    text-align: center;
+    color: rgb(12, 12, 12);
+    background-color: rgb(229, 221, 207);
+    border: 1px solid rgb(171, 50, 50);
+    border-radius: 4px;
+    padding: 1px 4px;
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+}
+.button-add:hover{
+    background-color: rgb(241, 124, 28);
+    color: white;
+}
+.discount {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border: 1px solid red;
+    background-color: black;
+
+}
+
+.product-container:hover{
+    box-shadow: 0px 10px 20px 0 rgb(229, 221, 207);
+}
+
+.product-container{
+    margin: 8px;
+    padding: 2px 16px;
+    position: relative;
+    background-color: rgb(229, 221, 207);
+    box-shadow: 0px 4px 8px 0 rgba(88, 45, 45, 0.2);
+    border-radius: 8px;
+    width: 230px;
+    height: 320px;
+}
+
+.product-container img {
+    width: 190px;
+    height: 200px;
+    margin-bottom: 4px;
+    margin-top: 8px;
+}
+
+.product-container h4 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.product-container h5{
+    text-align: left;
+}
+.product-container .button-heart::before{
+     display: block;
+     margin: 30px 0;
+}
+.button-heart {
+    position: absolute;
+    border-radius: 100%;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    top: 5%;
+    right: 0%;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+.button-car {
+    position: absolute;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    top: 15%;
+    right: 0%;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container-box{
+    width: 100%;
+    height: 400px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+}
+.box:hover{
+    box-shadow:0px 6px 10px 0px rgb(215, 211, 211);
+}
+
+.box{
+    width: 250px;
+    height: 230px;
+    margin: 10px;
+    padding: 20px;
+    border: 3px solid #eeeeee;
+    border-radius: 14px;
+    text-align: center;
+    margin-top: 100px;
+    position: relative;
+    background-color: rgb(215, 211, 211);
+}
+
+.box img{
+    width: 60%;
+}
+
+.box h2{
+    font-size: 16px;
+    margin-top: 10px;
+}
