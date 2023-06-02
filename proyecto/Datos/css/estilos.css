@@ -1,0 +1,230 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Wix+Madefor+Text:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+
+*{
+    font-family: nunito;
+}
+
+body{
+    background-color: #f1fbff;
+    
+}
+.carousel-item{
+    height: 95vh;
+    min-height: 300px;
+}
+.carousel-caption{
+    bottom: 220px;
+    z-index: 2; /*sobrepocisionar (capas)*/
+}
+.carousel-caption h5{
+    font-size: 100px; 
+    text-shadow: 1px 4px 5px rgb(238, 55, 55);
+    
+}
+.carousel-caption p{
+    width: 50%;
+    margin: auto;
+    font-size: 25px;
+    line-height: 1.9;
+    
+}
+.carousel-caption a{
+    font-size: 20px;
+}
+.carousel-inner::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.7);
+    z-index: 1;
+}
+
+/*footer*/
+#container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+footer{
+    background-color: rgba(0, 0, 0);
+    color: #fff;
+    padding: 20px;
+}
+#somos h4{
+    font-size: 20px;
+    text-shadow: 1px 1px #DD2330;
+}
+.terms a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #f1fbff;
+}
+.terms h4{
+    text-shadow: 1px 1px #DD2330;
+}
+.social-media h4{
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 1px 1px #DD2330;
+    
+}
+.social-icons {
+    list-style: none;
+    margin-bottom: 5.4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+    color: #DD2330;
+    padding: .8rem 2rem;
+    
+}
+
+.accordion{
+    width: 500px;
+}
+
+.accordion-button{
+    background-color: rgba(0, 0, 0);
+    color: #fff;
+}
+
+button.accordion-button::after{
+    color: red;
+    background-color: #e9f1e9;
+    border-radius: 5px;
+}
+
+.accordion-item{
+ 
+    border-width: 2px;
+    color: white;
+    background-color: rgba(0, 0, 0) !important;
+    
+}
+.accordion-body4{
+    padding: 10px;
+    position: relative;
+    padding: 20px;
+
+}
+
+.accordion-button:not(.collapsed){
+    background-color: black;
+    color: white;
+}
+
+.row img{
+
+    float: left;
+    margin-right: 10px;
+    height: 120px;
+    width: 160px;
+    margin-left: 10px;
+
+}
+.row h4{
+    font-size: 20px;
+    position: absolute;
+    left: 190px;
+    padding: 20px;
+}
+.row h5{
+    font-size: 15px;
+    position: absolute;
+    left: 180px;
+    padding: 20px;
+    margin-top: 40px;
+}
+.row a{
+    text-decoration: none;
+    color: #fff;
+    position: absolute;
+    left: 230px;
+    margin-top: 90px;
+}
+.row .name1{
+    left: 230px;
+}
+.row .name2{
+    left: 220px;
+}
+.row .name3{
+    left: 200px;
+}
+
+
+@media only screen and (max-width: 900px) {
+   
+    .carousel-item{
+        width: 100%;
+        height: 100%;  
+    }
+    .carousel-caption {
+        bottom: 100px;
+    }
+
+    .carousel-caption h5 {
+        font-size: 60px;
+        
+    }
+    .carousel-caption a {
+        padding: 10px 15px;
+        font-size: 20px;
+    }
+
+    .carousel-caption p {
+        width: 100%;
+        line-height: 1.6;
+        font-size: 20px;
+    }
+    .accordion{
+        width: 300px;
+    }
+    .row img{
+        align-items: center;
+        float: none;
+        margin-right: 0;
+        margin-left: 40px;
+        margin-top: 15px;
+        padding: 10px;
+    }
+    .row h4{
+        position: 0;
+        left: 0;
+        margin-top: 110px;
+        margin-left: 20px;
+    }
+    .row h5{
+        position: 0;
+        left: 0;
+        margin-top: 140px;
+        margin-left: 13px;
+    }
+    .row .name1{
+        left: 0;
+        margin-left: 60px;
+    }
+    .row .name2{
+        left: 0;
+        margin-left: 40px;
+    }
+    .row .name3{
+        left: 0;
+    }
+    .row a{
+        position:0;
+        left: 0;
+        margin-top: 170px;
+        margin-left: 50px;
+        padding: 10px;
+    }
+    
+}
