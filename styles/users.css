@@ -1,7 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Wix+Madefor+Text:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
 
 *{
-    background-color: black;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: nunito;
+
 }
 
 .btns{
@@ -65,7 +70,6 @@ a{
     justify-content: space-around;
     z-index: 1250;
     transform: translateX(-100%);
-   
 }
 
 .nav::before {
@@ -80,7 +84,6 @@ a{
     opacity: 0;
     transform: scale(0);
     transition: opacity .5s;
-
 }
 
 .menu-toggle .fa-times{
@@ -120,7 +123,139 @@ a{
 .nav-link:hover {
     color: rgb(223, 25, 39);
     font-weight: bold;
+} */
+
+.button-add{
+    font-size: 16px;
+    text-align: center;
+    background-color: rgb(171, 50, 50);
+    color: beige;
+    border: 2px solid rgb(171, 50, 50);
+    border-radius: 6px;
+    padding: 2px 6px;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
 }
+.button-ver{
+    font-size: 14px;
+    text-align: center;
+    color: rgb(12, 12, 12);
+    background-color: rgb(229, 221, 207);
+    border: 1px solid rgb(171, 50, 50);
+    border-radius: 4px;
+    padding: 1px 4px;
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+}
+.button-add:hover{
+    background-color: #BF202B;
+    color: white;
+}
+.discount {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: black;
+    margin: 1312px, 64px, 932px, 64px;
+}
+
+.product-container:hover{
+    box-shadow: 0px 10px 20px 0 rgb(229, 221, 207);
+}
+
+.product-container{
+    margin: 8px;
+    padding: 2px 16px;
+    position: relative;
+    background-color: rgb(229, 221, 207);
+    box-shadow: 0px 4px 8px 0 rgba(88, 45, 45, 0.2);
+    border-radius: 8px;
+    width: 230px;
+    height: 320px;
+}
+
+.product-container img {
+    width: 190px;
+    height: 200px;
+    margin-bottom: 4px;
+    margin-top: 8px;
+}
+
+.product-container h4 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+.product-container h5{
+    text-align: left;
+}
+.product-container .button-heart::before{
+     display: block;
+     margin: 30px 0;
+}
+.button-heart {
+    position: absolute;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    top: 5%;
+    right: 0%;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+.button-car {
+    position: absolute;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    top: 15%;
+    right: 0%;
+    background-color: transparent;
+    border: 1px solid transparent;
+}
+h3 {
+    background-color: black;
+    color: #BF202B;
+    height: 40px;
+    padding-left: 20px;
+}
+
+.container-box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: black;
+    margin: 842px, 194px, 1409px, 176px;
+}
+.box:hover{
+    box-shadow:0px 6px 10px 0px rgb(215, 211, 211);
+}
+
+.box{
+    width: 250px;
+    height: 230px;
+    margin: 10px;
+    padding: 20px;
+    border: 3px solid #eeeeee;
+    border-radius: 14px;
+    text-align: center;
+    margin-top: 20px;
+    position: relative;
+    background-color: rgb(215, 211, 211);
+}
+
+.box img{
+    width: 60%;
+}
+
+.box h2{
+    font-size: 16px;
+    margin-top: 10px;
+}
+
 
 /*Responsive para pantallas grandes*/
 @media screen and (min-width: 750px) {
@@ -184,4 +319,5 @@ a{
         color: rgb(223, 25, 39);
     }
     
+
 }
