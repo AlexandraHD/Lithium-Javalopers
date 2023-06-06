@@ -3,21 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/styles/users.css">
     <script src="https://kit.fontawesome.com/ea06c7c0f7.js" crossorigin="anonymous"></script>
     <title>Lithium</title>
+    <script src="https://kit.fontawesome.com/ea06c7c0f7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles/users.css">
     <link rel="icon" href="/img/logo.jpg" type="image/icon type">
 </head>
 <body>
     <header>
-        <!--Barra de navegacion-->
+        <!--NAVBAR-->
                 <nav>
                     <!--Logo-->
                     <div class="navbar-logo">
                         <img class="nav-img" src="/img/logo.jpg" alt="Logo">
                         <a class="navbar-brand" href="#">Lithium</a>
                     </div>
-                    <!--Menu desplegable-->
+                    <!--MENU TOGGLE-->
                     <div class="menu-toggle">
                         <i class="fas fa-bars"></i>
                         <i class="fas fa-times"></i>
@@ -39,16 +40,49 @@
                             <a href="#" class="nav-link ">Nosotros</a>
                         </li>
                     </ul>
-                    <!--Botones-->
+                    <!--BUTTONS-->
                     <div class="btns">
                         <a class="btn-register" type="button" href="#">Registrarse</a>
                         <a class="btn-login" type="button" href="#">Inicia Sesión</a>
                         <a class="btn-cart" type="button" href="#"><i class="fa-solid fa-cart-shopping" style="color: #ff0000;"></i> Carrito</a>
                     </div>
                 </nav>
-        
     </header>
-    
+
+    <!--**SEARCH-BAR**-->
+    <div class="search--div"> 
+        <input  class = "search--bar" type="text"  placeholder= "Buscar..."name="Texto" required>
+       <div class="icon-search"> <i class="fa-solid fa-magnifying-glass" style="color: #FF4533;"></i> 
+        <div class="space-search"></div>
+        </div>   
+    </div>
+    <!--*****SEARCH-BAR END*****-->
+   
+    <!--** CATEGORIES**-->
+        <div class="container-card">
+        <div class="card">
+            <div class="face face--front"><i class="fa-solid fa-mobile-retro"></i></div>
+            <div class="face face--back" id="text-mobile">Celulares</div>
+        </div>
+        <div class="card">
+            <div class="face face--front"><i class="fa-solid fa-computer"></i></div>
+            <div class="face face--back">PC's</div>
+        </div>
+        <div class="card">
+            <div class="face face--front"><i class="fa-solid fa-tablet-screen-button"></i></div>
+            <div class="face face--back">Tablets</div>
+        </div>
+        <div class="card">
+            <div class="face face--front"><i class="fa-solid fa-tv"></i></div>
+            <div class="face face--back">Tv's</div>
+        </div>
+        <div class="card">
+            <div class="face face--front"><i class="fa-solid fa-headphones"></i></div>
+            <div class="face face--back" id="text-headphones">Accesorios</div>
+        </div>
+    </div>
+    <!--** CATEGORIES END**-->
+
     <div class="container-box">
 
         <div class="box box1">
@@ -109,11 +143,11 @@
             <div><button class="button-heart"><i class="fa-regular fa-heart"></i></button></div>
             <div><button class="button-car"><i class="fa-solid fa-cart-shopping"></i></i></button></div>
         </div>
-
     </div>
 
     <script src="https://kit.fontawesome.com/e8d0c66caa.js" crossorigin="anonymous"></script>
 
+    <!--Script para el menu desplegable-->
     <script>
 
         const selectElement = function(element) {
