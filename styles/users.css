@@ -72,7 +72,7 @@ a{
     flex-direction: column;
     justify-content: space-around;
     z-index: 1250;
-    transform: translateX(-100%);
+    transform: translateX(-160%);
 }
 
 .nav::before {
@@ -351,6 +351,109 @@ h3 {
     font-size: 16px;
     margin-top: 10px;
 }
+
+/*CONTACT FORM*/
+.contact-form-title{
+    color: white;
+    margin-bottom: 15px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+.contact-form{
+    background-color: rgba(255, 0, 0, 0.5);
+    border-radius: 20px;
+    width: 80%;
+    height: fit-content;
+    margin: 0 auto;
+    display: flex;
+    margin-top: 1em;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+    gap: 20px;
+    font-weight: 500;
+    color: white;
+}
+
+form label{
+    margin-left: 8px;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    gap: 5px;
+}
+
+.contact-form input{
+    border-radius: 10px;
+    min-width: 230px;
+    max-width: 500px;
+    height: 25px;
+    border: none;
+    padding: 0 8px;
+    margin-left: 5px;
+}
+
+.contact-form input[type="submit"]{
+    display: block;
+    min-width: 100px;
+    max-width: 200px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+}
+
+.contact-form input[type="submit"]:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+input.inline{
+    min-width: unset;
+    max-width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+textarea{
+    display: block;
+    border: none;
+    border-radius: 10px;
+    padding: 1px 8px;
+    width: 100%;
+    height: 70px;
+}
+
+.contact-form hr{
+    width: 70%;
+    border: 1px solid rgba(21, 20, 20, 0.4);
+}
+
+#terms-and-conditions{
+    margin-left: 20px;
+}
+
+.terms-link{
+    color: white;
+}
+
+.terms-link:hover{
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 800;
+}
+
 
 
 /*Responsive para pantallas grandes*/
