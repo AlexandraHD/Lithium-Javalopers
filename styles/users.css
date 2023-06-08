@@ -519,4 +519,29 @@ textarea{
     }
     
 
+    /*CONTACT FORM*/
+    .contact-form-title h2{
+        font-size: 55px;
+    }
+
+    .contact-form-title h5{
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .contact-form{
+        width: 50%;
+    }
+    
+    .contact-form input[type="submit"]{
+        font-size: 18px;
+    }
+    
+    input.inline{
+        min-width: unset;
+        max-width: unset;
+        margin: 0 0.5em 0 0;
+        vertical-align: middle;
+    }
+
 }

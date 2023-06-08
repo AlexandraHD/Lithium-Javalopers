@@ -37,14 +37,62 @@
                             </li>
                         </ul>
                         <!--BUTTONS-->
-                        <div class="btns">
-                            <a href=""><i class="fa-solid fa-circle-user fa-xl" style="color: #ff0000;"></i></a>
+                        <div class="btns menu-toggle2">
+                            <i class="fa-solid fa-circle-user fa-xl" style="color: #ff0000;"></i>
                             
                             <a class="btn-cart" type="button" href="#"><i class="fa-solid fa-cart-shopping" style="color: #ff0000;"></i> Carrito</a>
                         </div>
+                        <ul class="nav-list2">
+                            <li class="nav-item">
+                                <a href="#" class="nav-link ">Perfil</a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#" class="nav-link " id="logout">Salir</a>
+                            </li>
+                        </ul>
                     </nav>
             
         </header>
+        <!--FORM-->
+        <h2 class="contact-form-title">Contáctanos</h2>
+        <h5 class="contact-form-title">Envíanos tus comentarios y solicitudes. Responderemos en el menor tiempo posible</h5>
+        <main class="contact-form">
+            <form action="https://formspree.io/f/xdovrwll"
+            method="POST" id="contact-form">
+                    <div>
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" placeholder="Tu nombre completo" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="example@mail.com">
+                    </div>
+                    <div>
+                        <label for="phone">Teléfono</label>
+                        <input type="text" id="phone" name="phone" placeholder="Numero de contacto">
+                    </div>
+                    <hr>
+                    <div class="contact-type">
+                        <label for="contact-type">¿Cómo podemos ayudarte?</label>
+                        <label for="congrats"><input id="contact-type" type="radio" name="contact-type" class="inline" />Felicitaciones</label>
+                        <label for="complain"><input id="contact-type" type="radio" name="contact-type" class="inline" />Queja</label>
+                        <label for="dispute"><input id="contact-type" type="radio" name="contact-type" class="inline" />Reclamo</label>
+                    </div>
+                    <hr>
+                    <div>
+                        <label for="more-info">Detalles de tu petición
+                            <textarea id="more-info" name="moreinfo" placeholder="Escribe los detalles de tu petición..."></textarea>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="terms-and-conditions">
+                            <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions" class="inline" /> Acepto los <a class="terms-link" href="">Términos y Condiciones</a>
+                          </label>
+                    </div>
+                    <input type="submit" value="Enviar" />
+                
+            </form>
+        </main>
 
         <!--Script for menu toggle-->
     <script src="/scripts/index.js"></script>
