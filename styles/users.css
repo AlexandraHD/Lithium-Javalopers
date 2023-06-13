@@ -15,6 +15,160 @@ body{
 .btns{
     display: none;
 }
+/*banner*/
+.carrousel{
+    width: 100%;
+}
+
+.conteCarrousel{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.itemCarrousel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselTarjeta{
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselArrows{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; 
+}
+.itemCarrouselArrows2{
+    position: absolute; 
+    display: flex;
+    align-items: center;
+    padding: 20px; 
+}
+
+.itemCarrouselArrows > i:hover {
+    cursor: pointer;
+}
+
+#itemCarrousel-1{
+    background-image: url(/img/samsun2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#itemCarrousel-2{
+    background-image: url(/img/audifonos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#itemCarrousel-3{
+    background-image: url(/img/banner2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.itemCarrouselArrows > a > i{
+    color: white;
+}
+.content2 .title{
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px rgb(255, 0, 0);
+    padding: 10px;
+    margin-left: 50px;
+}
+.content2 .text{
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 800px;  
+}
+.content2 .button-banner{
+    padding: 10PX;
+    font-size: 20px;
+    background-color:rgb(255, 0, 0);
+    border: rgb(255, 0, 0);
+    color: white;
+    margin-left: 200px;
+    height: 50px;
+    border-radius: 6px;
+    margin-top: 150px;
+}
+
+.content3{
+    padding: 20px;
+}
+.content3 .title{
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px rgb(255, 0, 0);
+    margin-left: 50px;
+    
+}
+.content3 .text{
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 800px;
+    
+}
+.content3 .button-banner{
+    padding: 10PX;
+    font-size: 20PX;
+    background-color:rgb(255, 0, 0);
+    border: rgb(255, 0, 0);
+    color: white;
+    margin-left: 120px;
+    height: 50px;
+    border-radius: 6px; 
+    margin-top: 150px;
+}
+.content4 .title{
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px rgb(255, 0, 0);
+    padding: 15px;
+    margin-left: 30px;
+}
+.content4 .text{
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 700px;
+    
+}
+.content4 .button-banner{
+    padding: 10PX;
+    font-size: 20PX;
+    background-color:rgb(255, 0, 0);
+    border: rgb(255, 0, 0);
+    color: white;
+    margin-left: 150px;
+    height: 50px;
+    border-radius: 6px; 
+    margin-top: 150px;
+}
+
+.button-banner:hover{
+    background-color: rgb(143, 3, 3);
+    cursor: pointer;
+}
+
 
 nav{
     display: flex;
@@ -352,6 +506,142 @@ h3 {
     margin-top: 10px;
 }
 
+/*footer*/
+#container-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+footer{
+    background-color: rgba(0, 0, 0);
+    color: #fff;
+    padding: 20px;
+    height: 200px;
+}
+#somos h4{
+    font-size: 20px;
+    text-shadow: 1px 1px #DD2330;
+}
+.terms a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #f1fbff;
+}
+.terms h4{
+    text-shadow: 1px 1px #DD2330;
+}
+.social-media h4{
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 1px 1px #DD2330;
+    
+}
+.social-icons {
+    list-style: none;
+    margin-bottom: 5.4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+    color: #DD2330;
+    padding: .8rem 2rem;
+    
+}
+.accordion {
+    width: 500px;
+    color: white;
+    background-color: black;
+
+  }
+  .accordion .container2{
+    position: relative;
+    margin: 10px 10px;
+  }
+  
+  .accordion .label {
+    position: relative;
+    padding: 10px 0;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    
+  }
+  
+  .accordion .label::before {
+    content: '+';
+    color: rgb(255, 0, 0);
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 30px;
+    transform: translateY(-50%);
+  }
+  
+  .accordion .content{
+    position: relative;
+    background: black;
+    height: 0;
+    font-size: 15px;
+    text-align: justify;
+    width: 450px;
+    overflow: hidden;
+    transition: 0.5s;
+    
+  }
+  .accordion .content2{
+    position: relative;
+    background: black;
+    height: 0;
+    font-size: 15px;
+    text-align: justify;
+    width: 450px;
+    overflow: hidden;
+    transition: 0.5s;
+    
+  }
+  .accordion .content3{
+    position: relative;
+    background: black;
+    height: 0;
+    font-size: 15px;
+    text-align: justify;
+    width: 450px;
+    overflow: hidden;
+    transition: 0.5s;
+    padding: 0;
+  }
+  .accordion hr {
+    width: 100;
+    margin-left: 0;
+    border: 1px solid rgb(255, 0, 0);
+  }
+  .seccion-we-are{
+    padding: 15px;
+    text-align: center;
+  }
+  .seccion-we-are a{
+    color: white;
+  }
+  .seccion-we-are img{
+    float: left;
+    margin-right: 10px;
+    height: 120px;
+    width: 140px;
+    margin-left: 10px;
+  }
+  .active .content{
+    height: 120px;
+  }
+  .active .content2{
+    height: 250px;
+  }
+  .active .content3{
+    height: 150vh;
+  }
 
 /*Responsive para pantallas grandes*/
 @media screen and (min-width: 750px) {
@@ -413,7 +703,5 @@ h3 {
 
     .btn-cart:hover{
         color: rgb(223, 25, 39);
-    }
-    
-
+    }  
 }
