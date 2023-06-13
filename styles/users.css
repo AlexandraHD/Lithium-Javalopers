@@ -454,6 +454,11 @@ form div{
 }
 
 /*Estilos Form Registro*/
+.h1-regis{
+    color: white;
+    text-align: center;
+    font-family: nunito;
+}
 .signup-form input{
     border-radius: 12px;
     height: 25px;
