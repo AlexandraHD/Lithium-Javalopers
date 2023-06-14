@@ -481,23 +481,35 @@ form div{
 .signup-form input[type="submit"]:hover{
     background-color:white;
 }
+
+.opc-h1{
+    text-align: center;
+    margin-top: 5%;
+    color: white;
+}
 .btns-users{
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
 }
 
 .btn-per {
+    display: flex;
     margin: 0 auto;
     width: 110px;
     height: 35px;
     border-radius: 15px;
-    margin-top: 0px;
+    justify-content: center;
     font-size: 15px;
     font-weight: 800;
     cursor: pointer;
     background-color: white; 
+    color: #000000;
+    align-items: center;
+    
 }
 .btn-com {
+    display: flex;
     margin: 0 auto;
     width: 110px;
     height: 35px;
@@ -507,6 +519,12 @@ form div{
     font-weight: 800;
     cursor: pointer;
     background-color: white; 
+    color: #000000;
+    justify-content: center;
+    align-items: center;
+}
+#choose-signup{
+    margin: 50px 28%;
 }
 
 
