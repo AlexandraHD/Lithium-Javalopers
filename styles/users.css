@@ -481,8 +481,33 @@ form div{
 .signup-form input[type="submit"]:hover{
     background-color:white;
 }
+.btns-users{
+    display: flex;
+    flex-direction: row;
+}
 
-
+.btn-per {
+    margin: 0 auto;
+    width: 110px;
+    height: 35px;
+    border-radius: 15px;
+    margin-top: 0px;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    background-color: white; 
+}
+.btn-com {
+    margin: 0 auto;
+    width: 110px;
+    height: 35px;
+    border-radius: 15px;
+    margin-top: 0px;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    background-color: white; 
+}
 
 
 

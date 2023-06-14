@@ -10,7 +10,6 @@ menuToggle.addEventListener('click', function(){        //Abre el menu
     body.classList.toggle('open');
 })
 
-//formularios
 const signupForm = document.querySelector('.signup-form')
 
 signupForm.addEventListener('submit', (e) => {
