@@ -93,15 +93,15 @@ a{
     display: none;
 }
 
-.open .fa-times {
+.open.fa-times {
     display: block;
 }
 
-.open .fa-bars {
+.open.fa-bars {
     display: none;
 }
 
-.open .nav-list {
+.open.nav-list {
     transform: translateX(0);
 }
 .open .nav::before{
@@ -358,6 +358,10 @@ h3 {
     margin-bottom: 15px;
     margin-top: 15px;
     text-align: center;
+}
+
+h5.contact-form-title{
+  font-weight: 500;
 }
 
 .contact-form{
@@ -753,13 +757,12 @@ textarea{
     
 
     /*CONTACT FORM*/
-    .contact-form-title h2{
-        font-size: 55px;
+    h2.contact-form-title{
+        font-size: 30px;
     }
 
-    .contact-form-title h5{
-        font-size: 20px;
-        font-weight: 500;
+    h5.contact-form-title{
+        font-size: 16px;
     }
 
     .contact-form{

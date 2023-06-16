@@ -54,7 +54,7 @@ a{
     font-size: 1.5rem;
     position: absolute;
     top: 5%;       /*desplaza hacia abajo*/
-    transform: translateY(-45%);    /*Hacia arriba*/
+    transform: translateY(-15%);    /*Hacia arriba*/
     right: 2.5rem;
     cursor: pointer;        /*Cursor manita*/
     z-index: 1500;
@@ -480,6 +480,120 @@ textarea{
     font-weight: 800;
 }
 
+/*EDIT ADDRESSES*/
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+h2{
+    color: white;
+    text-align: center;
+    margin-top: 15px;
+}
+
+#content-edit-address {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    background-color: rgba(21, 20, 20, 0.8);
+    width: 90%;
+    height: fit-content;
+    margin-top: 25px;
+    border-radius: 8px;
+}
+
+#add-address {
+    margin-top: 16px;
+    margin-left: 32px;
+}
+
+.content-address {
+    display: flex;
+    margin: 16px 16px;
+    width: 90%;
+    color: white;
+    padding: 12px;
+    
+}
+
+#address-location {
+    padding: 0 16px;
+    width: 200px;
+    height: 30px;
+}
+
+#address {
+    border: 1px solid red;
+    padding: 5px 8px;
+    width: 220px;
+    height: 30px;
+    margin-left: 25px;
+}
+
+#icons {
+    margin-left: 25px;
+    cursor: pointer;
+}
+
+.fa-pen-to-square {
+    margin-right: 8px;
+}
+
+.fa-circle-plus{
+    cursor: pointer;
+}
+
+.fa-pen-to-square:hover{
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5);
+}
+
+.fa-trash-can:hover{
+    box-shadow: 1px 1px 10px rgba(255, 255, 255, 0.5);
+}
+
+.fa-circle-plus:hover{
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.5);
+}
+
+.btns-address{
+    display: flex;
+    justify-content: end;
+    padding: 16px;
+}
+
+#btn-save-address{
+    margin-right: 12px;
+    background-color: red;
+    border: none;
+    padding: 8px;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#btn-save-address:hover{
+    background-color: rgb(223, 25, 39);
+    font-weight: 600;
+}
+
+#btn-cancel-address{
+    margin-right: 12px;
+    background-color: rgba(21, 20, 20, 0.8);
+    border: 1px solid red;
+    padding: 8px;
+    color: white;
+    font-size: 16px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+#btn-cancel-address:hover{
+    background-color: rgb(223, 25, 39);
+    font-weight: 600;
+}
+
 /*Responsive para pantallas grandes*/
 @media screen and (min-width: 750px) {
     .menu-toggle {
@@ -530,6 +644,22 @@ textarea{
     
     .contact-form input[type="submit"]{
         font-size: 18px;
+    }
+
+    /*EDIT ADDRESS*/
+    #content-edit-address {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        background-color: rgba(21, 20, 20, 0.8);
+        width: 60%;
+        height: fit-content;
+        margin-top: 25px;
+        border-radius: 8px;
+    }
+
+    #address{
+        width: 300px;
     }
     
 }
