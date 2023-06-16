@@ -286,11 +286,12 @@ a{
 .search--div{
     display: flex;
     width: 100%;
-    height: 2.4rem;
+    height: 3rem;
     justify-content: center;
     align-items: center;
     font-family: nunito;
     color: #FF4533;
+    outline:  none;
   }
   .search--bar{
     display: flex;
@@ -299,6 +300,9 @@ a{
     width: 21.8rem;
     position: absolute;
     background-color: transparent;
+  }
+  .search--bar:focus{
+   outline: none;
   }
   .icon-search{
     display: flex;
@@ -316,7 +320,7 @@ a{
     height: 2rem;
     width: 0.6rem;
   }
-  
+  /*Categorias*/
   .container-card {
       display: flex;
       width: 100%;
@@ -352,11 +356,11 @@ a{
       transition: transform 0.5s ease-in-out;
     }
     .face--front {
-      background: #FF4533;
+      background: #ff0000;
       font-size: 1.7rem; /*Size Icon*/
     }
     .face--back {
-      background: #FF4533;
+      background:#ff0000;
       font-weight: bold;
       font-size: 0.9rem;
       transform: rotateX(180deg);
@@ -643,6 +647,178 @@ footer{
     height: 150vh;
   }
 
+/*Formulario Login*/
+.text-Login{
+    margin:10px 28%; 
+    width: 43.6%;
+    text-align: center;
+    font-weight: 500;
+    color: white;
+}
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 28%;
+    width: 43.6%;
+    margin-bottom: 25px;
+    height: 50vh;
+    align-items:center;
+    justify-content: center;
+    background-color: #ff000080;
+    border-radius: 50px;
+    gap: 10px;
+    font-weight: 500;
+    color: white;
+    font-family: nunito;
+}
+
+form label{
+    margin-left: 8px;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    
+}
+.login-form input{
+    border-radius: 12px;
+    height: 25px;
+    border: none;
+    padding: 0 8px;
+}
+
+.login-form input[type="submit"]{
+    margin: 0 auto;
+    width: 110px;
+    height: 35px;
+    border-radius: 15px;
+    margin-top: 0px;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    background-color: white;
+}
+
+.login-form input[type="submit"]:hover{
+    background-color: rgba(255, 255, 255, 0.858);
+}
+.a-form{
+    color: white;
+    margin: 0px 1px;
+}
+
+#icon-eye{
+     transform: translateY(-130%) translateX(90%);
+  }
+.recuerdame{
+    flex-direction: row;
+    justify-content:left;
+   
+    margin: 0;
+}
+/*Estilos pop up Swal Alert*/
+ 
+.swal2-title {
+    position: relative;
+    max-width: 100%;
+    margin: 0 0 .4em;
+    padding: 0;
+    color: #ff0000;
+    font-size: 1.875em;
+    font-weight: 600;
+    text-align: center;
+    text-transform: none;
+    word-wrap: break-word;
+    font-family: nunito;
+}
+.swal2-styled.swal2-confirm {
+    border: 0;
+    border-radius: .25em;
+    background: initial;
+    background-color:  #ff000080;
+    color: #fff;
+    font-size: 1em;
+}
+
+/*Estilos Form Registro*/
+.h1-regis{
+    color: white;
+    text-align: center;
+    font-family: nunito;
+}
+.signup-form input{
+    border-radius: 12px;
+    height: 25px;
+    border: none;
+    padding: 0 8px;
+}
+
+.signup-form input[type="submit"]{
+    margin: 0 auto;
+    width: 100px;
+    height: 35px;
+    border-radius: 15px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    background-color: white;
+}
+
+.signup-form input[type="submit"]:hover{
+    background-color:white;
+}
+
+.opc-h1{
+    text-align: center;
+    margin-top: 5%;
+    color: white;
+}
+.btns-users{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn-per {
+    display: flex;
+    margin: 0 auto;
+    width: 110px;
+    height: 35px;
+    border-radius: 15px;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    background-color: white; 
+    color: #000000;
+    align-items: center;
+    
+}
+.btn-com {
+    display: flex;
+    margin: 0 auto;
+    width: 110px;
+    height: 35px;
+    border-radius: 15px;
+    margin-top: 0px;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    background-color: white; 
+    color: #000000;
+    justify-content: center;
+    align-items: center;
+}
+#choose-signup{
+    margin: 50px 28%;
+}
+
+
+
 /*Responsive para pantallas grandes*/
 @media screen and (min-width: 750px) {
 
@@ -704,4 +880,9 @@ footer{
     .btn-cart:hover{
         color: rgb(223, 25, 39);
     }  
+}
+@media screen and (max-width: 600px) {
+    #icon-eye{
+        transform: translateY(-130%) translateX(84%);
+     }
 }
