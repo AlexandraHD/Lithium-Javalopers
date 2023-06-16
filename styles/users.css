@@ -10,26 +10,28 @@
 .button-add{
     font-size: 16px;
     text-align: center;
-    background-color: rgb(171, 50, 50);
+    background-color: #DD2330;
     color: beige;
-    border: 2px solid rgb(171, 50, 50);
+    border: 2px solid #DD2330;
     border-radius: 6px;
     padding: 2px 6px;
     position: absolute;
     right: 20px;
     bottom: 10px;
+    cursor: pointer;
 }
 .button-ver{
     font-size: 14px;
     text-align: center;
     color: rgb(12, 12, 12);
     background-color: rgb(229, 221, 207);
-    border: 1px solid rgb(171, 50, 50);
+    border: 1px solid #DD2330;
     border-radius: 4px;
     padding: 1px 4px;
     position: absolute;
     left: 15px;
     bottom: 10px;
+    cursor: pointer;
 }
 .button-add:hover{
     background-color: #BF202B;
@@ -86,6 +88,7 @@
     right: 0%;
     background-color: transparent;
     border: 1px solid transparent;
+    cursor: pointer;
 }
 .button-car {
     position: absolute;
@@ -97,10 +100,11 @@
     right: 0%;
     background-color: transparent;
     border: 1px solid transparent;
+    cursor: pointer;
 }
 h3 {
     background-color: black;
-    color: #BF202B;
+    color: #ED2532;
     height: 40px;
     padding-left: 20px;
 }
