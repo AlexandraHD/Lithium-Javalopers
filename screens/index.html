@@ -3,16 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ea06c7c0f7.js" crossorigin="anonymous"></script>
     <title>Lithium</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="/styles/users.css">
+    <link rel="icon" href="/img/logo.jpg" type="image/icon type">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 </head>
 <body>
-    
-    <header>
-        
+
+    <header>		
+        <!--NAVBAR-->
+                <nav>
+                    <!--Logo-->
+                    <div class="navbar-logo">
+                        <img class="nav-img" src="/img/logo.jpg" alt="Logo">
+                        <a class="navbar-brand" href="#">Lithium</a>
+                    </div>
+                    <!--MENU TOGGLE-->
+                    <div class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link ">Registrarse</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link ">Inicia Sesion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link ">Carrito</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link ">Nosotros</a>
+                        </li>
+                    </ul>
+                    <!--BUTTONS-->
+                    <div class="btns">
+                        <a class="btn-register" type="button" href="#">Registrarse</a>
+                        <a class="btn-login" type="button" href="#">Inicia Sesión</a>
+                        <a class="btn-cart" type="button" href="#"><i class="fa-solid fa-cart-shopping" style="color: #ff0000;"></i> Carrito</a>
+                    </div>
+                </nav>
     </header>
+
     <!--**SEARCH-BAR**-->
     <div class="search--div"> 
         <input  class = "search--bar" type="text"  placeholder= "Buscar..."name="Texto" required>
@@ -21,7 +60,8 @@
         </div>   
     </div>
     <!--*****SEARCH-BAR END*****-->
-  
+
+    
     <!--** CATEGORIES**-->
         <div class="container-card">
         <div class="card">
@@ -44,46 +84,144 @@
             <div class="face face--front"><i class="fa-solid fa-headphones"></i></div>
             <div class="face face--back" id="text-headphones">Accesorios</div>
         </div>
-    </div>
+    </div><br>
     <!--** CATEGORIES END**-->
-    <div class="carousel slide" data-bs-ride="carousel" id="carouselExampleIndicators">
-		<div class="carousel-indicators">
-			<!--El valor "t" en "slide-t" significa "transition" (transición) y se utiliza para especificar la forma en que se desplazan los elementos en el carrusel. Los valores que pueden tener "slide-t" incluyen "fade" (desvanecimiento), "slide" (deslizamiento) y "scroll" (desplazamiento).-->
-			<button aria-label="Slide 1" class="active" data-bs-slide-to="0" data-bs-target="#carouselExampleIndicators" type="button"></button> <button aria-label="Slide 2" data-bs-slide-to="1" data-bs-target="#carouselExampleIndicators" type="button"></button> <button aria-label="Slide 3" data-bs-slide-to="2" data-bs-target="#carouselExampleIndicators" type="button"></button>
-		</div>
-		<div class="carousel-inner">
-			<div class="carousel-item active">
-				<img alt="..." class="d-block w-100" src="../img/samsung.png">
-				<div class="carousel-caption">
-					<h5>BlackDays</h5>
-					<p>Aprovecha nuestras ofertas en la marca Samsung</p>
-					<!---->
-					<p><a class="btn btn-danger mt-3" href="#">Ver más</a></p>
-				</div>
-			</div>
-			<div class="carousel-item">
-				<img alt="..." class="d-block w-100" src="../img/banner1.png">
-				<div class="carousel-caption">
-					<h5>BlackDays</h5>
-					<p>Aprovecha nuestras ofertas en accesorios tecnológicos</p>
-					<p><a class="btn btn-danger mt-3" href="#">Ver más</a></p>
-				</div>
-			</div>
-			<div class="carousel-item">
-				<img alt="..." class="d-block w-100" src="../img/banner2.png">
-				<div class="carousel-caption">
-					<h5>BlackDays</h5>
-					<p>Aprovecha los descuentos en celulares Iphone 13 pro</p>
-					<p><a class="btn btn-danger mt-3" href="#">Ver más</a></p>
-				</div>
-			</div>
-		</div><button class="carousel-control-prev" data-bs-slide="prev" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-prev-icon"></span> <span class="visually-hidden">Previous</span></button> <button class="carousel-control-next" data-bs-slide="next" data-bs-target="#carouselExampleIndicators" type="button"><span aria-hidden="true" class="carousel-control-next-icon"></span> <span class="visually-hidden">Next</span></button>
-	</div><br>
 
+	<!--Banner-->
+	<div class="carrousel">
+		<div class="conteCarrousel">
+			<div class="itemCarrousel" id="itemCarrousel-1">
+				<div class="itemCarrouselTarjeta">
+					<div class = "content2">
+						<h2 class = "title">BLACKDAYS</h2>
+						<p class = "text">¡Descubre el poder y la elegancia de los celulares Samsung! Encuentra el tuyo y sé parte de la revolución tecnológica.</p>
+					</div> 
+				</div>
+				<div class="itemCarrouselArrows">
+					<a href="#itemCarrousel-3">
+						<i class="fas fa-chevron-left"></i>
+					</a>
+					<a href="#itemCarrousel-2">
+						<i class="fas fa-chevron-right"></i>
+					</a> 
+                    <div class="itemCarrouselArrows2">
+                        <div class = "content2">
+                            <button class = "button-banner">Ver Más</button>
+                        </div>
+                    </div>
+				</div>
+			</div>
+			<div class="itemCarrousel" id="itemCarrousel-2">
+				<div class="itemCarrouselTarjeta">
+					<div class =  "content3">
+						<h2 class = "title">BLACKDAYS</h2>
+						<p class = "text">Descubre nuestras increíbles ofertas y encuentra los dispositivos que harán tu vida más fácil y emocionante.</p>
+					</div>
+				</div>
+				<div class="itemCarrouselArrows">
+					<a href="#itemCarrousel-1">
+						<i class="fas fa-chevron-left"></i>
+					</a>
+					<a href="#itemCarrousel-3">
+						<i class="fas fa-chevron-right"></i>
+					</a>
+                    <div class="itemCarrouselArrows2">
+                        <div class = "content3">
+                            <button class = "button-banner">Ver Más</button>
+                        </div>
+                    </div> 
+				</div>
+			</div>
+			<div class="itemCarrousel" id="itemCarrousel-3">
+				<div class="itemCarrouselTarjeta">
+					<div class="content4">
+						<h2 class = "title">BLACKDAYS</h2>
+						<p class = "text">¡Descubre la perfección en cada detalle con los increíbles iPhones de Apple! Sumérgete en un mundo de innovación y estilo.</p>
+						
+					</div>
+				</div>
+				<div class="itemCarrouselArrows">
+					<a href="#itemCarrousel-2">
+						<i class="fas fa-chevron-left"></i>
+					</a>
+					<a href="#itemCarrousel-1">
+						<i class="fas fa-chevron-right"></i>
+					</a>
+                    <div class="itemCarrouselArrows2">
+                        <div class = "content4">
+                            <button class = "button-banner">Ver Más</button>
+                        </div>
+                    </div>
+				</div>
+			</div>
+		</div>
+		
+	</div>
+
+    <div class="container-box">
+
+        <div class="box box1">
+            <img src="/img/ventajas1.png" alt="">
+            <h2>Descuentos especiales todos los viernes</h2>
+
+        </div>
+
+        <div class="box box2">
+            <img src="/img/ventajas2.jpeg" alt="">
+            <h2>Envío gratis a partir de 100mil pesos en compras</h2>
+        </div>
+
+        <div class="box box3">
+            <img src="/img/ventajas3.jpeg" alt="">
+            <h2>Las mejores tiendas te esperan</h2>
+        </div>
+
+    </div>
+
+    <h3>Imperdibles</h3>
+
+    <div class="discount">
+        <div class="product-container">
+            <img src="/img/imperdibles1.jpeg" alt="">
+            <h5>iPhone 12 Pro Max 256gb 15% dto</h5>
+            <h4>$1.325.263</h4>
+            <button class="button-ver">Detalles</button>
+            <button class="button-add">Comprar</button>
+            <div><button class="button-heart"><i class="fa-regular fa-heart"></i></button></div>
+            <div><button class="button-car"><i class="fa-solid fa-cart-shopping"></i></i></button></div>
+        </div>
+        
+        <div class="product-container">
+            <img src="/img/imperdibles2.jpeg" alt="">
+            <h5>Laptop Asus Vivobook Pro 15 25%dto</h5>
+            <h4>$1.325.263</h4>
+            <button class="button-ver">Detalles</button>
+            <button class="button-add">Comprar</button>
+            <div><button class="button-heart"><i class="fa-regular fa-heart"></i></button></div>
+            <div><button class="button-car"><i class="fa-solid fa-cart-shopping"></i></i></button></div>
+        </div>
+        <div class="product-container">
+            <img src="/img/imperdibles3.jpeg" alt="">
+            <h5>Televisor Samsung 55 Crystal Uhd 4k 10%dto</h5>
+            <h4>$1.325.263</h4>
+            <button class="button-ver">Detalles</button>
+            <button class="button-add">Comprar</button>
+            <div><button class="button-heart"><i class="fa-regular fa-heart"></i></button></div>
+            <div><button class="button-car"><i class="fa-solid fa-cart-shopping"></i></i></button></div>
+        </div>
+        <div class="product-container">
+            <img src="/img/imperdibles4.jpeg" alt="">
+            <h5>Audífonos gamer Kotion G2000 15%dto</h5>
+            <h4>$1.325.263</h4>
+            <button class="button-ver">Detalles</button>
+            <button class="button-add">Comprar</button>
+            <div><button class="button-heart"><i class="fa-regular fa-heart"></i></button></div>
+            <div><button class="button-car"><i class="fa-solid fa-cart-shopping"></i></i></button></div>
+        </div>
+    </div><br>
 
 	<footer>
-
-		<div id = "container">
+		<div id = "container-footer">
 
 			<div class = "column">
 
@@ -108,106 +246,85 @@
 				<div id = "somos">
 					<h4>Quienes Somos</h4>
 				</div><br>
-		
-				<div class="accordion" id="accordionExample">
-		
-					<div class="accordion-item">
-					  <h2 class="accordion-header" id="headingOne">
-						<button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-							Misión
-						</button>
-					  </h2>
-					  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
-						<div class="accordion-body4">
-							Ofrecer productos en tecnología al alcance de todos para aportar en la economía de millones de Colombianos.
-						</div>
-					  </div>
-					</div>
-		
-					<div class="accordion-item">
-					  <h2 class="accordion-header" id="headingTwo">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-						  Visión
-						</button>
-					  </h2>
-					  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
-						<div class="accordion-body4">
-                            Para el 2028 seremos uno de los E-commerce lideres en tecnología de América latina, a través de una estrategia de posicionamiento a bajo costo y excelente calidad para los consumidores de los diferentes países como Colombia, chile, Uruguay y Argentina.
-						</div>
-					  </div>
-					</div>
-		
-					<div class="accordion-item">
-					  <h2 class="accordion-header" id="headingThree">
-						<button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-							Objetivos
-						</button>
-					  </h2>
-					  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
-						<div class="accordion-body4">
-							<ul>
-								<li> <strong>Gestión ética</strong> en busca de un crecimiento empresarial donde reina la transparencia, la empatía, impulsando el talento humano como eje principal.</li><br>
-								<li> <strong>Innovación tecnológica constante,</strong> dando calidad en los productos que se comercializan en nuestra página.</li><br>
-								<li> <strong>Renovación a la línea de logística y suministros,</strong> teniendo como prioridad la reducción de daños al medio ambiente buscando alternativas de uso y de procesos.</li>
-							</ul>
-						</div>
-					  </div>
-					</div>
-	
-					<div class="accordion-item">
-						<h2 class="accordion-header" id="headingFour">
-						  <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
-							  Nosotros
-						  </button>
-						</h2>
-						<div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingFour" data-bs-parent="#accordionExample">
-						  <div class="accordion-body4">
-
-							<div class = "row">
-								<img src="../img/alexa.jpg"><br>
-								<h4>Alexandra Hernández</h4><br>
-								<h5>(Desarrolladora Full Stack Java)</h5><br>
-								<a href="https://www.linkedin.com/in/alexandrahernandez-dev/?originalSubdomain=co">www.linkedin.com/in/</a>
-							</div><br><br>
-
-							<div class = "row">
-								<img src="../img/Luis.jpeg"><br>
-								<h4 class="name1">Luis Espitia</h4><br>
-								<h5>(Desarrollador Full Stack Java)</h5><br>
-								<a href="https://www.linkedin.com/home">www.linkedin.com/in/</a>
-							</div><br><br>
-							
-							<div class = "row">
-								<img src="../img/Karen.jpeg "><br>
-								<h4 class = "name2">Karen Buitrago</h4><br>
-								<h5>(Desarrolladora Full Stack Java)</h5><br>
-								<a href="https://www.linkedin.com/in/karen-buitrago0">www.linkedin.com/in/</a>
-
-							</div><br><br>
-
-							<div class = "row">
-								<img src="../img/Alexander.jpeg"><br>
-								<h4 class = "name3">Alexander Hernández</h4><br>
-								<h5 class = "name2">(Desarrollador Senior)</h5><br>
-								<a href="https://www.linkedin.com/in/alex-hern%C3%A1ndez-664865127">www.linkedin.com/in/</a>
-							</div><br><br>
-
-							<div class = "row">
-								<img src="../img/paula.png"><br>
-								<h4 class = "name1">Paula Pulido</h4><br>
-								<h5>(Desarrolladora Full Stack Java)</h5><br>
-								<a href="https://www.linkedin.com/home">www.linkedin.com/in/</a>
-							</div><br><br>
-
-						  </div>
-						</div>
-					</div>
-				 </div><br>
-
+                
+                <div class="accordion-body">
+                    <div class="accordion">
+                    <hr>
+                    <div class="container2">
+                      <div class="label">Misión</div>
+                      <div class="content">
+                        <div class = "paragraph">
+                          <p>Ofrecer productos en tecnología al alcance de todos para aportar en la economía de millones de Colombianos.</p>
+                      </div>
+                    </div>
+                    </div>
+                    <hr>
+                    <div class="container2">
+                      <div class="label">Visión</div>
+                      <div class="content">Para el 2028 seremos uno de los E-commerce lideres en tecnología de América latina, a través de una estrategia de posicionamiento a bajo costo y excelente calidad para los consumidores de los diferentes países como Colombia, chile, Uruguay y Argentina.</div>
+                    </div>
+                    <hr>
+                    <div class="container2">
+                      <div class="label">Valores Corporativos</div>
+                      <div class="content2">
+                        <div class = "values">
+                          <ul>
+                            <li> <strong>Gestión ética</strong> en busca de un crecimiento empresarial donde reina la transparencia, la empatía, impulsando el talento humano como eje principal.</li><br>
+                            <li> <strong>Innovación tecnológica constante,</strong> dando calidad en los productos que se comercializan en nuestra página.</li><br>
+                            <li> <strong>Renovación a la línea de logística y suministros,</strong> teniendo como prioridad la reducción de daños al medio ambiente buscando alternativas de uso y de procesos.</li>
+                          </ul>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                    <div class="container2">
+                      <div class="label">Nosotros</div>
+                      <div class="content3">
+                        <div class = "seccion-we-are">
+                            <div class = "row">
+                                <img src="/img/alexa.jpg"><br>
+                                <h4>Alexandra Hernández</h4><br>
+                                <h5>(Desarrolladora Full Stack Java)</h5><br>
+                                <a href="https://www.linkedin.com/in/alexandrahernandez-dev/?originalSubdomain=co">www.linkedin.com/in/</a>
+                              </div><br><br>
+                      
+                              <div class = "row">
+                                <img src="/img/Luis.jpeg"><br>
+                                <h4 class="name1">Luis Espitia</h4><br>
+                                <h5>(Desarrollador Full Stack Java)</h5><br>
+                                <a href="https://www.linkedin.com/feed/">www.linkedin.com/in/</a>
+                              </div><br><br>
+                              
+                              <div class = "row">
+                                <img src="/img/Karen.jpeg"><br>
+                                <h4 class = "name2">Karen Buitrago</h4><br>
+                                <h5>(Desarrolladora Full Stack Java)</h5><br>
+                                <a href="https://www.linkedin.com/in/karen-buitrago0">www.linkedin.com/in/</a>
+                      
+                              </div><br><br>
+                      
+                              <div class = "row">
+                                <img src="/img/Alex.png"><br>
+                                <h4 class = "name3">Alexander Hernández</h4><br>
+                                <h5 class = "name2">(Desarrollador Senior)</h5><br>
+                                <a href="https://www.linkedin.com/in/alex-hern%C3%A1ndez-664865127/">www.linkedin.com/in/</a>
+                              </div><br><br>
+                      
+                              <div class = "row">
+                                <img src="/img/paula.png"><br>
+                                <h4 class = "name1">Paula Pulido</h4><br>
+                                <h5>(Desarrolladora Full Stack Java)</h5><br>
+                                <a href="https://www.linkedin.com/feed/">www.linkedin.com/in/</a>
+                              </div><br><br>
+                        </div>
+                      </div>
+                    </div>
+                    <hr>
+                  </div>
+                  </div>
 			</div>
-		</div><br>
-
-		<br><div class="social-media">
+		</div>
+		<div class="social-media">
 			<h4>Siguenos en redes</h4>
 			<ul class="social-icons">
 				<li>
@@ -225,12 +342,46 @@
 
 			</ul>
 		</div>
-
-
     </footer>
-	
-	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.min.js">
-	</script>
-    <script src="https://kit.fontawesome.com/e8d0c66caa.js" crossorigin="anonymous"></script>
+    <!--Script para el despliegue de Nosotros en el footer-->
+	<script>
+        const accordion = document.getElementsByClassName('container2');
+        for (i=0; i<accordion.length; i++) {
+            accordion[i].addEventListener('click', function () {
+                this.classList.toggle('active')
+            })
+        }
+        const accordion3 = document.getElementsByClassName('content2');
+        for (i=0; i<accordion3.length; i++) {
+        accordion3[i].addEventListener('click', function () {
+            this.classList.toggle('active')
+        })
+        }
+        const accordion4 = document.getElementsByClassName('content3');
+
+        for (i=0; i<accordion4.length; i++) {
+        accordion4[i].addEventListener('click', function () {
+            this.classList.toggle('active')
+        })
+        }
+    </script>
+
+    <!--Script para el menu desplegable-->
+    <script>
+
+        const selectElement = function(element) {
+            return document.querySelector(element);     //selecciona los elementos
+        }
+
+
+        let menuToggle = selectElement('.menu-toggle');     //Selecciona el menu
+        let body = selectElement('body');
+
+        menuToggle.addEventListener('click', function(){        //Abre el menu
+            body.classList.toggle('open');
+        })
+
+    </script>
+
 </body>
 </html>
