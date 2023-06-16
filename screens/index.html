@@ -3,29 +3,67 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/users.css">
+    <script src="https://kit.fontawesome.com/ea06c7c0f7.js" crossorigin="anonymous"></script>
     <title>Lithium</title>
-    <link rel="stylesheet" href="/Lithium-Javalopers/styles/users.css">
+    <link rel="icon" href="/img/logo.jpg" type="image/icon type">
 </head>
 <body>
     <header>
+        <!--Barra de navegacion-->
+                <nav>
+                    <!--Logo-->
+                    <div class="navbar-logo">
+                        <img class="nav-img" src="/img/logo.jpg" alt="Logo">
+                        <a class="navbar-brand" href="#">Lithium</a>
+                    </div>
+                    <!--Menu desplegable-->
+                    <div class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link ">Registrarse</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link ">Inicia Sesion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link ">Carrito</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link ">Nosotros</a>
+                        </li>
+                    </ul>
+                    <!--Botones-->
+                    <div class="btns">
+                        <a class="btn-register" type="button" href="#">Registrarse</a>
+                        <a class="btn-login" type="button" href="#">Inicia Sesión</a>
+                        <a class="btn-cart" type="button" href="#"><i class="fa-solid fa-cart-shopping" style="color: #ff0000;"></i> Carrito</a>
+                    </div>
+                </nav>
         
     </header>
     
     <div class="container-box">
 
         <div class="box box1">
-            <img src="/Lithium-Javalopers/img/ventajas1.png" alt="">
+            <img src="/img/ventajas1.png" alt="">
             <h2>Descuentos especiales todos los viernes</h2>
 
         </div>
 
         <div class="box box2">
-            <img src="/Lithium-Javalopers/img/ventajas2.jpeg" alt="">
+            <img src="/img/ventajas2.jpeg" alt="">
             <h2>Envío gratis a partir de 100mil pesos en compras</h2>
         </div>
 
         <div class="box box3">
-            <img src="/Lithium-Javalopers/img/ventajas3.jpeg" alt="">
+            <img src="/img/ventajas3.jpeg" alt="">
             <h2>Las mejores tiendas te esperan</h2>
         </div>
 
@@ -35,7 +73,7 @@
 
     <div class="discount">
         <div class="product-container">
-            <img src="/Lithium-Javalopers/img/imperdibles1.jpeg" alt="">
+            <img src="/img/imperdibles1.jpeg" alt="">
             <h5>iPhone 12 Pro Max 256gb 15% dto</h5>
             <h4>$1.325.263</h4>
             <button class="button-ver">Detalles</button>
@@ -45,7 +83,7 @@
         </div>
         
         <div class="product-container">
-            <img src="/Lithium-Javalopers/img/imperdibles2.jpeg" alt="">
+            <img src="/img/imperdibles2.jpeg" alt="">
             <h5>Laptop Asus Vivobook Pro 15 25%dto</h5>
             <h4>$1.325.263</h4>
             <button class="button-ver">Detalles</button>
@@ -54,7 +92,7 @@
             <div><button class="button-car"><i class="fa-solid fa-cart-shopping"></i></i></button></div>
         </div>
         <div class="product-container">
-            <img src="/Lithium-Javalopers/img/imperdibles3.jpeg" alt="">
+            <img src="/img/imperdibles3.jpeg" alt="">
             <h5>Televisor Samsung 55 Crystal Uhd 4k 10%dto</h5>
             <h4>$1.325.263</h4>
             <button class="button-ver">Detalles</button>
@@ -63,7 +101,7 @@
             <div><button class="button-car"><i class="fa-solid fa-cart-shopping"></i></i></button></div>
         </div>
         <div class="product-container">
-            <img src="/Lithium-Javalopers/img/imperdibles4.jpeg" alt="">
+            <img src="/img/imperdibles4.jpeg" alt="">
             <h5>Audífonos gamer Kotion G2000 15%dto</h5>
             <h4>$1.325.263</h4>
             <button class="button-ver">Detalles</button>
@@ -74,8 +112,23 @@
 
     </div>
 
-    
     <script src="https://kit.fontawesome.com/e8d0c66caa.js" crossorigin="anonymous"></script>
+
+    <script>
+
+        const selectElement = function(element) {
+            return document.querySelector(element);     //selecciona los elementos
+        }
+
+
+        let menuToggle = selectElement('.menu-toggle');     //Selecciona el menu
+        let body = selectElement('body');
+
+        menuToggle.addEventListener('click', function(){        //Abre el menu
+            body.classList.toggle('open');
+        })
+
+    </script>
 
 </body>
 </html>

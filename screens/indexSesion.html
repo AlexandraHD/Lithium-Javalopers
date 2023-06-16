@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/people.css">
+    <script src="https://kit.fontawesome.com/ea06c7c0f7.js" crossorigin="anonymous"></script>
+    <title>Lithium</title>
+    <link rel="icon" href="/img/logo.jpg" type="image/icon type">
+</head>
+<body>
+    <header>
+        <!--Barra de navegacion-->
+                <nav>
+                    <!--Logo-->
+                    <div class="navbar-logo">
+                        <img class="nav-img" src="/img/logo.jpg" alt="Logo">
+                        <a class="navbar-brand" href="#">Lithium</a>
+                    </div>
+                    <!--Menu desplegable-->
+                    <div class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link ">Perfil</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link ">Carrito</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link ">Nosotros</a>
+                        </li>
+                    </ul>
+                    <!--Botones-->
+                    <div class="btns">
+                        <a href=""><i class="fa-solid fa-circle-user fa-xl" style="color: #ff0000;"></i></a>
+                        
+                        <a class="btn-cart" type="button" href="#"><i class="fa-solid fa-cart-shopping" style="color: #ff0000;"></i> Carrito</a>
+                    </div>
+                </nav>
+        
+    </header>
+
+    <script>
+
+        const selectElement = function(element) {
+            return document.querySelector(element);     //sekecciona los elementos
+        }
+
+
+        let menuToggle = selectElement('.menu-toggle');     //Selecciona el menu
+        let body = selectElement('body');
+
+        menuToggle.addEventListener('click', function(){        //Abre el menu
+            body.classList.toggle('open');
+        })
+
+    </script>
+</body>
+</html>
