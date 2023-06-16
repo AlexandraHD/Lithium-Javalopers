@@ -16,6 +16,161 @@ body{
     display: none;
 }
 
+/*banner*/
+.carrousel{
+    width: 100%;
+}
+
+.conteCarrousel{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.itemCarrousel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselTarjeta{
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselArrows{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; 
+}
+.itemCarrouselArrows2{
+    position: absolute; 
+    display: flex;
+    align-items: center;
+    padding: 20px; 
+}
+
+.itemCarrouselArrows > i:hover {
+    cursor: pointer;
+}
+
+#itemCarrousel-1{
+    background-image: url(/img/samsun2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#itemCarrousel-2{
+    background-image: url(/img/audifonos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#itemCarrousel-3{
+    background-image: url(/img/banner2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.itemCarrouselArrows > a > i{
+    color: white;
+}
+.content2 .title{
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px rgb(255, 0, 0);
+    padding: 10px;
+    margin-left: 50px;
+}
+.content2 .text{
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 800px;  
+}
+.content2 .button-banner{
+    padding: 10PX;
+    font-size: 20px;
+    background-color:rgb(255, 0, 0);
+    border: rgb(255, 0, 0);
+    color: white;
+    margin-left: 200px;
+    height: 50px;
+    border-radius: 6px;
+    margin-top: 150px;
+}
+
+.content3{
+    padding: 20px;
+}
+.content3 .title{
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px rgb(255, 0, 0);
+    margin-left: 50px;
+    
+}
+.content3 .text{
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 800px;
+    
+}
+.content3 .button-banner{
+    padding: 10PX;
+    font-size: 20PX;
+    background-color:rgb(255, 0, 0);
+    border: rgb(255, 0, 0);
+    color: white;
+    margin-left: 120px;
+    height: 50px;
+    border-radius: 6px; 
+    margin-top: 150px;
+}
+.content4 .title{
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px rgb(255, 0, 0);
+    padding: 15px;
+    margin-left: 30px;
+}
+.content4 .text{
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 700px;
+    
+}
+.content4 .button-banner{
+    padding: 10PX;
+    font-size: 20PX;
+    background-color:rgb(255, 0, 0);
+    border: rgb(255, 0, 0);
+    color: white;
+    margin-left: 150px;
+    height: 50px;
+    border-radius: 6px; 
+    margin-top: 150px;
+}
+
+.button-banner:hover{
+    background-color: rgb(143, 3, 3);
+    cursor: pointer;
+}
+
+
 nav{
     display: flex;
     height: 56px;
@@ -52,7 +207,7 @@ a{
     color: rgb(255, 0, 0);
     font-size: 1.5rem;
     position: absolute;
-    top: 5%;       /*desplaza hacia abajo*/
+    top: 3%;       /*desplaza hacia abajo*/
     transform: translateY(-15%);    /*Hacia arriba*/
     right: 2.5rem;
     cursor: pointer;        /*Cursor manita*/
@@ -132,11 +287,12 @@ a{
 .search--div{
     display: flex;
     width: 100%;
-    height: 2.4rem;
+    height: 3rem;
     justify-content: center;
     align-items: center;
     font-family: nunito;
     color: #FF4533;
+    outline:  none;
   }
   .search--bar{
     display: flex;
@@ -145,6 +301,9 @@ a{
     width: 21.8rem;
     position: absolute;
     background-color: transparent;
+  }
+  .search--bar:focus{
+   outline: none;
   }
   .icon-search{
     display: flex;
@@ -162,7 +321,7 @@ a{
     height: 2rem;
     width: 0.6rem;
   }
-  
+  /*Categorias*/
   .container-card {
       display: flex;
       width: 100%;
@@ -198,11 +357,11 @@ a{
       transition: transform 0.5s ease-in-out;
     }
     .face--front {
-      background: #FF4533;
+      background: #ff0000;
       font-size: 1.7rem; /*Size Icon*/
     }
     .face--back {
-      background: #FF4533;
+      background:#ff0000;
       font-weight: bold;
       font-size: 0.9rem;
       transform: rotateX(180deg);
@@ -352,6 +511,7 @@ h3 {
     margin-top: 10px;
 }
 
+
 /*CONTACT FORM*/
 .contact-form-title{
     color: white;
@@ -374,6 +534,152 @@ h5.contact-form-title{
     margin-top: 1em;
 }
 
+/*footer*/
+#container-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+footer{
+    background-color: rgba(0, 0, 0);
+    color: #fff;
+    padding: 20px;
+    height: 200px;
+}
+#somos h4{
+    font-size: 20px;
+    text-shadow: 1px 1px #DD2330;
+}
+.terms a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #f1fbff;
+}
+.terms h4{
+    text-shadow: 1px 1px #DD2330;
+}
+.social-media h4{
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 1px 1px #DD2330;
+    
+}
+.social-icons {
+    list-style: none;
+    margin-bottom: 5.4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+    color: #DD2330;
+    padding: .8rem 2rem;
+    
+}
+.accordion {
+    width: 500px;
+    color: white;
+    background-color: black;
+
+  }
+  .accordion .container2{
+    position: relative;
+    margin: 10px 10px;
+  }
+  
+  .accordion .label {
+    position: relative;
+    padding: 10px 0;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    
+  }
+  
+  .accordion .label::before {
+    content: '+';
+    color: rgb(255, 0, 0);
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 30px;
+    transform: translateY(-50%);
+  }
+  
+  .accordion .content{
+    position: relative;
+    background: black;
+    height: 0;
+    font-size: 15px;
+    text-align: justify;
+    width: 450px;
+    overflow: hidden;
+    transition: 0.5s;
+    
+  }
+  .accordion .content2{
+    position: relative;
+    background: black;
+    height: 0;
+    font-size: 15px;
+    text-align: justify;
+    width: 450px;
+    overflow: hidden;
+    transition: 0.5s;
+    
+  }
+  .accordion .content3{
+    position: relative;
+    background: black;
+    height: 0;
+    font-size: 15px;
+    text-align: justify;
+    width: 450px;
+    overflow: hidden;
+    transition: 0.5s;
+    padding: 0;
+  }
+  .accordion hr {
+    width: 100;
+    margin-left: 0;
+    border: 1px solid rgb(255, 0, 0);
+  }
+  .seccion-we-are{
+    padding: 15px;
+    text-align: center;
+  }
+  .seccion-we-are a{
+    color: white;
+  }
+  .seccion-we-are img{
+    float: left;
+    margin-right: 10px;
+    height: 120px;
+    width: 140px;
+    margin-left: 10px;
+  }
+  .active .content{
+    height: 120px;
+  }
+  .active .content2{
+    height: 250px;
+  }
+  .active .content3{
+    height: 150vh;
+  }
+
+/*Formulario Login*/
+.text-Login{
+    margin:10px 28%; 
+    width: 43.6%;
+    text-align: center;
+    font-weight: 500;
+    color: white;
+}
+
 form{
     display: flex;
     flex-direction: column;
@@ -386,6 +692,18 @@ form{
     gap: 20px;
     font-weight: 500;
     color: white;
+    margin: 10px 28%;
+    width: 43.6%;
+    margin-bottom: 25px;
+    height: 50vh;
+    align-items:center;
+    justify-content: center;
+    background-color: #ff000080;
+    border-radius: 50px;
+    gap: 10px;
+    font-weight: 500;
+    color: white;
+    font-family: nunito;
 }
 
 form label{
@@ -689,7 +1007,142 @@ textarea{
   
   .icon-font-color--black {
     color: #333333;
+    width: 70%;
+}
+
+.login-form input{
+    border-radius: 12px;
+    height: 25px;
+    border: none;
+    padding: 0 8px;
+}
+
+.login-form input[type="submit"]{
+    margin: 0 auto;
+    width: 110px;
+    height: 35px;
+    border-radius: 15px;
+    margin-top: 0px;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    background-color: white;
+}
+
+.login-form input[type="submit"]:hover{
+    background-color: rgba(255, 255, 255, 0.858);
+}
+.a-form{
+    color: white;
+    margin: 0px 1px;
+}
+
+#icon-eye{
+     transform: translateY(-130%) translateX(90%);
   }
+.recuerdame{
+    flex-direction: row;
+    justify-content:left;
+   
+    margin: 0;
+}
+/*Estilos pop up Swal Alert*/
+ 
+.swal2-title {
+    position: relative;
+    max-width: 100%;
+    margin: 0 0 .4em;
+    padding: 0;
+    color: #ff0000;
+    font-size: 1.875em;
+    font-weight: 600;
+    text-align: center;
+    text-transform: none;
+    word-wrap: break-word;
+    font-family: nunito;
+}
+.swal2-styled.swal2-confirm {
+    border: 0;
+    border-radius: .25em;
+    background: initial;
+    background-color:  #ff000080;
+    color: #fff;
+    font-size: 1em;
+}
+
+/*Estilos Form Registro*/
+.h1-regis{
+    color: white;
+    text-align: center;
+    font-family: nunito;
+}
+.signup-form input{
+    border-radius: 12px;
+    height: 25px;
+    border: none;
+    padding: 0 8px;
+}
+
+.signup-form input[type="submit"]{
+    margin: 0 auto;
+    width: 100px;
+    height: 35px;
+    border-radius: 15px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    background-color: white;
+}
+
+.signup-form input[type="submit"]:hover{
+    background-color:white;
+}
+
+.opc-h1{
+    text-align: center;
+    margin-top: 5%;
+    color: white;
+}
+.btns-users{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.btn-per {
+    display: flex;
+    margin: 0 auto;
+    width: 110px;
+    height: 35px;
+    border-radius: 15px;
+    justify-content: center;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    background-color: white; 
+    color: #000000;
+    align-items: center;
+    
+}
+.btn-com {
+    display: flex;
+    margin: 0 auto;
+    width: 110px;
+    height: 35px;
+    border-radius: 15px;
+    margin-top: 0px;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    background-color: white; 
+    color: #000000;
+    justify-content: center;
+    align-items: center;
+}
+#choose-signup{
+    margin: 50px 28%;
+}
 
 
 
@@ -706,6 +1159,13 @@ textarea{
 
     .nav-list {
         display: none;
+    }
+
+    .btn-us {
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+        margin-right: 16px;
     }
 
     .btn-register{
@@ -779,5 +1239,10 @@ textarea{
         margin: 0 0.5em 0 0;
         vertical-align: middle;
     }
+}  
 
+@media screen and (max-width: 600px) {
+    #icon-eye{
+        transform: translateY(-130%) translateX(84%);
+     }
 }

@@ -172,6 +172,9 @@ a{
     position: absolute;
     background-color: transparent;
   }
+  .search--bar:focus{
+    outline: none;
+   }
   .icon-search{
     display: flex;
     align-items: center;
@@ -224,11 +227,11 @@ a{
       transition: transform 0.5s ease-in-out;
     }
     .face--front {
-      background: #FF4533;
+      background: #ff0000;
       font-size: 1.7rem; /*Size Icon*/
     }
     .face--back {
-      background: #FF4533;
+      background: #ff0000;
       font-weight: bold;
       font-size: 0.9rem;
       transform: rotateX(180deg);
@@ -606,6 +609,14 @@ h2{
 
     .btns{
         display: flex;
+    }
+
+    .btn-us {
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+        margin-right: 20px;
+        margin-top: 6px;
     }
 
     .fa-circle-user{
