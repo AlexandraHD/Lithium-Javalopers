@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+		<title>Lithium</title>
+		<link rel="icon" href="/img/logo.jpg" type="image/icon type">
+		<script src="https://kit.fontawesome.com/ea06c7c0f7.js" crossorigin="anonymous"></script>
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+		<link rel="stylesheet" href="/styles/producto.css"/>
+	</head>
+	<body>
+		<header>
+            <!--NAVBAR-->
+            <nav>
+                <!--Logo-->
+                <div class="navbar-logo">
+                    <img class="nav-img" src="/img/logo.jpg" alt="Logo">
+                    <a class="navbar-brand" href="#">Lithium</a>
+                </div>
+                <!--MENU TOGGLE-->
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                    <i class="fas fa-times"></i>
+                </div>
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ">Registrarse</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ">Inicia Sesion</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ">Carrito</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link ">Nosotros</a>
+                    </li>
+                </ul>
+                <!--BUTTONS-->
+                <div class="btns">
+                    <a class="btn-register" type="button" href="#">Registrarse</a>
+                    <a class="btn-login" type="button" href="#">Inicia Sesión</a>
+                    <a class="btn-cart" type="button" href="#"><i class="fa-solid fa-cart-shopping" style="color: #ff0000;"></i> Carrito</a>
+                </div>
+            </nav>
+		</header><br>
+
+		<main>
+            <!--Imagen del producto-->
+			<div class="container-img">
+				<img src="https://http2.mlstatic.com/D_NQ_NP_733511-MLA52131558252_102022-O.webp"alt="imagen-producto" id="ïmg-principal"/>
+				<div class="gallery">
+					<div class="gallery-item">
+						<img src="https://http2.mlstatic.com/D_NQ_NP_670312-MLA52131542566_102022-O.webp" alt="Imagen 1" onclick="showFullscreenImage(this)">
+					</div>
+					<div class="gallery-item">
+						<img src="https://http2.mlstatic.com/D_NQ_NP_893328-MLA52131542568_102022-O.webp" alt="Imagen 2" onclick="showFullscreenImage(this)">
+					</div>
+				</div>
+				<div class="fullscreen-image" onclick="hideFullscreenImage()">
+					<img id="fullscreen-img" src="" alt="Imagen a pantalla completa">
+				</div>	
+			</div>
+            
+            <!--Informacion del producto-->
+			<div class="container-info-product">
+                <!--Nombre-->
+                <div class =  "container-name">
+                    <h2 class = "name-product">Xiaomi Redmi Note 11S Dual SIM 128 GB</h2>
+                </div>
+				<!--calificación del producto-->
+				<div class="rating">
+					<input type="radio" id="star1" name="rating" value="1">
+					<label for="star1"></label>
+					<input type="radio" id="star2" name="rating" value="2">
+					<label for="star2"></label>
+					<input type="radio" id="star3" name="rating" value="3">
+					<label for="star3"></label>
+					<input type="radio" id="star4" name="rating" value="4">
+					<label for="star4"></label>
+					<input type="radio" id="star5" name="rating" value="5">
+					<label for="star5"></label>
+				</div>
+                <!--Disponibilidad-->
+                <div class =  "container-name">
+                    <h3 class="available">Disponibilidad 11 unidades</h3>
+                </div>
+                <!--Precio-->
+				<div class="container-price">
+					<span>$924.900</span>
+				</div>
+                <!--Seccion del color del producto-->
+				<div class="container-details-product">
+					<div class="form-group">
+						<label for="colour">Color</label>
+						<select name="colour" id="colour">
+							<option disabled selected value="">
+								Escoge una opción
+							</option>
+							<option value="rojo">Negro</option>
+							<option value="blanco">Blanco</option>
+							<option value="beige">Beige</option>
+						</select>
+					</div>
+				</div>
+
+				<div class="container-add-cart">
+                    <!--div para el contador de cantidades de productos a comprar-->
+					<div class="container-quantity">
+						<input
+							type="number"
+							placeholder="1"
+							value="1"
+							class="input-quantity"/>
+						<div class="btn-increment-decrement">
+							<i class="fa-solid fa-chevron-up" id="increment"></i> <!--Boton de incremento de unidades-->
+							<i class="fa-solid fa-chevron-down" id="decrement"></i><!--Boton de decremento de unidades-->
+						</div>
+					</div>
+                    <!--boton de añadir al carrito-->
+					<button class="btn-add-to-cart">
+						<i class="fa-solid fa-plus"></i>
+						Añadir al carrito
+					</button>
+                    <!--boton de compra-->
+                    <button class="btn-buy">
+						Comprar ahora
+					</button>
+				</div>
+                <!--Descripcion del producto-->
+				<div class="container-description">
+					<div class="title-description">
+						<h4>Descripción</h4>
+						<i class="fa-solid fa-chevron-down"></i>
+					</div>
+					<div class="text-description">
+						<p>
+							Lorem ipsum dolor, sit amet consectetur adipisicing
+							elit. Laboriosam iure provident atque voluptatibus
+							reiciendis quae rerum, maxime placeat enim cupiditate
+							voluptatum, temporibus quis iusto. Enim eum qui delectus
+							deleniti similique? Lorem, ipsum dolor sit amet
+							consectetur adipisicing elit. Sint autem magni earum est
+							dolorem saepe perferendis repellat ipsam laudantium cum
+							assumenda quidem quam, vero similique? Iusto officiis
+							quod blanditiis iste?
+						</p>
+					</div>
+				</div>
+                <!--Informacion extra acerca del producto-->
+				<div class="container-additional-information">
+					<div class="title-additional-information">
+						<h4>Características del producto</h4>
+						<i class="fa-solid fa-chevron-down"></i>
+					</div>
+					<div class="text-additional-information hidden">
+						<p>-----------</p>
+					</div>
+				</div>
+                <!--Reseñas del producto-->
+				<div class="container-reviews">
+					<div class="title-reviews">
+						<h4>Reseñas del producto</h4>
+						<i class="fa-solid fa-chevron-down"></i>
+					</div>
+					<div class="text-reviews hidden">
+						<p>-----------</p>
+					</div>
+				</div>
+                <!--contacto-->
+				<div class="container-social">
+					<span>Contáctanos</span>
+					<div class="container-buttons-social">
+						<a href="#"><i class="fa-brands fa-whatsapp"></i></a>
+					</div>
+				</div>
+			</div>
+		</main>
+        <!--Productos relacionados-->
+		<section class="container-related-products">
+			<h2>Productos Relacionados</h2><br>
+			<div class="discount">
+				<div class="product-container">
+					<img src="https://falabella.scene7.com/is/image/FalabellaCO/prod13330031?wid=500&hei=500&qlt=70" alt="">
+					<h5>Celular Samsung Galaxy M14 128GB</h5><br>
+					<h4>$933.000</h4>
+					<button class="button-ver">Ver producto</button>
+					<div><button class="button-heart"><i class="fa-regular fa-heart"></i></button></div>
+					<div><button class="button-car"><i class="fa-solid fa-cart-shopping"></i></i></button></div>
+				</div>
+				
+				<div class="product-container">
+					<img src="https://tiendasishop.com/media/catalog/product/m/l/mlq83lz_a_11.jpg?optimize=high&bg-color=255,255,255&fit=bounds&height=700&width=700&canvas=700:700" alt="">
+					<h5>iPhone 13 mini/128 GB</h5><br>
+					<h4>$3.769.000</h4>
+					<button class="button-ver">Ver producto</button>
+					<div><button class="button-heart"><i class="fa-regular fa-heart"></i></button></div>
+					<div><button class="button-car"><i class="fa-solid fa-cart-shopping"></i></i></button></div>
+				</div>
+				<div class="product-container">
+					<img src="https://cdn.shopify.com/s/files/1/0271/0922/8578/products/samsung-galaxy-a33-5g-1.jpg?v=1675171900" alt="">
+					<h5>Samsung Galaxy A33 5G</h5><br>
+					<h4>$799.9000</h4>
+					<button class="button-ver">Ver producto</button>
+					<div><button class="button-heart"><i class="fa-regular fa-heart"></i></button></div>
+					<div><button class="button-car"><i class="fa-solid fa-cart-shopping"></i></i></button></div>
+				</div>
+				<div class="product-container">
+					<img src="https://falabella.scene7.com/is/image/FalabellaCO/65449334_1?wid=800&hei=800&qlt=70" alt="">
+					<h5>Xiaomi Celular Redmi Note 12 128Gb</h5><br>
+					<h4>$932.900</h4>
+					<button class="button-ver">Ver producto</button>
+					<div><button class="button-heart"><i class="fa-regular fa-heart"></i></button></div>
+					<div><button class="button-car"><i class="fa-solid fa-cart-shopping"></i></i></button></div>
+				</div>
+			</div><br>
+		</section>
+		<!--footer de la pagina con boton desplegable-->
+		<footer>
+			<hr class = "dividing">
+			<div id = "contenedor">
+				<!--boton desplegable-->
+				<div class = "buttom-expand">
+					<button class="expand-btn">Más información
+						<i class="fa-solid fa-chevron-down"></i>
+					</button>
+				</div>
+				<!--contenido que esta dentro del boton de expander-->
+				<div class="contents-footer">
+					<div id = "container-footer">
+	
+						<div class = "column1">
+			
+							<div class = "terms">
+								<h4>Sobre LITHIUM</h4><br>
+								<a href="">Terminos y Condiciones</a><br><br>
+								<a href="">Tratamiento de datos</a><br><br>
+								<a href="">Politicas de privacidad</a><br><br>
+							</div>
+						</div>
+			
+						<div class = "column">
+							<div class = "terms">
+								<h4>Categorias</h4><br>
+								<a href="">Productos</a><br><br>
+								<a href="">Promociones y ofertas</a><br><br>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<p>&copy; 2023- Lithium</p>
+		</footer>
+		<script
+			src="https://kit.fontawesome.com/81581fb069.js"
+			crossorigin="anonymous"
+		></script>
+		<script src="/js/script.js"></script>
+	</body>
+</html>
