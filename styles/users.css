@@ -17,160 +17,75 @@ body{
 }
 
 /*banner*/
-.carrousel{
+.contenedor{
     width: 100%;
-}
-
-.conteCarrousel{
-    width: 100%;
-    height: 400px;
     overflow: hidden;
+    height: 400px;
 }
-
-.itemCarrousel{
-    position: relative;
+.slider-contenedor{
     width: 100%;
-    height: 100%;
+    display: flex;
 }
-
-.itemCarrouselTarjeta{
+.contenido-slider{
     width: 100%;
-    height: 100%;
-}
-
-.itemCarrouselArrows{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    height: 500px;
     display: flex;
     align-items: center;
-    justify-content: space-between;
-    padding: 20px; 
+    flex-shrink: 0;
+    color: #fff;
 }
-.itemCarrouselArrows2{
-    position: absolute; 
-    display: flex;
-    align-items: center;
-    padding: 20px; 
-}
-
-.itemCarrouselArrows > i:hover {
-    cursor: pointer;
-}
-
-#itemCarrousel-1{
+.contenido-slider:first-child{
     background-image: url(/img/samsun2.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center center;
+    background-position: 100% 60%;
 }
-
-#itemCarrousel-2{
+.contenido-slider:nth-child(2){
     background-image: url(/img/audifonos.png);
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background-position: 100% 100%;
+    background-size: cover
 }
-
-#itemCarrousel-3{
+.contenido-slider:nth-child(3){
     background-image: url(/img/banner2.png);
     background-repeat: no-repeat;
+    background-position: center;
     background-size: cover;
-}
-
-.itemCarrouselArrows > a > i{
-    color: white;
-}
-.content2 .title{
-    font-size: 50px;
-    color: white;
+}.title{
+    font-size: 45px;
     text-shadow: 2px 2px rgb(255, 0, 0);
+}
+.content-slider{
     padding: 10px;
-    margin-left: 50px;
-}
-.content2 .text{
-    font-size: 20px;
-    color: white;
-    padding: 20px;
-    margin-left: 50px;
-    margin-right: 800px;  
-}
-.content2 .button-banner{
-    padding: 10PX;
-    font-size: 20px;
-    background-color:rgb(255, 0, 0);
-    border: rgb(255, 0, 0);
-    color: white;
-    margin-left: 200px;
-    height: 50px;
-    border-radius: 6px;
-    margin-top: 150px;
-}
-
-.content3{
-    padding: 20px;
-}
-.content3 .title{
-    font-size: 50px;
-    color: white;
-    text-shadow: 2px 2px rgb(255, 0, 0);
-    margin-left: 50px;
-    
-}
-.content3 .text{
-    font-size: 20px;
-    color: white;
-    padding: 20px;
     margin-left: 40px;
-    margin-right: 800px;
-    
+    margin-bottom: 200px;
 }
-.content3 .button-banner{
-    padding: 10PX;
-    font-size: 20PX;
-    background-color:rgb(255, 0, 0);
-    border: rgb(255, 0, 0);
-    color: white;
-    margin-left: 120px;
-    height: 50px;
-    border-radius: 6px; 
-    margin-top: 150px;
-}
-.content4 .title{
-    font-size: 50px;
-    color: white;
-    text-shadow: 2px 2px rgb(255, 0, 0);
-    padding: 15px;
-    margin-left: 30px;
-}
-.content4 .text{
+.text1{
     font-size: 20px;
-    color: white;
-    padding: 20px;
-    margin-left: 40px;
-    margin-right: 700px;
-    
+    margin-right: 700px; 
 }
-.content4 .button-banner{
-    padding: 10PX;
-    font-size: 20PX;
-    background-color:rgb(255, 0, 0);
-    border: rgb(255, 0, 0);
-    color: white;
+.text2{
+    font-size: 20px;
+    margin-right: 900px; 
+}
+.button-banner{
+    background-color: #DD2330;
+    font-size: 16px;
+    padding: 8px;
+    color: #fff;
+    margin-left: 100px;
+}
+#button-samsung{
     margin-left: 150px;
-    height: 50px;
-    border-radius: 6px; 
-    margin-top: 150px;
 }
-
+#button-iphone{
+    margin-top: 20px;
+}
 .button-banner:hover{
-    background-color: rgb(143, 3, 3);
-    cursor: pointer;
+    background-color: #4b0409;
 }
-
-
+/*fin del banner*/
+/*barra de navegacion*/
 nav{
     display: flex;
     height: 56px;
@@ -475,7 +390,7 @@ a{
     border: 1px solid transparent;
     cursor: pointer;
 }
-h3 {
+.imperdibles {
     background-color: black;
     color: #ED2532;
     height: 40px;
@@ -1148,8 +1063,6 @@ textarea{
     margin: 50px 28%;
 }
 
-
-
 /*Responsive para pantallas grandes*/
 @media screen and (min-width: 750px) {
 
@@ -1242,11 +1155,78 @@ textarea{
         max-width: unset;
         margin: 0 0.5em 0 0;
         vertical-align: middle;
-    }
+    } 
 }  
+/*responsive para pantallas grandes*/
+@media (min-width: 1300px){
+    /*Ajuste de los textos del banner*/
+    .text1{
+        margin-right: 70rem; 
+    }
+    .text2{
+        margin-right: 80rem; 
+    }
+    #button-samsung{
+        margin-left: 190px;
+    }
+}
+/*responsive para media pantalla*/
+@media screen and (max-width: 767px) {
+    .contenido-slider{
+        display: block;
+    }
+    #title{
+        margin-left: 100px;
+    }
+    #text2{
+        display: none;
+    }
+    .text1{
+        margin-right: 10px; 
+        margin-left: 250px;
+        margin-top: 40px;
+    }
+    .text2{
+        margin-right:10px;
+        margin-left: 350px; 
+    }
+    .button-banner{
+        display: none; 
+    }
+    .accordion {
+        width: 300px;
+    }
+    .accordion .content{
+        width: 250px; 
+      }
+      .accordion .content2{
+        width: 250px;
+      }
+      .accordion .content3{
+
+      }
+    .active .content{
+        height: 170px;
+    }
+    .active .content2{
+        height: 350px;
+    }
+    .active .content3{
+        height: 230vh;
+      }
+    .seccion-we-are{
+        padding:0;
+        text-align:left;
+        margin-left: 50px;
+    }
+    .seccion-we-are img{
+        float: none;
+    }
+      
+}
 
 @media screen and (max-width: 600px) {
     #icon-eye{
         transform: translateY(-130%) translateX(84%);
-     }
+     }    
 }

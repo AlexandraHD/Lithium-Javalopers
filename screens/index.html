@@ -87,76 +87,36 @@
     <!--** CATEGORIES END**-->
 
 	<!--Banner-->
-	<div class="carrousel">
-		<div class="conteCarrousel">
-			<div class="itemCarrousel" id="itemCarrousel-1">
-				<div class="itemCarrouselTarjeta">
-					<div class = "content2">
-						<h2 class = "title">BLACKDAYS</h2>
-						<p class = "text">¡Descubre el poder y la elegancia de los celulares Samsung! Encuentra el tuyo y sé parte de la revolución tecnológica.</p>
-					</div> 
-				</div>
-				<div class="itemCarrouselArrows">
-					<a href="#itemCarrousel-3">
-						<i class="fas fa-chevron-left"></i>
-					</a>
-					<a href="#itemCarrousel-2">
-						<i class="fas fa-chevron-right"></i>
-					</a> 
-                    <div class="itemCarrouselArrows2">
-                        <div class = "content2">
-                            <button class = "button-banner">Ver Más</button>
-                        </div>
-                    </div>
-				</div>
-			</div>
-			<div class="itemCarrousel" id="itemCarrousel-2">
-				<div class="itemCarrouselTarjeta">
-					<div class =  "content3">
-						<h2 class = "title">BLACKDAYS</h2>
-						<p class = "text">Descubre nuestras increíbles ofertas y encuentra los dispositivos que harán tu vida más fácil y emocionante.</p>
-					</div>
-				</div>
-				<div class="itemCarrouselArrows">
-					<a href="#itemCarrousel-1">
-						<i class="fas fa-chevron-left"></i>
-					</a>
-					<a href="#itemCarrousel-3">
-						<i class="fas fa-chevron-right"></i>
-					</a>
-                    <div class="itemCarrouselArrows2">
-                        <div class = "content3">
-                            <button class = "button-banner">Ver Más</button>
-                        </div>
-                    </div> 
-				</div>
-			</div>
-			<div class="itemCarrousel" id="itemCarrousel-3">
-				<div class="itemCarrouselTarjeta">
-					<div class="content4">
-						<h2 class = "title">BLACKDAYS</h2>
-						<p class = "text">¡Descubre la perfección en cada detalle con los increíbles iPhones de Apple! Sumérgete en un mundo de innovación y estilo.</p>
-						
-					</div>
-				</div>
-				<div class="itemCarrouselArrows">
-					<a href="#itemCarrousel-2">
-						<i class="fas fa-chevron-left"></i>
-					</a>
-					<a href="#itemCarrousel-1">
-						<i class="fas fa-chevron-right"></i>
-					</a>
-                    <div class="itemCarrouselArrows2">
-                        <div class = "content4">
-                            <button class = "button-banner">Ver Más</button>
-                        </div>
-                    </div>
-				</div>
-			</div>
-		</div>
-		
-	</div>
+    <div class="contenedor">
+        <div class="slider-contenedor">
 
+            <section class="contenido-slider">
+                <div class = "content-slider">
+                    <h2 class = "title" id="title">BLACKDAYS</h2><br>
+                    <p class = "text1">¡Descubre el poder y la elegancia de los celulares Samsung! Encuentra el tuyo y sé parte de la revolución tecnológica.</p><br>
+                    <button class = "button-banner" id="button-samsung">Ver Más <a href="#"></a></button>
+                </div>
+            </section>
+
+            <section class="contenido-slider">
+                <div class = "content-slider">
+                    <h2 class = "title" id="title">BLACKDAYS</h2><br>
+                    <p class = "text2">¡Descubre la perfección en cada detalle con los increíbles iPhones de Apple! Sumérgete en un mundo de innovación y estilo.</p><br>
+                    <button class = "button-banner">Ver Más <a href="#"></a></button>
+                </div>  
+            </section>
+
+            <section class="contenido-slider">
+                <div class = "content-slider">
+                    <h2 class = "title">BLACKDAYS</h2><br>
+                    <p class = "text2" id="text2">Descubre nuestras increíbles ofertas y encuentra los dispositivos que harán tu vida más fácil y emocionante.</p><br>
+                    <button class = "button-banner" id="button-iphone">Ver Más <a href="#"></a></button>
+                </div>
+            </section>
+        </div>
+    </div>
+	
+    <!--productos- seccion de ventajas-->
     <div class="container-box">
 
         <div class="box box1">
@@ -176,8 +136,8 @@
         </div>
 
     </div>
-
-    <h3>Imperdibles</h3>
+    <!--seccion de los imperdible de los productos-->
+    <h3 class = "imperdibles">Imperdibles</h3>
 
     <div class="discount">
         <div class="product-container">
@@ -221,8 +181,7 @@
 
     <!--WHATSAPP BUTTON-->
     <div class="nav-bottom">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
-   rel="stylesheet">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
          <div class="popup-whatsapp fadeIn">
              <div class="content-whatsapp -top"><button type="button" class="closePopup">
                    <i class="material-icons icon-font-color">close</i>
@@ -233,10 +192,6 @@
              </div>
              <div class="content-whatsapp -bottom">
                <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
-                
-                
-               
-       
                  <button class="send-msPopup" id="send-btn" type="button">
                      <i class="material-icons icon-font-color--black">send</i>
                  </button>
@@ -245,12 +200,13 @@
          </div>
          <button type="button" id="whats-openPopup" class="whatsapp-button">
              <div class="float" >
-<i class="fa fa-whatsapp my-float"></i></div>
+                <i class="fa fa-whatsapp my-float"></i></div>
          </button>
          <div class="circle-anime"></div>
      </div>
 
     <script src="https://kit.fontawesome.com/e8d0c66caa.js" crossorigin="anonymous"></script>
+
 	<footer>
 		<div id = "container-footer">
 
@@ -374,33 +330,9 @@
 			</ul>
 		</div>
     </footer>
-    <!--Script para el despliegue de Nosotros en el footer-->
-	<script>
-        const accordion = document.getElementsByClassName('container2');
-        for (i=0; i<accordion.length; i++) {
-            accordion[i].addEventListener('click', function () {
-                this.classList.toggle('active')
-            })
-        }
-        const accordion3 = document.getElementsByClassName('content2');
-        for (i=0; i<accordion3.length; i++) {
-        accordion3[i].addEventListener('click', function () {
-            this.classList.toggle('active')
-        })
-        }
-        const accordion4 = document.getElementsByClassName('content3');
-
-        for (i=0; i<accordion4.length; i++) {
-        accordion4[i].addEventListener('click', function () {
-            this.classList.toggle('active')
-        })
-        }
-    </script>
-
     <!--Script for menu toggle-->
     <script src="/scripts/index.js"></script>
     <!--Script for whatsapp button-->
     <script src="/scripts/whats.js"></script>
-
 </body>
 </html>
