@@ -726,7 +726,7 @@ form div{
     max-width: 100%;
     margin: 0 0 .4em;
     padding: 0;
-    color: #ff0000;
+    color: #fefdfd;
     font-size: 1.875em;
     font-weight: 600;
     text-align: center;
@@ -738,11 +738,29 @@ form div{
     border: 0;
     border-radius: .25em;
     background: initial;
-    background-color:  #ff000080;
-    color: #fff;
+    background-color:  #fff;
+    color: #ff000080;
     font-size: 1em;
+    font-weight: bold;
 }
 
+
+.swal2-popup {
+    display: none;
+    position: relative;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: center;
+    width: 32em;
+    max-width: 100%;
+    padding: 1.25em;
+    border: none;
+    border-radius: 5px;
+    background:rgb(143, 3, 3);
+    font-family: nunito;
+    font-size: 1rem;
+    
+}
 /*Estilos Form Registro*/
 .h1-regis{
     color: white;
