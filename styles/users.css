@@ -51,35 +51,28 @@ body{
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-}.title{
+}
+.content-slider{
+    margin-left: 40px;
+    margin-bottom: 300px;
+}
+.title{
+    margin-top: 100px;
     font-size: 45px;
     text-shadow: 2px 2px rgb(255, 0, 0);
 }
-.content-slider{
-    padding: 10px;
-    margin-left: 40px;
-    margin-bottom: 200px;
-}
 .text1{
-    font-size: 20px;
-    margin-right: 700px; 
-}
-.text2{
-    font-size: 20px;
-    margin-right: 900px; 
+    margin-bottom: 0;
+    font-size: 18px;
+    margin-right: 60%;
 }
 .button-banner{
+    margin-top: 30px;
     background-color: #DD2330;
     font-size: 16px;
     padding: 8px;
     color: #fff;
     margin-left: 100px;
-}
-#button-samsung{
-    margin-left: 150px;
-}
-#button-iphone{
-    margin-top: 20px;
 }
 .button-banner:hover{
     background-color: #4b0409;
@@ -1158,13 +1151,13 @@ textarea{
     } 
 }  
 /*responsive para pantallas grandes*/
-@media (min-width: 1300px){
+@media (min-width: 1500px){
     /*Ajuste de los textos del banner*/
     .text1{
         margin-right: 70rem; 
     }
     .text2{
-        margin-right: 80rem; 
+        margin-right: 80rem;  
     }
     #button-samsung{
         margin-left: 190px;
@@ -1175,36 +1168,37 @@ textarea{
     .contenido-slider{
         display: block;
     }
-    #title{
-        margin-left: 100px;
+    .content-slider{
+        margin-left: 40px;
+        margin-bottom: 900px;
     }
-    #text2{
-        display: none;
+    .title{
+        margin-top: 30px;
     }
     .text1{
-        margin-right: 10px; 
-        margin-left: 250px;
-        margin-top: 40px;
-    }
-    .text2{
-        margin-right:10px;
-        margin-left: 350px; 
+        margin-left: 61%;
+        margin-right: 10px;
     }
     .button-banner{
-        display: none; 
+        margin-top: 30px;
+        margin-left: 450px;
     }
+    #text2, #button-iphone{
+        display: none;
+    }
+    
     .accordion {
         width: 300px;
     }
     .accordion .content{
         width: 250px; 
-      }
-      .accordion .content2{
+    }
+    .accordion .content2{
         width: 250px;
-      }
-      .accordion .content3{
-
-      }
+    }
+    .accordion .content3{
+        width: 300px;
+    }
     .active .content{
         height: 170px;
     }
@@ -1222,7 +1216,6 @@ textarea{
     .seccion-we-are img{
         float: none;
     }
-      
 }
 
 @media screen and (max-width: 600px) {
