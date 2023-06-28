@@ -1346,3 +1346,224 @@ h2{
     }
     
 }
+body{
+    margin: 0;
+    padding: 0;
+    background-color: black;
+    font-family: verdana;
+    font-family: nunito;
+}
+/*contenedor de los productos*/
+#products{
+    width: 98%;
+}
+/*contenedor para la seccion de los filtros*/
+.filtro {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+#filter{
+    background-color: rgb(229, 221, 207);
+    margin-left: 0.2%;
+    height: 500px;
+    margin-top: 20px;
+}
+/*Botón marca*/
+.brand{
+    padding: 3px 10px;
+    font-size: 12px;
+    text-align: center;
+    background-color: #DD2330;
+    border:1px solid #DD2330;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+/*Botón precio*/
+.price{
+    padding: 3px 10px;
+    font-size: 12px;
+    text-align: center;
+    background-color: #DD2330;
+    border:1px solid #DD2330;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+/*Contenedor de todos los items*/
+#contents-filter{
+    display: grid;
+    grid-template-columns: 17% 82%;
+    grid-gap: 20px;
+    padding: 10px;
+}
+/*botón comprar*/
+.button-add{
+    font-size: 16px;
+    text-align: center;
+    background-color: #DD2330;
+    color: beige;
+    border: 2px solid #DD2330;
+    border-radius: 6px;
+    padding: 2px 6px;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    cursor: pointer;
+}
+.button-add:hover{
+    background-color: #BF202B;
+    color: black;
+}
+/*Botón detalles*/
+.button-ver{
+    font-size: 14px;
+    text-align: center;
+    color: rgb(12, 12, 12);
+    background-color: rgb(229, 221, 207);
+    border: 1px solid #DD2330;
+    border-radius: 4px;
+    padding: 1px 4px;
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    cursor: pointer;
+}
+.button-ver:hover{
+    background-color: #DD2330;
+    color: beige;
+} 
+/*Contenedor de los productos*/
+.discount {
+    display: flex;
+    flex-wrap: wrap;
+}
+/*Contenedor de cada uno de los productos*/
+.product-container:hover{
+    box-shadow: 0px 10px 20px 0 rgb(25, 25, 24);
+}
+.product-container{
+    margin: 20px;
+    padding: 2px 16px;
+    position: relative;
+    background-color: rgb(229, 221, 207);
+    box-shadow: 0px 4px 8px 0 rgba(249, 244, 244, 0.2);
+    border-radius: 8px;
+    width: 250px;
+    height: 330px;
+    box-sizing: border-box;
+}
+/*Estilos de la imagen de los productos*/
+.product-container img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 4px;
+    margin-top: 8px;
+}
+/*Estilos del precio del producto*/
+.product-container .precio-item { 
+    position: absolute;
+    bottom: 40px;
+    left: 60px;
+}
+/*Estilos del nombre del producto*/
+.product-container .titulo-item{
+    text-align: left;
+    margin-top: 6px;
+}
+/*Botón de lista de deseos*/
+.product-container .button-heart::before{
+     display: block;
+     margin: 30px 0;
+}
+.button-heart {
+    position: absolute;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    top: 5%;
+    right: 0%;
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: #DD2330;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+.product-container .button-heart :hover{
+    transform: scale(1.2);
+}
+/*Botón de carrito de compras que esta en los div de los productos*/
+.product-container .button-car {
+    position: absolute;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    top: 15%;
+    right: 0%;
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-size: 16px;
+    cursor: pointer;
+}
+/*carrito de compras*/
+.header-carrito{
+    position: relative;
+    margin-top: 4%;
+}
+
+.container-carrito{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    backdrop-filter: blur(10px);
+    top: 100%;
+    z-index: 1;
+    background-color:black ;
+    padding: 20px;
+    min-width: 200px;
+    height: 300px;
+    color: beige;
+    border: 1px solid rgb(45, 45, 44);
+    border-radius: 10px;
+}
+.cart-products{
+    height: 450px;
+    overflow-y: scroll;
+    
+
+}
+
+.header-carrito .btn-cart{
+    cursor: pointer;
+}
+img{
+    width: 100px;
+    height: 100px;
+}
+#btn-finalizar-compra{
+    border-radius: 8px;
+    background-color: #DD2330;
+    color: beige;
+    border: 2px solid #DD2330;
+}
+.button-delete {
+    background-color: rgb(229, 221, 207);
+    color: black;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+/* -------------------------------------------------------------------------- */
+/* ocultar carrito */
+.hidden{
+    display: none;
+    
+}
