@@ -388,29 +388,187 @@ a{
        font-size: 0.8rem;
     }
 
+/*banner*/
+.carrousel{
+    width: 100%;
+}
+
+.conteCarrousel{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.itemCarrousel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselTarjeta{
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselArrows{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; 
+}
+.itemCarrouselArrows2{
+    position: absolute; 
+    display: flex;
+    align-items: center;
+    padding: 20px; 
+}
+
+.itemCarrouselArrows > i:hover {
+    cursor: pointer;
+}
+
+#itemCarrousel-1{
+    background-image: url(/img/samsun2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#itemCarrousel-2{
+    background-image: url(/img/audifonos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#itemCarrousel-3{
+    background-image: url(/img/banner2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.itemCarrouselArrows > a > i{
+    color: white;
+}
+.content2 .title{
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px rgb(255, 0, 0);
+    padding: 10px;
+    margin-left: 50px;
+}
+.content2 .text{
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 800px;  
+}
+.content2 .button-banner{
+    padding: 10PX;
+    font-size: 20px;
+    background-color:rgb(255, 0, 0);
+    border: rgb(255, 0, 0);
+    color: white;
+    margin-left: 200px;
+    height: 50px;
+    border-radius: 6px;
+    margin-top: 150px;
+}
+
+.content3{
+    padding: 20px;
+}
+.content3 .title{
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px rgb(255, 0, 0);
+    margin-left: 50px;
+    
+}
+.content3 .text{
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 800px;
+    
+}
+.content3 .button-banner{
+    padding: 10PX;
+    font-size: 20PX;
+    background-color:rgb(255, 0, 0);
+    border: rgb(255, 0, 0);
+    color: white;
+    margin-left: 120px;
+    height: 50px;
+    border-radius: 6px; 
+    margin-top: 150px;
+}
+.content4 .title{
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px rgb(255, 0, 0);
+    padding: 15px;
+    margin-left: 30px;
+}
+.content4 .text{
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 700px;
+    
+}
+.content4 .button-banner{
+    padding: 10PX;
+    font-size: 20PX;
+    background-color:rgb(255, 0, 0);
+    border: rgb(255, 0, 0);
+    color: white;
+    margin-left: 150px;
+    height: 50px;
+    border-radius: 6px; 
+    margin-top: 150px;
+}
+
+.button-banner:hover{
+    background-color: rgb(143, 3, 3);
+    cursor: pointer;
+}
+
+/*Ventajas e imperdibles*/
+
 .button-add{
     font-size: 16px;
     text-align: center;
-    background-color: rgb(171, 50, 50);
+    background-color: #DD2330;
     color: beige;
-    border: 2px solid rgb(171, 50, 50);
+    border: 2px solid #DD2330;
     border-radius: 6px;
     padding: 2px 6px;
     position: absolute;
     right: 20px;
     bottom: 10px;
+    cursor: pointer;
 }
 .button-ver{
     font-size: 14px;
     text-align: center;
     color: rgb(12, 12, 12);
     background-color: rgb(229, 221, 207);
-    border: 1px solid rgb(171, 50, 50);
+    border: 1px solid #DD2330;
     border-radius: 4px;
     padding: 1px 4px;
     position: absolute;
     left: 15px;
     bottom: 10px;
+    cursor: pointer;
 }
 .button-add:hover{
     background-color: #BF202B;
@@ -467,6 +625,7 @@ a{
     right: 0%;
     background-color: transparent;
     border: 1px solid transparent;
+    cursor: pointer;
 }
 .button-car {
     position: absolute;
@@ -478,10 +637,11 @@ a{
     right: 0%;
     background-color: transparent;
     border: 1px solid transparent;
+    cursor: pointer;
 }
 h3 {
     background-color: black;
-    color: #BF202B;
+    color: #ED2532;
     height: 40px;
     padding-left: 20px;
 }
@@ -517,6 +677,7 @@ h3 {
 .box h2{
     font-size: 16px;
     margin-top: 10px;
+    color: #000000;
 }
 
 /*CONTACT FORM*/
@@ -619,6 +780,379 @@ textarea{
 .terms-link:hover{
     color: rgba(0, 0, 0, 0.5);
     font-weight: 800;
+}
+
+
+/*footer*/
+#container-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+footer{
+    background-color: rgba(0, 0, 0);
+    color: #fff;
+    padding: 20px;
+    height: 200px;
+}
+#somos h4{
+    font-size: 20px;
+    text-shadow: 1px 1px #DD2330;
+}
+.terms a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #f1fbff;
+}
+.terms h4{
+    text-shadow: 1px 1px #DD2330;
+}
+.social-media h4{
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 1px 1px #DD2330;
+    
+}
+.social-icons {
+    list-style: none;
+    margin-bottom: 5.4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+    color: #DD2330;
+    padding: .8rem 2rem;
+    
+}
+.accordion {
+    width: 500px;
+    color: white;
+    background-color: black;
+
+  }
+  .accordion .container2{
+    position: relative;
+    margin: 10px 10px;
+  }
+  
+  .accordion .label {
+    position: relative;
+    padding: 10px 0;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    
+  }
+  
+  .accordion .label::before {
+    content: '+';
+    color: rgb(255, 0, 0);
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 30px;
+    transform: translateY(-50%);
+  }
+  
+  .accordion .content{
+    position: relative;
+    background: black;
+    height: 0;
+    font-size: 15px;
+    text-align: justify;
+    width: 450px;
+    overflow: hidden;
+    transition: 0.5s;
+    
+  }
+  .accordion .content2{
+    position: relative;
+    background: black;
+    height: 0;
+    font-size: 15px;
+    text-align: justify;
+    width: 450px;
+    overflow: hidden;
+    transition: 0.5s;
+    
+  }
+  .accordion .content3{
+    position: relative;
+    background: black;
+    height: 0;
+    font-size: 15px;
+    text-align: justify;
+    width: 450px;
+    overflow: hidden;
+    transition: 0.5s;
+    padding: 0;
+  }
+  .accordion hr {
+    width: 100;
+    margin-left: 0;
+    border: 1px solid rgb(255, 0, 0);
+  }
+  .seccion-we-are{
+    padding: 15px;
+    text-align: center;
+  }
+  .seccion-we-are a{
+    color: white;
+  }
+  .seccion-we-are img{
+    float: left;
+    margin-right: 10px;
+    height: 120px;
+    width: 140px;
+    margin-left: 10px;
+  }
+  .active .content{
+    height: 120px;
+  }
+  .active .content2{
+    height: 250px;
+  }
+  .active .content3{
+    height: 150vh;
+  }
+
+
+/*WHATSAPP BUTTON*/
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom: 15px;
+    right: 16px;
+	background-color:#4cc370;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+.float:hover {
+    background-color:#3d9e5a;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+/* offset-x > | offset-y ^| blur-radius | spread-radius | color */
+@keyframes pulse {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      opacity: 0.3;
+    }
+    100% {
+      transform: scale(1.45);
+      opacity: 0;
+    }
+  }
+  .pulse {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+  }
+  
+  .nav-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: flex-end;
+    width: auto;
+    height: auto;
+    position: fixed;
+    z-index: 8;
+    bottom: 0px;
+    right: 0px;
+    padding: 5px;
+    margin: 0px;
+  }
+  @media (max-width: 360px) {
+    .nav-bottom {
+      width: 320px;
+    }
+  }
+  
+  .whatsapp-button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 60px;
+    height: 60px;
+    z-index: 8;
+    transition: .3s;
+    margin: 10px;
+    padding: 7px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: black;
+    /* offset-x > | offset-y ^| blur-radius | spread-radius | color */
+    -webkit-box-shadow: 1px 1px 6px 0px rgba(68, 68, 68, 0.705);
+    -moz-box-shadow: 1px 1px 6px 0px rgba(68, 68, 68, 0.705);
+    box-shadow: 1px 1px 6px 0px rgba(68, 68, 68, 0.705);
+  }
+  
+  .circle-anime {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    width: 60px;
+    height: 60px;
+    top: 15px;
+    right: 15px;
+    border-radius: 50%;
+    transition: .3s;
+    background-color: #77bb4a;
+    animation: pulse 1.2s 4.0s ease 4;
+  }
+  
+  .popup-whatsapp {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    bottom: 85px;
+    right: 6px;
+    transition: .5s;
+    border-radius: 10px;
+    background-color: white;
+    /* offset-x > | offset-y ^| blur-radius | spread-radius | color */
+    -webkit-box-shadow: 2px 1px 6px 0px rgba(68, 68, 68, 0.705);
+    -moz-box-shadow: 2px 1px 6px 0px rgba(68, 68, 68, 0.705);
+    box-shadow: 2px 1px 6px 0px rgba(68, 68, 68, 0.705);
+    animation: slideInRight .6s 0.0s both;
+  }
+  .popup-whatsapp > div {
+    margin: 5px;
+  }
+  @media (max-width: 680px) {
+    .popup-whatsapp p {
+      font-size: 0.9em;
+    }
+  }
+  .popup-whatsapp > .content-whatsapp.-top {
+    display: flex;
+    flex-direction: column;
+  }
+  .popup-whatsapp > .content-whatsapp.-top p {
+    margin-top: 15px;
+    color: #585858;
+    font-family: nunito;
+    font-weight: 400;
+    font-size: 1.0em;
+  }
+  .popup-whatsapp > .content-whatsapp.-bottom {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .closePopup {
+    display: flex;
+    position: absolute;
+    right: 15px;
+    width: 25px;
+    height: 25px;
+    margin: 0 0 15px 0;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: red;
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
+    -moz-box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
+    box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
+  }
+  .closePopup:hover {
+    background-color: rgb(223, 25, 39)
+  }
+  
+  .send-msPopup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin: 0px 0px 0px 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
+    -moz-box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
+    box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
+  }
+  
+  .is-active-whatsapp-popup {
+    display: flex;
+    animation: slideInRight .6s 0.0s both;    /*Lo muestra a la derecha y se demora esos segs en aparecer*/
+    background-color: #fafafa;
+  }
+  
+  input.whats-input[type=text] {
+    width: 250px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 0px solid #ffffff;
+    border-radius: 20px;
+    font-size: 1em;
+    background-color: #ffffff;
+    padding: 0px 0px 0px 10px;
+    -webkit-transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+    outline: none;
+    transition: .3s;
+  }
+  @media (max-width: 420px) {
+    input.whats-input[type=text] {
+      width: 225px;
+    }
+  }
+  input.whats-input::placeholder {
+    /* Most modern browsers support this now. */
+    color: rgba(68, 68, 68, 0.705);
+    opacity: 1;
+  }
+  input.whats-input[type=text]:focus {
+    background-color: #f8f8f8;
+    -webkit-transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+    transition: .3s;
+  }
+  
+  .icon-whatsapp-small {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .icon-whatsapp {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .icon-font-color {
+    color: #ffffff;
+  }
+  
+  .icon-font-color--black {
+    color: #333333;
+    width: 70%;
 }
 
 /*EDIT ADDRESSES*/
