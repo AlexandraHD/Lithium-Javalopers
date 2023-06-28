@@ -1019,6 +1019,14 @@ img{
     color: beige;
     border: 2px solid #DD2330;
 }
+.button-delete {
+    background-color: rgb(229, 221, 207);
+    color: black;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+  }
 /* -------------------------------------------------------------------------- */
 /* ocultar carrito */
 .hidden{

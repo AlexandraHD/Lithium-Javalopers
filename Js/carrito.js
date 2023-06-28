@@ -96,15 +96,16 @@ const renderCarritoCompras = () => {
     
     
     card_carrito += `
-    <div clas = 'card-items'>
-      <div class="item">
-        <img src="${producto.imagen}" alt="${producto.alt}">
-        <div class="item-content">
+    <div class="card-items">
+    <div class="item">
+      <img src="${producto.imagen}" alt="${producto.alt}">
+      <div class="item-content">
         <span>${producto.titulo}</span>
-        <strong class="cart-price">$${producto.precio}v</strong>
-      
+        <strong class="cart-price">$${producto.precio}</strong>
+        <button class="button-delete" onclick="eliminarProducto(${producto.id})">Eliminar</button>
       </div>
     </div>
+  </div>
     
     `
   })
@@ -145,7 +146,7 @@ const renderTotalCarrito = (arr) => {
   totalTxt.textContent = `$ ${sumarTotalCarrito(arr)}`
 }
 
-
+/* ------------------------------- finalizar compra ------------------------------- */
 const finalizarCompra = () => {
   Swal.fire({
     //title: 'Finalizar compra',
@@ -165,3 +166,11 @@ const finalizarCompra = () => {
 
 const btnFinalizarCompra = document.querySelector('#btn-finalizar-compra');
 btnFinalizarCompra.addEventListener('click', finalizarCompra);
+
+/* ------------------------------- eliminar producto ------------------------------- */
+
+const eliminarProducto = (id) => {
+  carritodeCompras = carritodeCompras.filter(producto => producto.id !== id);
+  renderCarritoCompras();
+  actualizarNumeroCarrito(carritodeCompras);
+};
