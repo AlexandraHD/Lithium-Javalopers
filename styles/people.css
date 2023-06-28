@@ -980,7 +980,6 @@ body{
 /*carrito de compras*/
 .header-carrito{
     position: relative;
-    margin-top: 4%;
 }
 
 .container-carrito{
@@ -988,8 +987,6 @@ body{
     flex-direction: column;
     position: absolute;
     right: 0;
-    backdrop-filter: blur(10px);
-    top: 100%;
     z-index: 1;
     background-color:black ;
     padding: 20px;
@@ -1009,15 +1006,19 @@ body{
 .header-carrito .btn-cart{
     cursor: pointer;
 }
-img{
+.img-carrito{
     width: 100px;
     height: 100px;
+}
+.card-items{
+    margin-bottom: 25px;
 }
 #btn-finalizar-compra{
     border-radius: 8px;
     background-color: #DD2330;
     color: beige;
     border: 2px solid #DD2330;
+    cursor: pointer;
 }
 .button-delete {
     background-color: rgb(229, 221, 207);
