@@ -17,7 +17,7 @@
                     <!--Logo-->
                     <div class="navbar-logo">
                         <img class="nav-img" src="/img/logo.jpg" alt="Logo">
-                        <a class="navbar-brand" href="#">Lithium</a>
+                        <a class="navbar-brand" href="/screens/index.html">Lithium</a>
                     </div>
                     <!--MENU TOGGLE-->
                     <div class="menu-toggle">
@@ -26,7 +26,7 @@
                     </div>
                     <ul class="nav-list">
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">Inicio</a>
+                            <a href="/screens/index.html" class="nav-link active">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a href="bottonRI.html" class="nav-link ">Registrarse</a>
@@ -38,11 +38,12 @@
                             <a href="#" class="nav-link ">Carrito</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link ">Nosotros</a>
+                            <a href="#somos" class="nav-link ">Nosotros</a>
                         </li>
                     </ul>
                     <!--BUTTONS-->
                     <div class="btns">
+                        <a class="btn-us" type="button" href="#somos">Nosotros</a>
                         <a class="btn-register" type="button" href="bottonRI.html">Registrarse</a>
                         <a class="btn-login" type="button" href="login.html">Inicia Sesión</a>
                         <a class="btn-cart" type="button" href="#"><i class="fa-solid fa-cart-shopping" style="color: #ff0000;"></i> Carrito</a>
@@ -218,6 +219,38 @@
         </div>
     </div><br>
 
+    <!--WHATSAPP BUTTON-->
+    <div class="nav-bottom">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+   rel="stylesheet">
+         <div class="popup-whatsapp fadeIn">
+             <div class="content-whatsapp -top"><button type="button" class="closePopup">
+                   <i class="material-icons icon-font-color">close</i>
+                 </button> 
+               
+                <p> <img src="/img/secretary.png" width="35">  Hola, ¿cómo podemos ayudate? </p>
+                
+             </div>
+             <div class="content-whatsapp -bottom">
+               <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
+                
+                
+               
+       
+                 <button class="send-msPopup" id="send-btn" type="button">
+                     <i class="material-icons icon-font-color--black">send</i>
+                 </button>
+
+             </div>
+         </div>
+         <button type="button" id="whats-openPopup" class="whatsapp-button">
+             <div class="float" >
+<i class="fa fa-whatsapp my-float"></i></div>
+         </button>
+         <div class="circle-anime"></div>
+     </div>
+
+    <script src="https://kit.fontawesome.com/e8d0c66caa.js" crossorigin="anonymous"></script>
 	<footer>
 		<div id = "container-footer">
 
@@ -364,22 +397,10 @@
         }
     </script>
 
-    <!--Script para el menu desplegable-->
-    <script>
-
-        const selectElement = function(element) {
-            return document.querySelector(element);     //selecciona los elementos
-        }
-
-
-        let menuToggle = selectElement('.menu-toggle');     //Selecciona el menu
-        let body = selectElement('body');
-
-        menuToggle.addEventListener('click', function(){        //Abre el menu
-            body.classList.toggle('open');
-        })
-
-    </script>
+    <!--Script for menu toggle-->
+    <script src="/scripts/index.js"></script>
+    <!--Script for whatsapp button-->
+    <script src="/scripts/whats.js"></script>
 
 </body>
 </html>
