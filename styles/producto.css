@@ -340,10 +340,14 @@ main {
 }
 
 .text-description,.text-additional-information,.text-reviews {
-	font-size: 13px;
+	font-size: 15px;
 	color: white;
 	line-height: 22px;
 	margin-top: 25px;
+}
+.product-characteristics{
+    margin-left: 30px;
+    font-size: 15px;
 }
 /*estilos a la parte de contacto*/
 .container-social {
