@@ -1,0 +1,426 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Wix+Madefor+Text:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: verdana;
+    font-family: nunito;
+}
+.usuario{
+    background-color: black;
+    width: 100%;
+    height: 100%;
+}
+.usuario h1{
+    color: white;
+    padding: 20px 30px;
+}
+.usuario .perfil{
+    padding: 10px 20px;
+    display: grid;
+    grid-gap: 30px;
+    
+}
+.usuario .img{
+    border-radius: 50%;
+    
+}
+.usuario .avatar .button-img{
+    position: absolute;
+    left: 250px;
+    top: 130px;
+    background-color: transparent;
+    color: black;
+    border: 0;
+    cursor: pointer;
+}
+.usuario .avatar{
+    margin-left: 50px;
+}
+.usuario .pago{
+    color: rgb(229, 221, 207);
+    padding: 10px;
+    font-size: 18px;
+    width: 350px;
+    border: solid 2px rgb(16, 16, 16);
+    height: 150px;
+    position: absolute;
+    right: 200px;
+    top: 80px;
+}
+.usuario .info{
+    color: rgb(229, 221, 207);
+    padding: 10px;
+    font-size: 18px;
+    width: 350px;
+    border: solid 1px rgb(16, 16, 16);
+    height: 150px;
+    margin: 10px;
+    
+}
+.usuario .info .button-edit{
+    position: absolute;
+    left: 360px;
+    top: 370px;
+    background-color: transparent;
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+.usuario .info .button-dir{
+    position: absolute;
+    left: 360px;
+    top: 530px;
+    background-color: transparent;
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+.usuario .pago .button-card{
+    position: absolute;
+    right: 10px;
+    top: 10px;
+    background-color: transparent;
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+.usuario .pago .button-card1{
+    position: absolute;
+    right: 10px;
+    top: 30px;
+    background-color: transparent;
+    color: white;
+    border: 0;
+    cursor: pointer;
+}
+.usuario .store:hover{
+    transform: scale(1.2);
+}
+
+.usuario .store{
+    border-radius: 100px;
+    width: 100px;
+    height: 100px;
+    font-size: 16px;
+    position: absolute;
+    top: 260px;
+    right: 280px;
+    border: solid 2px #DD2330;
+    background-color: #DD2330;
+    cursor: pointer;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+}
+.usuario .store1{
+    color: white;
+}
+.usuario .grup{
+    border-radius: 100px;
+    font-size: 16px;
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+    cursor: pointer;
+    border: solid 2px #DD2330;
+    background-color: rgb(229, 221, 207);
+    margin: 10px;
+    color: #DD2330;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, .5);
+    transition: all .4s ease-in-out;
+}
+.usuario .grup:hover{
+    transform: scale(1.2);
+}
+.usuario .grupo1 .seguir{
+    color: rgb(229, 221, 207);
+    margin: 0;
+}
+.usuario .grupo1{
+    position: absolute;
+    right: 450px;
+    top: 320px;
+    
+}
+.usuario .grupo2{
+    position: absolute;
+    right: 100px;
+    top: 320px;
+}
+.usuario .grupo2 .seguir{
+    color: rgb(229, 221, 207);
+    text-decoration: none;
+    font-family: nunito;
+}
+
+body{
+    background-color: #000000 ;
+}
+
+.btns{
+    display: none;
+}
+
+nav{
+    display: flex;
+    height: 56px;
+    background-color: black;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+}
+
+.navbar-logo{
+    display: flex;
+    height: 56px;
+    align-items: center;
+}
+
+.nav-img{
+    height: 50px;
+}
+
+a{
+    text-decoration: none;
+    font-family: nunito;
+}
+
+.navbar-brand{
+    color: red;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: nunito;
+}
+
+/*Menu desplegable*/
+.menu-toggle {
+    color: rgb(255, 0, 0);
+    font-size: 1.5rem;
+    position: absolute;
+    top: 5%;       /*desplaza hacia abajo*/
+    transform: translateY(-15%);    /*Hacia arriba*/
+    right: 2.5rem;
+    cursor: pointer;        /*Cursor manita*/
+    z-index: 1500;
+}
+
+.nav-list {
+    list-style: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 40%;
+    height: 70vh;
+    background-color: rgba(21, 20, 20, 0.95);
+    padding: 4.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 1250;
+    transform: translateX(-100%);
+}
+
+.nav::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 0, 0, 0.5);
+    z-index: 2000;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity .5s;
+}
+
+.menu-toggle .fa-times{
+    display: none;
+}
+
+.open .fa-times {
+    display: block;
+}
+
+.open .fa-bars {
+    display: none;
+}
+
+.open .nav-list {
+    transform: translateX(0);
+}
+.open .nav::before{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.nav-item {
+    width: 10rem;
+    border-bottom: 2px solid rgba(255, 0, 0, .7);
+}
+
+.nav-link {
+    display: block;
+    color: #fff;
+    background-color: rgba(21, 20, 20, 0.95);
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-right: -2px;
+}
+
+.nav-link:hover {
+    color: rgb(223, 25, 39);
+    font-weight: bold;
+}
+/*Formulario Login*/
+
+form{
+    display: flex;
+    flex-direction: column;
+    margin: 10px 28%;
+    width: 43.6%;
+    margin-bottom: 25px;
+    height: 70vh;
+    align-items:center;
+    justify-content: center;
+    background-color: #ff000080;
+    border-radius: 50px;
+    gap: 10px;
+    font-weight: 500;
+    color: white;
+    font-family: nunito;
+}
+
+form label{
+    margin-left: 8px;
+}
+
+form div{
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    
+}
+/*Estilos pop up Swal Alert*/
+ 
+.swal2-title {
+    position: relative;
+    max-width: 100%;
+    margin: 0 0 .4em;
+    padding: 0;
+    color: #ff0000;
+    font-size: 1.875em;
+    font-weight: 600;
+    text-align: center;
+    text-transform: none;
+    word-wrap: break-word;
+    font-family: nunito;
+}
+.swal2-styled.swal2-confirm {
+    border: 0;
+    border-radius: .25em;
+    background: initial;
+    background-color:  #ff000080;
+    color: #fff;
+    font-size: 1em;
+}
+
+/*Estilos Form Registro*/
+.h1-regis{
+    color: white;
+    text-align: center;
+    font-family: nunito;
+}
+.signup-form input  {
+    border-radius: 12px;
+    height: 25px;
+    border: none;
+    padding: 0 8px;
+}
+#act-econo{
+    border-radius: 12px;
+    height: 25px;
+    border: none;
+    padding: 0 8px;
+}
+
+.signup-form input[type="submit"]{
+    margin: 0 auto;
+    width: 100px;
+    height: 35px;
+    border-radius: 15px;
+    margin-top: 20px;
+    font-size: 15px;
+    font-weight: 800;
+    cursor: pointer;
+    background-color: white;
+}
+
+.signup-form input[type="submit"]:hover{
+    background-color:white;
+}
+/*Responsive para pantallas grandes*/
+@media screen and (min-width: 750px) {
+
+    .btns{
+        display: block;
+    }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .btn-register{
+        padding: 5px 8px;
+        margin-right: 16px;
+        background-color: red;
+        color: white;
+        font-weight: 500;
+        border-color: 2px solid red;
+        font-size: 18px;
+        border-radius: 8px;
+        font-family: nunito;
+    }
+
+    .btn-register:hover{
+        background-color: rgb(223, 25, 39);
+    }
+    
+    .btn-login{
+        margin-right: 16px;
+        padding: 4px 8px;
+        background-color: black;
+        color: white;
+        font-weight: 500;
+        border: 2px solid red;
+        border-radius: 8px;
+        font-size: 18px;
+        font-family: nunito;
+    }
+
+    .btn-login:hover{
+        background-color: rgb(223, 25, 39);
+        border: 2px solid rgb(223, 25, 39);
+    }
+    
+    .btn-cart{
+        padding: 5px 8px;
+        background-color: black;
+        color: white;
+        font-weight: 500;
+        border: none;
+        font-size: 20px;
+        font-family: nunito;
+    }
+
+    .btn-cart:hover{
+        color: rgb(223, 25, 39);
+    }
+    
+
+}

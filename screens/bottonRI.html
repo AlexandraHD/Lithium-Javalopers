@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ea06c7c0f7.js" crossorigin="anonymous"></script>
+    <title>Lithium</title>
+    <script src="https://kit.fontawesome.com/ea06c7c0f7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles/users.css">
+    <link rel="icon" href="/img/logo.jpg" type="image/icon type">
+</head>
+<body>
+    <header>
+        <!--NAVBAR-->
+                <nav>
+                    <!--Logo-->
+                    <div class="navbar-logo">
+                        <img class="nav-img" src="/img/logo.jpg" alt="Logo">
+                        <a class="navbar-brand" href="index.html">Lithium</a>
+                    </div>
+                    <!--MENU TOGGLE-->
+                    <div class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="bottonRI.html" class="nav-link ">Registrarse</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link ">Inicia Sesion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link ">Carrito</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link ">Nosotros</a>
+                        </li>
+                    </ul>
+                    <!--BUTTONS-->
+                    <div class="btns">
+                       
+                        <a class="btn-login" type="button" href="login.html">Inicia Sesión</a>
+                        
+                    </div>
+                </nav>
+
+    </header>
+    <section>
+        <h1 class="opc-h1">Elige una opción</h1>
+        <form action="" id="choose-signup" class="signup-form">
+           
+            <div class="btns-users">
+                <a class="btn-per" type="button" href="signup.html">Persona</a>
+                <a class="btn-com" type="button" href="signupCom.html">Empresa</a>
+            </div>
+        </form>
+
+</section>
+   
+
+    <script src="https://kit.fontawesome.com/e8d0c66caa.js" crossorigin="anonymous"></script>
+
+    <!--Script para el menu desplegable-->
+    <script>
+
+        const selectElement = function(element) {
+            return document.querySelector(element);     //selecciona los elementos
+        }
+
+
+        let menuToggle = selectElement('.menu-toggle');     //Selecciona el menu
+        let body = selectElement('body');
+
+        menuToggle.addEventListener('click', function(){        //Abre el menu
+            body.classList.toggle('open');
+        })
+
+    </script>
+     <script src="/Js/singup.Com.js"></script>
+     <script src="https://kit.fontawesome.com/e8d0c66caa.js" crossorigin="anonymous"></script>
+     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.all.min.js"></script>
+</body>
+</html>
