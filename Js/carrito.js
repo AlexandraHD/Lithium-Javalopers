@@ -98,7 +98,7 @@ const renderCarritoCompras = () => {
     card_carrito += `
     <div class="card-items">
     <div class="item">
-      <img src="${producto.imagen}" alt="${producto.alt}">
+      <img class="img-carrito" src="${producto.imagen}" alt="${producto.alt}">
       <div class="item-content">
         <span>${producto.titulo}</span>
         <strong class="cart-price">$${producto.precio}</strong>

@@ -1,0 +1,200 @@
+-- MySQL Workbench Forward Engineering
+
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
+
+-- -----------------------------------------------------
+-- Schema Lithium
+-- -----------------------------------------------------
+
+-- -----------------------------------------------------
+-- Schema Lithium
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `Lithium` DEFAULT CHARACTER SET utf8 ;
+USE `Lithium` ;
+
+-- -----------------------------------------------------
+-- Table `Lithium`.`Usuario`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Lithium`.`Usuario` (
+  `idUsuario` INT NOT NULL,
+  `Nombre_Usuario` VARCHAR(45) NULL,
+  `Correo` VARCHAR(45) NOT NULL,
+  `Telefono` BIGINT(13) NOT NULL,
+  `Dirección` VARCHAR(45) NOT NULL,
+  `Contraseña` VARCHAR(50) NOT NULL,
+  `Image` LONGTEXT NULL,
+  `Fecha_Registro` VARCHAR(45) NULL,
+  PRIMARY KEY (`idUsuario`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `Lithium`.`Empresa`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Lithium`.`Empresa` (
+  `idEmpresa` INT NOT NULL,
+  `Nombre_Empresa` VARCHAR(45) NOT NULL,
+  `Actividad_Economica` VARCHAR(45) NULL,
+  `Dirección` VARCHAR(45) NULL,
+  `Correo` VARCHAR(45) NULL,
+  `Telefono` BIGINT(13) NULL,
+  `Contraseña` VARCHAR(45) NULL,
+  `Fecha_Registro` VARCHAR(45) NULL,
+  PRIMARY KEY (`idEmpresa`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `Lithium`.`Carrito`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Lithium`.`Carrito` (
+  `idCarrito` INT NOT NULL AUTO_INCREMENT,
+  `Total` DOUBLE NULL,
+  `Cantidad` VARCHAR(45) NULL,
+  PRIMARY KEY (`idCarrito`))
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `Lithium`.`Producto`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Lithium`.`Producto` (
+  `idProducto` INT NOT NULL,
+  `Nombre_Producto` VARCHAR(45) NULL,
+  `Categoria` VARCHAR(45) NULL,
+  `Precio` DOUBLE NULL,
+  `Cantidad` VARCHAR(45) NULL,
+  `Descripción` VARCHAR(45) NOT NULL,
+  `Empresa_idEmpresa` INT NOT NULL,
+  `Usuario_idUsuario` INT NOT NULL,
+  `Carrito_idCarrito` INT NOT NULL,
+  PRIMARY KEY (`idProducto`),
+  INDEX `fk_Producto_Empresa_idx` (`Empresa_idEmpresa` ASC) VISIBLE,
+  INDEX `fk_Producto_Usuario1_idx` (`Usuario_idUsuario` ASC) VISIBLE,
+  INDEX `fk_Producto_Carrito1_idx` (`Carrito_idCarrito` ASC) VISIBLE,
+  CONSTRAINT `fk_Producto_Empresa`
+    FOREIGN KEY (`Empresa_idEmpresa`)
+    REFERENCES `Lithium`.`Empresa` (`idEmpresa`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Producto_Usuario1`
+    FOREIGN KEY (`Usuario_idUsuario`)
+    REFERENCES `Lithium`.`Usuario` (`idUsuario`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION,
+  CONSTRAINT `fk_Producto_Carrito1`
+    FOREIGN KEY (`Carrito_idCarrito`)
+    REFERENCES `Lithium`.`Carrito` (`idCarrito`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `Lithium`.`Pedido`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Lithium`.`Pedido` (
+  `idPedido` INT NOT NULL,
+  `Total` DOUBLE NOT NULL,
+  `Estado_Pedido` VARCHAR(45) NULL,
+  `Usuario_idUsuario` INT NOT NULL,
+  PRIMARY KEY (`idPedido`),
+  INDEX `fk_Pedido_Usuario1_idx` (`Usuario_idUsuario` ASC) VISIBLE,
+  CONSTRAINT `fk_Pedido_Usuario1`
+    FOREIGN KEY (`Usuario_idUsuario`)
+    REFERENCES `Lithium`.`Usuario` (`idUsuario`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+-- -----------------------------------------------------
+-- Table `Lithium`.`Tarjetas_Pago`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `Lithium`.`Tarjetas_Pago` (
+  `idTarjetas_Pago` INT NOT NULL,
+  `tipo` VARCHAR(45) NULL,
+  `Fecha_Vencimiento` VARCHAR(45) NULL,
+  `Usuario_idUsuario` INT NOT NULL,
+  PRIMARY KEY (`idTarjetas_Pago`),
+  INDEX `fk_Tarjetas_Pago_Usuario1_idx` (`Usuario_idUsuario` ASC) VISIBLE,
+  CONSTRAINT `fk_Tarjetas_Pago_Usuario1`
+    FOREIGN KEY (`Usuario_idUsuario`)
+    REFERENCES `Lithium`.`Usuario` (`idUsuario`)
+    ON DELETE NO ACTION
+    ON UPDATE NO ACTION)
+ENGINE = InnoDB;
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;
+
+
+
+
+
+
+USE lithium;
+
+/* se agregan datos a la tabla usuario */
+
+INSERT INTO usuario (idUsuario, Nombre_Usuario, Correo, Telefono, Dirección, Contraseña)
+VALUES ('01', 'Camila_Ortiz', 'camila@gmail.com', '3012583698', 'Cra50No71', 'Camila123');
+
+INSERT INTO usuario (idUsuario, Nombre_Usuario, Correo, Telefono, Dirección, Contraseña)
+VALUES ('02', 'Andres Mora', 'andres@gmail.com', '3012588438', 'Cra50No51', 'Andres123');
+
+INSERT INTO usuario (idUsuario, Nombre_Usuario, Correo, Telefono, Dirección, Contraseña)
+VALUES ('03', 'Angel Sanchez', 'angel@hotmail.com', '3011537438', 'Cra50No30', 'Angel123');
+
+INSERT INTO usuario (idUsuario, Nombre_Usuario, Correo, Telefono, Dirección, Contraseña)
+VALUES ('04', 'Brenda Delgado', 'brenda@hotmail.com', '3011547938', 'Cra50No80', 'Brenda123');
+
+INSERT INTO usuario (idUsuario, Nombre_Usuario, Correo, Telefono, Dirección, Contraseña)
+VALUES ('05', 'Carlos Beltran', 'Carlos@hotmail.com', '3205447938', 'Cra60No80', 'Carlos123');
+
+SELECT * FROM lithium.empresa
+
+/* se agregan datos a la tabla empresa */
+
+INSERT INTO empresa (idEmpresa, Nombre_Empresa, Actividad_Economica, Dirección, Correo, Telefono)
+VALUES ('001', 'Máster digital', '4651', 'Master@hotmail.com', 'Cra60No80', '3253698547');
+
+INSERT INTO empresa (idEmpresa, Nombre_Empresa, Actividad_Economica, Dirección, Correo, Telefono)
+VALUES ('002', 'Select Tech', '4652', 'selecttech@hotmail.com', 'Cra90No45', '3255438547');
+
+INSERT INTO empresa (idEmpresa, Nombre_Empresa, Actividad_Economica, Dirección, Correo, Telefono)
+VALUES ('003', 'Impulso Beta', '4651', 'impulso@gmail.com', 'Cra10No85', '3208438547');
+
+INSERT INTO empresa (idEmpresa, Nombre_Empresa, Actividad_Economica, Dirección, Correo, Telefono)
+VALUES ('004', 'innovaTECH', '4651', 'innovatech@gmail.com', 'Cra10No85', '3208414767');
+
+INSERT INTO empresa (idEmpresa, Nombre_Empresa, Actividad_Economica, Dirección, Correo, Telefono)
+VALUES ('005', 'Tecnologías OGX', '4652', 'Tecnologíasogx@gmail.com', 'Cra10No104', '3012586974');
+
+SELECT * FROM lithium.producto
+
+/* se agregan datos a la tabla producto */
+
+INSERT INTO producto (idProducto, Nombre_Producto, Categoria, Precio, Cantidad, Descripción, Empresa_idEmpresa, Usuario_idUsuario, Carrito_idCarrito)
+VALUES ('01', 'iPhone 12 Pro Max 256gb Grafito', 'celulares', '4459999', '10', 'Un chip superpotente y rápido', '004', '02', '01');
+
+INSERT INTO producto (idProducto, Nombre_Producto, Categoria, Precio, Cantidad, Descripción, Empresa_idEmpresa, Usuario_idUsuario, Carrito_idCarrito)
+VALUES ('02', 'Laptop Asus Vivobook', 'laptos', '2644900', '10', 'Procesador móvil. Hasta Ryzen ™ 9 5900HX', '003', '01', '01');
+
+INSERT INTO producto (idProducto, Nombre_Producto, Categoria, Precio, Cantidad, Descripción, Empresa_idEmpresa, Usuario_idUsuario, Carrito_idCarrito)
+VALUES ('03', 'Televisor Samsung 55', 'televisores', '2199900', '20', 'Crystal Uhd 4k Cu8200', '001', '03', '01');
+
+INSERT INTO producto (idProducto, Nombre_Producto, Categoria, Precio, Cantidad, Descripción, Empresa_idEmpresa, Usuario_idUsuario, Carrito_idCarrito)
+VALUES ('04', 'Audífonos gamer Kotion', 'accesorios', '51443', '50', 'Each G9000 black y blue con luz LED', '002', '04', '01');
+
+INSERT INTO producto (idProducto, Nombre_Producto, Categoria, Precio, Cantidad, Descripción, Empresa_idEmpresa, Usuario_idUsuario, Carrito_idCarrito)
+VALUES ('05', 'Tablet Amazon Fire', 'tablets', '529900', '20', 'HD 10 2021 KFTRWI 10.1 32gb', '001', '05', '01');
+
+/* se agregan datos a la tabla carrito */
+
+INSERT INTO carrito (idCarrito, Total, Cantidad)
+VALUES ('01', '5263698', '10');
