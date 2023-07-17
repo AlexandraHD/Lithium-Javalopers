@@ -5,8 +5,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="../styles/people.css">
+    <title>Lithium</title>
+    <link rel="stylesheet" href="/styles/people.css">
     <link rel="icon" href="/img/logo.jpg" type="image/icon type">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 </head>
@@ -31,10 +31,10 @@
                     <a href="/screens/indexSesion.html" class="nav-link active">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link ">Perfil</a>
+                    <a href="/screens/perfilpersona.html" class="nav-link ">Perfil</a>
                 </li>
                 <li class="nav-item">
-                    <a href="#" class="nav-link ">Carrito</a>
+                    <a href="/screens/carrito.html" class="nav-link ">Carrito</a>
                 </li>
                 <li class="nav-item">
                     <a href="#nosotros" class="nav-link ">Nosotros</a>
@@ -43,39 +43,37 @@
             <!--BUTTONS-->
             <div class="btns menu-toggle2">
                 <a class="btn-us" type="button" href="#somos">Nosotros</a>
+
                 <i class="fa-solid fa-circle-user fa-xl" style="color: #ff0000;"></i>
+
+                <!--carrito de compras-->
+                <div class="header-carrito">
+                    <div id="header-carrito__btn">
+                        <a class="btn-cart" type="button" href="#"><i class="fa-solid fa-cart-shopping"
+                                style="color: #ff0000;"></i><span class="count-product">0</span> Carrito</a>
+                    </div>  
+                    
+                    <div id='container-carrito ' class= ' container-carrito  hidden'>
+                        <div class="cart-products  " id="products-id">
+                            <h3> Mi carrito</h3>
+                        </div>
+
+                        <div class='carrito-total'>
+                            <h3 >Total: <span class='carritoTotal__text'></span> </h3>
+                            <button id="btn-finalizar-compra">Finalizar compra</button>
+                        </div>
+                    </div>
+                </div>
             </div>
             <ul class="nav-list2">
                 <li class="nav-item">
-                    <a href="#" class="nav-link ">Perfil</a>
+                    <a href="/screens/perfilpersona.html" class="nav-link ">Perfil</a>
                 </li>
                 <li class="nav-item">
                     <a href="#" class="nav-link " id="logout">Salir</a>
                 </li>
             </ul>
 
-            <!--carrito de compras-->
-            <div class="header-carrito">
-                <div id="header-carrito__btn">
-                    <a class="btn-cart" type="button" href="#"><i class="fa-solid fa-cart-shopping"
-                            style="color: #ff0000;"></i><span class="count-product">0</span> Carrito</a>
-                </div>  
-                
-                <div id='container-carrito ' class= ' container-carrito  hidden'>
-                    <div class="cart-products  " id="products-id">
-                        <h3> Mi carrito</h3>
-                    </div>
-
-                    <div class='carrito-total'>
-                        <h3 >Total: <span class='carritoTotal__text'></span> </h3>
-                        <button id="btn-finalizar-compra">Finalizar compra</button>
-                    </div>
-                </div>
-                    
-                
-            </div>
-
-                
             </div>
         </nav>
     </header>
@@ -94,7 +92,7 @@
             <div class="contents-brand">
                 <div id="container-brand">
                     <div class="filtro">
-                        <form>
+                        <form class="">
                             <label>
                                 <input type="checkbox" name="Samsung" value="Samsung">Samsung
                             </label><br>
@@ -152,9 +150,9 @@
         </div>
     </div>
     <!-- <script src="js/script.js"></script> -->
-    <script src='../Js/data.js'></script>
-    <script src='../Js/carrito.js'></script>
-    <script src="../scripts/index.js"></script>
+    <script src='/scripts/data.js'></script>
+    <script src='/scripts/carrito.js'></script>
+    <script src="/scripts/index.js"></script>
     <script src="https://kit.fontawesome.com/e8d0c66caa.js" crossorigin="anonymous"></script>
 
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>

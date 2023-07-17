@@ -146,6 +146,8 @@ a{
     width: 21.8rem;
     position: absolute;
     background-color: transparent;
+    border: none;
+    padding: 8px;
   }
   .search--bar:focus{
    outline: none;
@@ -175,7 +177,7 @@ a{
       justify-content: center;
       align-items: center;
       perspective: 1000px;
-     
+      padding: 8px;
     }
     .card {
       position: relative;
@@ -578,13 +580,83 @@ h5.contact-form-title{
 }
 
 .contact-form{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
     background-color: rgba(255, 0, 0, 0.5);
     border-radius: 20px;
     width: 80%;
     height: fit-content;
-    margin: 0 auto;
-    display: flex;
-    margin-top: 1em;
+    color: white;
+    margin-bottom: 25px;
+}
+
+.contact-form input{
+    border-radius: 10px;
+    min-width: 230px;
+    max-width: 500px;
+    height: 25px;
+    border: none;
+    padding: 0 8px;
+    margin-left: 5px;
+    margin-bottom: 12px;
+}
+.contact-form div {
+    margin-top: 12px;
+}
+
+.contact-form hr{
+    margin-top: 12px;
+}
+
+.contact-form input[type="submit"]{
+    display: block;
+    min-width: 100px;
+    max-width: 200px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+    font-size: 16px;
+    margin-top: 32px;
+}
+
+.contact-form input[type="submit"]:hover{
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+}
+
+input.inline{
+    min-width: unset;
+    max-width: unset;
+    margin: 0 0.5em 0 0;
+    vertical-align: middle;
+}
+
+#more-info{
+    display: block;
+    border: none;
+    border-radius: 10px;
+    padding: 6px 8px;
+    width: 100%;
+    height: 70px;
+}
+
+.contact-form hr{
+    width: 70%;
+    border: 1px solid rgba(21, 20, 20, 0.4);
+}
+
+#terms-and-conditions{
+    margin-left: 20px;
+}
+
+.terms-link{
+    color: white;
+}
+
+.terms-link:hover{
+    color: rgba(0, 0, 0, 0.5);
+    font-weight: 800;
 }
 
 /*footer*/
@@ -724,110 +796,79 @@ footer{
     height: 150vh;
   }
 
-/*Formulario Login*/
-.text-Login{
-    margin:10px 28%; 
-    width: 43.6%;
-    text-align: center;
-    font-weight: 500;
-    color: white;
-}
+  /*Formulario Login*/
+  .text-Login{
+      margin:10px 28%; 
+      width: 43.6%;
+      text-align: center;
+      font-weight: 500;
+      color: white;
+  }
+  
+  .login-form, .signup-form{
+      display: flex;
+      flex-direction: column;
+      margin: 10px 28%;
+      width: 43.6%;
+      margin-bottom: 25px;
+      height: 50vh;
+      align-items:center;
+      justify-content: center;
+      background-color: #ff000080;
+      border-radius: 50px;
+      gap: 10px;
+      font-weight: 500;
+      color: white;
+      font-family: nunito;
+  }
+  
+  form label{
+      margin-left: 8px;
+  }
+  
+  form div{
+      display: flex;
+      flex-direction: column;
+      width: 70%;
+      
+  }
+  .login-form input{
+      border-radius: 12px;
+      height: 25px;
+      border: none;
+      padding: 0 8px;
+  }
+  
+  .login-form input[type="submit"]{
+      margin: 0 auto;
+      width: 110px;
+      height: 35px;
+      border-radius: 15px;
+      margin-top: 0px;
+      font-size: 15px;
+      font-weight: 800;
+      cursor: pointer;
+      background-color: white;
+  }
+  
+  .login-form input[type="submit"]:hover{
+      background-color: rgba(255, 255, 255, 0.858);
+  }
+  .a-form{
+      color: white;
+      margin: 0px 1px;
+  }
+  
+  #icon-eye{
+       transform: translateY(-130%) translateX(90%);
+    }
+  .recuerdame{
+      flex-direction: row;
+      justify-content:left;
+     
+      margin: 0;
+  }
 
-form{
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    gap: 20px;
-    font-weight: 500;
-    color: white;
-    margin: 10px 28%;
-    width: 43.6%;
-    margin-bottom: 25px;
-    height: 50vh;
-    align-items:center;
-    justify-content: center;
-    background-color: #ff000080;
-    border-radius: 50px;
-    gap: 10px;
-    font-weight: 500;
-    color: white;
-    font-family: nunito;
-}
-
-form label{
-    margin-left: 8px;
-}
-
-form div{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    gap: 5px;
-}
-
-.contact-form input{
-    border-radius: 10px;
-    min-width: 230px;
-    max-width: 500px;
-    height: 25px;
-    border: none;
-    padding: 0 8px;
-    margin-left: 5px;
-}
-
-.contact-form input[type="submit"]{
-    display: block;
-    min-width: 100px;
-    max-width: 200px;
-    font-weight: 600;
-    cursor: pointer;
-    transition: 0.3s;
-    font-size: 16px;
-}
-
-.contact-form input[type="submit"]:hover{
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-}
-
-input.inline{
-    min-width: unset;
-    max-width: unset;
-    margin: 0 0.5em 0 0;
-    vertical-align: middle;
-}
-
-textarea{
-    display: block;
-    border: none;
-    border-radius: 10px;
-    padding: 1px 8px;
-    width: 100%;
-    height: 70px;
-}
-
-.contact-form hr{
-    width: 70%;
-    border: 1px solid rgba(21, 20, 20, 0.4);
-}
-
-#terms-and-conditions{
-    margin-left: 20px;
-}
-
-.terms-link{
-    color: white;
-}
-
-.terms-link:hover{
-    color: rgba(0, 0, 0, 0.5);
-    font-weight: 800;
-}
 
 
 .login-form input{
@@ -1197,6 +1238,8 @@ textarea{
     width: 70%;
 }
 
+/*FORM??*/
+
 .login-form input{
     border-radius: 12px;
     height: 25px;
@@ -1430,10 +1473,18 @@ textarea{
 
     .contact-form{
         width: 50%;
+        
+    }
+
+    .contact-form input{
+        min-width: 300px;
+        max-width: 800px;
+        
     }
     
     .contact-form input[type="submit"]{
         font-size: 18px;
+        margin-bottom: 12px;
     }
     
     input.inline{
