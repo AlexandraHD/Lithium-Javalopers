@@ -304,11 +304,13 @@ a{
   }
   .search--bar{
     display: flex;
+    border: none;
     border-radius: 1rem;
     height: 2rem;
     width: 21.8rem;
     position: absolute;
     background-color: transparent;
+    padding: 8px;
   }
   .search--bar:focus{
     outline: none;
@@ -329,6 +331,8 @@ a{
     height: 2rem;
     width: 0.6rem;
   }
+
+  /*Categorias*/
   
   .container-card {
       display: flex;
@@ -337,7 +341,7 @@ a{
       justify-content: center;
       align-items: center;
       perspective: 1000px;
-     
+      padding: 8px;
     }
     .card {
       position: relative;
@@ -688,39 +692,20 @@ h3 {
     text-align: center;
 }
 
+h5.contact-form-title{
+  font-weight: 500;
+}
+
 .contact-form{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
     background-color: rgba(255, 0, 0, 0.5);
     border-radius: 20px;
     width: 80%;
     height: fit-content;
-    margin: 0 auto;
-    display: flex;
-    margin-top: 1em;
-}
-
-form{
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    gap: 20px;
-    font-weight: 500;
     color: white;
-}
-
-form label{
-    margin-left: 8px;
-}
-
-form div{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    gap: 5px;
+    margin-bottom: 25px;
 }
 
 .contact-form input{
@@ -731,6 +716,14 @@ form div{
     border: none;
     padding: 0 8px;
     margin-left: 5px;
+    margin-bottom: 12px;
+}
+.contact-form div {
+    margin-top: 12px;
+}
+
+.contact-form hr{
+    margin-top: 12px;
 }
 
 .contact-form input[type="submit"]{
@@ -741,6 +734,7 @@ form div{
     cursor: pointer;
     transition: 0.3s;
     font-size: 16px;
+    margin-top: 32px;
 }
 
 .contact-form input[type="submit"]:hover{
@@ -755,11 +749,11 @@ input.inline{
     vertical-align: middle;
 }
 
-textarea{
+#more-info{
     display: block;
     border: none;
     border-radius: 10px;
-    padding: 1px 8px;
+    padding: 6px 8px;
     width: 100%;
     height: 70px;
 }
@@ -1161,11 +1155,12 @@ main{
     flex-direction: column;
     align-items: center;
 }
-h2{
+
+/* Llamar a una clase.h2{
     color: white;
     text-align: center;
     margin-top: 15px;
-}
+} */
 
 #content-edit-address {
     display: flex;
@@ -1269,90 +1264,6 @@ h2{
     font-weight: 600;
 }
 
-/*Responsive para pantallas grandes*/
-@media screen and (min-width: 750px) {
-    .menu-toggle {
-        display: none;
-    }
-
-    .nav-list {
-        display: none;
-    }
-
-    .btns{
-        display: flex;
-    }
-
-    .btn-us {
-        text-decoration: none;
-        color: white;
-        font-weight: 400;
-        margin-right: 20px;
-        margin-top: 6px;
-    }
-
-    .fa-circle-user{
-        display: flex;
-        margin-right: 16px;
-        margin-top: 16px;
-    }
-    
-    .btn-cart{
-        padding: 5px 8px;
-        background-color: black;
-        color: white;
-        font-weight: 500;
-        border: none;
-        font-size: 20px;
-        font-family: nunito;
-    }
-
-    .btn-cart:hover{
-        color: rgb(223, 25, 39);
-    }
-
-    /*CONTACT FORM*/
-    .contact-form-title h2{
-        font-size: 55px;
-    }
-
-    .contact-form-title h5{
-        font-size: 20px;
-        font-weight: 500;
-    }
-
-    .contact-form{
-        width: 50%;
-    }
-    
-    .contact-form input[type="submit"]{
-        font-size: 18px;
-    }
-
-    /*EDIT ADDRESS*/
-    #content-edit-address {
-        display: flex;
-        flex-direction: column;
-        align-content: center;
-        background-color: rgba(21, 20, 20, 0.8);
-        width: 60%;
-        height: fit-content;
-        margin-top: 25px;
-        border-radius: 8px;
-    }
-
-    #address{
-        width: 300px;
-    }
-    
-}
-body{
-    margin: 0;
-    padding: 0;
-    background-color: black;
-    font-family: verdana;
-    font-family: nunito;
-}
 /*contenedor de los productos*/
 #products{
     width: 98%;
@@ -1514,7 +1425,7 @@ body{
 /*carrito de compras*/
 .header-carrito{
     position: relative;
-    margin-top: 4%;
+
 }
 
 .container-carrito{
@@ -1543,10 +1454,12 @@ body{
 .header-carrito .btn-cart{
     cursor: pointer;
 }
-img{
+
+.img-carrito{
     width: 100px;
     height: 100px;
 }
+
 #btn-finalizar-compra{
     border-radius: 8px;
     background-color: #DD2330;
@@ -1567,3 +1480,101 @@ img{
     display: none;
     
 }
+
+/*Responsive para pantallas grandes*/
+@media screen and (min-width: 750px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .btns{
+        display: flex;
+    }
+
+    .btn-us {
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+        margin-right: 20px;
+        margin-top: 6px;
+    }
+
+    .fa-circle-user{
+        display: flex;
+        margin-right: 16px;
+        margin-top: 16px;
+    }
+    
+    .btn-cart{
+        padding: 5px 8px;
+        background-color: black;
+        color: white;
+        font-weight: 500;
+        border: none;
+        font-size: 20px;
+        font-family: nunito;
+    }
+
+    .btn-cart:hover{
+        color: rgb(223, 25, 39);
+    }
+
+    /*CONTACT FORM*/
+    h2.contact-form-title{
+        font-size: 30px;
+    }
+
+    h5.contact-form-title{
+        font-size: 16px;
+    }
+
+    .contact-form{
+        width: 50%;
+        
+    }
+
+    .contact-form input{
+        min-width: 300px;
+        max-width: 800px;
+        
+    }
+    
+    .contact-form input[type="submit"]{
+        font-size: 18px;
+        margin-bottom: 12px;
+    }
+    
+    input.inline{
+        min-width: unset;
+        max-width: unset;
+        margin: 0 0.5em 0 0;
+        vertical-align: middle;
+    }
+
+    #more-info{
+        min-width: 300px;
+        max-width: 800px;
+    }
+
+    /*EDIT ADDRESS*/
+    #content-edit-address {
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        background-color: rgba(21, 20, 20, 0.8);
+        width: 60%;
+        height: fit-content;
+        margin-top: 25px;
+        border-radius: 8px;
+    }
+
+    #address{
+        width: 300px;
+    }
+    
+}
+
