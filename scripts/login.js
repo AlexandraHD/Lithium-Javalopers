@@ -59,7 +59,7 @@ loginForm.addEventListener('submit', (e) => {
         window.location.href='indexSesion.html'
       })
 })
-
+//Mostrar la contraseña
 const pass= document.getElementById("input-password");
 const eye = document.getElementById("icon-eye");
 

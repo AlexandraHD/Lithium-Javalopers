@@ -296,23 +296,26 @@ a{
 .search--div{
     display: flex;
     width: 100%;
-    height: 2.4rem;
+    height: 3rem;
     justify-content: center;
     align-items: center;
     font-family: nunito;
     color: #FF4533;
+    outline:  none;
   }
   .search--bar{
     display: flex;
+    border: none;
     border-radius: 1rem;
     height: 2rem;
     width: 21.8rem;
     position: absolute;
     background-color: transparent;
+    padding: 8px;
   }
   .search--bar:focus{
-    outline: none;
-   }
+   outline: none;
+  }
   .icon-search{
     display: flex;
     align-items: center;
@@ -329,6 +332,8 @@ a{
     height: 2rem;
     width: 0.6rem;
   }
+
+  /*Categorias*/
   
   .container-card {
       display: flex;
@@ -337,7 +342,7 @@ a{
       justify-content: center;
       align-items: center;
       perspective: 1000px;
-     
+      padding: 8px;
     }
     .card {
       position: relative;
@@ -369,7 +374,7 @@ a{
       font-size: 1.7rem; /*Size Icon*/
     }
     .face--back {
-      background: #ff0000;
+      background:#ff0000;
       font-weight: bold;
       font-size: 0.9rem;
       transform: rotateX(180deg);
@@ -388,29 +393,187 @@ a{
        font-size: 0.8rem;
     }
 
+/*banner*/
+.carrousel{
+    width: 100%;
+}
+
+.conteCarrousel{
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+}
+
+.itemCarrousel{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselTarjeta{
+    width: 100%;
+    height: 100%;
+}
+
+.itemCarrouselArrows{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px; 
+}
+.itemCarrouselArrows2{
+    position: absolute; 
+    display: flex;
+    align-items: center;
+    padding: 20px; 
+}
+
+.itemCarrouselArrows > i:hover {
+    cursor: pointer;
+}
+
+#itemCarrousel-1{
+    background-image: url(/img/samsun2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#itemCarrousel-2{
+    background-image: url(/img/audifonos.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#itemCarrousel-3{
+    background-image: url(/img/banner2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.itemCarrouselArrows > a > i{
+    color: white;
+}
+.content2 .title{
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px rgb(255, 0, 0);
+    padding: 10px;
+    margin-left: 50px;
+}
+.content2 .text{
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    margin-left: 50px;
+    margin-right: 800px;  
+}
+.content2 .button-banner{
+    padding: 10PX;
+    font-size: 20px;
+    background-color:rgb(255, 0, 0);
+    border: rgb(255, 0, 0);
+    color: white;
+    margin-left: 200px;
+    height: 50px;
+    border-radius: 6px;
+    margin-top: 150px;
+}
+
+.content3{
+    padding: 20px;
+}
+.content3 .title{
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px rgb(255, 0, 0);
+    margin-left: 50px;
+    
+}
+.content3 .text{
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 800px;
+    
+}
+.content3 .button-banner{
+    padding: 10PX;
+    font-size: 20PX;
+    background-color:rgb(255, 0, 0);
+    border: rgb(255, 0, 0);
+    color: white;
+    margin-left: 120px;
+    height: 50px;
+    border-radius: 6px; 
+    margin-top: 150px;
+}
+.content4 .title{
+    font-size: 50px;
+    color: white;
+    text-shadow: 2px 2px rgb(255, 0, 0);
+    padding: 15px;
+    margin-left: 30px;
+}
+.content4 .text{
+    font-size: 20px;
+    color: white;
+    padding: 20px;
+    margin-left: 40px;
+    margin-right: 700px;
+    
+}
+.content4 .button-banner{
+    padding: 10PX;
+    font-size: 20PX;
+    background-color:rgb(255, 0, 0);
+    border: rgb(255, 0, 0);
+    color: white;
+    margin-left: 150px;
+    height: 50px;
+    border-radius: 6px; 
+    margin-top: 150px;
+}
+
+.button-banner:hover{
+    background-color: rgb(143, 3, 3);
+    cursor: pointer;
+}
+
+/*Ventajas e imperdibles*/
+
 .button-add{
     font-size: 16px;
     text-align: center;
-    background-color: rgb(171, 50, 50);
+    background-color: #DD2330;
     color: beige;
-    border: 2px solid rgb(171, 50, 50);
+    border: 2px solid #DD2330;
     border-radius: 6px;
     padding: 2px 6px;
     position: absolute;
     right: 20px;
     bottom: 10px;
+    cursor: pointer;
 }
 .button-ver{
     font-size: 14px;
     text-align: center;
     color: rgb(12, 12, 12);
     background-color: rgb(229, 221, 207);
-    border: 1px solid rgb(171, 50, 50);
+    border: 1px solid #DD2330;
     border-radius: 4px;
     padding: 1px 4px;
     position: absolute;
     left: 15px;
     bottom: 10px;
+    cursor: pointer;
 }
 .button-add:hover{
     background-color: #BF202B;
@@ -467,6 +630,7 @@ a{
     right: 0%;
     background-color: transparent;
     border: 1px solid transparent;
+    cursor: pointer;
 }
 .button-car {
     position: absolute;
@@ -478,45 +642,64 @@ a{
     right: 0%;
     background-color: transparent;
     border: 1px solid transparent;
+    cursor: pointer;
 }
 h3 {
     background-color: black;
-    color: #BF202B;
+    color: #ED2532;
     height: 40px;
     padding-left: 20px;
 }
 
 .container-box{
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    background-color: black;
-    margin: 842px, 194px, 1409px, 176px;
 }
-.box:hover{
-    box-shadow:0px 6px 10px 0px rgb(215, 211, 211);
+.contenido-slider{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    color: #fff;
 }
-
-.box{
-    width: 250px;
-    height: 230px;
-    margin: 10px;
-    padding: 20px;
-    border: 3px solid #eeeeee;
-    border-radius: 14px;
-    text-align: center;
-    margin-top: 20px;
-    position: relative;
-    background-color: rgb(215, 211, 211);
+.contenido-slider:first-child{
+    background-image: url(/img/samsun2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 100% 60%;
 }
-
-.box img{
-    width: 60%;
+.contenido-slider:nth-child(2){
+    background-image: url(/img/audifonos.png);
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-size: cover
 }
-
-.box h2{
+.contenido-slider:nth-child(3){
+    background-image: url(/img/banner2.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.content-slider{
+    margin-left: 40px;
+    margin-bottom: 300px;
+}
+.title{
+    margin-top: 100px;
+    font-size: 45px;
+    text-shadow: 2px 2px rgb(255, 0, 0);
+}
+.text1{
+    margin-bottom: 0;
+    font-size: 18px;
+    margin-right: 60%;
+}
+.button-banner{
+    margin-top: 30px;
+    background-color: #DD2330;
     font-size: 16px;
     margin-top: 10px;
+    color: #000000;
 }
 
 /*CONTACT FORM*/
@@ -527,39 +710,20 @@ h3 {
     text-align: center;
 }
 
+h5.contact-form-title{
+  font-weight: 500;
+}
+
 .contact-form{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
     background-color: rgba(255, 0, 0, 0.5);
     border-radius: 20px;
     width: 80%;
     height: fit-content;
-    margin: 0 auto;
-    display: flex;
-    margin-top: 1em;
-}
-
-form{
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    width: 100%;
-    height: 100vh;
-    justify-content: center;
-    align-items: center;
-    border-radius: 20px;
-    gap: 20px;
-    font-weight: 500;
     color: white;
-}
-
-form label{
-    margin-left: 8px;
-}
-
-form div{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    gap: 5px;
+    margin-bottom: 25px;
 }
 
 .contact-form input{
@@ -570,6 +734,14 @@ form div{
     border: none;
     padding: 0 8px;
     margin-left: 5px;
+    margin-bottom: 12px;
+}
+.contact-form div {
+    margin-top: 12px;
+}
+
+.contact-form hr{
+    margin-top: 12px;
 }
 
 .contact-form input[type="submit"]{
@@ -580,6 +752,7 @@ form div{
     cursor: pointer;
     transition: 0.3s;
     font-size: 16px;
+    margin-top: 32px;
 }
 
 .contact-form input[type="submit"]:hover{
@@ -594,11 +767,11 @@ input.inline{
     vertical-align: middle;
 }
 
-textarea{
+#more-info{
     display: block;
     border: none;
     border-radius: 10px;
-    padding: 1px 8px;
+    padding: 6px 8px;
     width: 100%;
     height: 70px;
 }
@@ -621,17 +794,391 @@ textarea{
     font-weight: 800;
 }
 
+
+/*footer*/
+#container-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+footer{
+    background-color: rgba(0, 0, 0);
+    color: #fff;
+    padding: 20px;
+    height: 200px;
+}
+#somos h4{
+    font-size: 20px;
+    text-shadow: 1px 1px #DD2330;
+}
+.terms a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #f1fbff;
+}
+.terms h4{
+    text-shadow: 1px 1px #DD2330;
+}
+.social-media h4{
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 1px 1px #DD2330;
+    
+}
+.social-icons {
+    list-style: none;
+    margin-bottom: 5.4rem;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+    color: #DD2330;
+    padding: .8rem 2rem;
+    
+}
+.accordion {
+    width: 500px;
+    color: white;
+    background-color: black;
+
+  }
+  .accordion .container2{
+    position: relative;
+    margin: 10px 10px;
+  }
+  
+  .accordion .label {
+    position: relative;
+    padding: 10px 0;
+    font-size: 15px;
+    color: white;
+    cursor: pointer;
+    
+  }
+  
+  .accordion .label::before {
+    content: '+';
+    color: rgb(255, 0, 0);
+    position: absolute;
+    top: 50%;
+    right: -5px;
+    font-size: 30px;
+    transform: translateY(-50%);
+  }
+  
+  .accordion .content{
+    position: relative;
+    background: black;
+    height: 0;
+    font-size: 15px;
+    text-align: justify;
+    width: 450px;
+    overflow: hidden;
+    transition: 0.5s;
+    
+  }
+  .accordion .content2{
+    position: relative;
+    background: black;
+    height: 0;
+    font-size: 15px;
+    text-align: justify;
+    width: 450px;
+    overflow: hidden;
+    transition: 0.5s;
+    
+  }
+  .accordion .content3{
+    position: relative;
+    background: black;
+    height: 0;
+    font-size: 15px;
+    text-align: justify;
+    width: 450px;
+    overflow: hidden;
+    transition: 0.5s;
+    padding: 0;
+  }
+  .accordion hr {
+    width: 100;
+    margin-left: 0;
+    border: 1px solid rgb(255, 0, 0);
+  }
+  .seccion-we-are{
+    padding: 15px;
+    text-align: center;
+  }
+  .seccion-we-are a{
+    color: white;
+  }
+  .seccion-we-are img{
+    float: left;
+    margin-right: 10px;
+    height: 120px;
+    width: 140px;
+    margin-left: 10px;
+  }
+  .active .content{
+    height: 120px;
+  }
+  .active .content2{
+    height: 250px;
+  }
+  .active .content3{
+    height: 150vh;
+  }
+
+
+/*WHATSAPP BUTTON*/
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom: 15px;
+    right: 16px;
+	background-color:#4cc370;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+.float:hover {
+    background-color:#3d9e5a;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+/* offset-x > | offset-y ^| blur-radius | spread-radius | color */
+@keyframes pulse {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      opacity: 0.3;
+    }
+    100% {
+      transform: scale(1.45);
+      opacity: 0;
+    }
+  }
+  .pulse {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+  }
+  
+  .nav-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: flex-end;
+    width: auto;
+    height: auto;
+    position: fixed;
+    z-index: 8;
+    bottom: 0px;
+    right: 0px;
+    padding: 5px;
+    margin: 0px;
+  }
+  @media (max-width: 360px) {
+    .nav-bottom {
+      width: 320px;
+    }
+  }
+  
+  .whatsapp-button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 60px;
+    height: 60px;
+    z-index: 8;
+    transition: .3s;
+    margin: 10px;
+    padding: 7px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: black;
+    /* offset-x > | offset-y ^| blur-radius | spread-radius | color */
+    -webkit-box-shadow: 1px 1px 6px 0px rgba(68, 68, 68, 0.705);
+    -moz-box-shadow: 1px 1px 6px 0px rgba(68, 68, 68, 0.705);
+    box-shadow: 1px 1px 6px 0px rgba(68, 68, 68, 0.705);
+  }
+  
+  .circle-anime {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    width: 60px;
+    height: 60px;
+    top: 15px;
+    right: 15px;
+    border-radius: 50%;
+    transition: .3s;
+    background-color: #77bb4a;
+    animation: pulse 1.2s 4.0s ease 4;
+  }
+  
+  .popup-whatsapp {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    bottom: 85px;
+    right: 6px;
+    transition: .5s;
+    border-radius: 10px;
+    background-color: white;
+    /* offset-x > | offset-y ^| blur-radius | spread-radius | color */
+    -webkit-box-shadow: 2px 1px 6px 0px rgba(68, 68, 68, 0.705);
+    -moz-box-shadow: 2px 1px 6px 0px rgba(68, 68, 68, 0.705);
+    box-shadow: 2px 1px 6px 0px rgba(68, 68, 68, 0.705);
+    animation: slideInRight .6s 0.0s both;
+  }
+  .popup-whatsapp > div {
+    margin: 5px;
+  }
+  @media (max-width: 680px) {
+    .popup-whatsapp p {
+      font-size: 0.9em;
+    }
+  }
+  .popup-whatsapp > .content-whatsapp.-top {
+    display: flex;
+    flex-direction: column;
+  }
+  .popup-whatsapp > .content-whatsapp.-top p {
+    margin-top: 15px;
+    color: #585858;
+    font-family: nunito;
+    font-weight: 400;
+    font-size: 1.0em;
+  }
+  .popup-whatsapp > .content-whatsapp.-bottom {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .closePopup {
+    display: flex;
+    position: absolute;
+    right: 15px;
+    width: 25px;
+    height: 25px;
+    margin: 0 0 15px 0;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: red;
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
+    -moz-box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
+    box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
+  }
+  .closePopup:hover {
+    background-color: rgb(223, 25, 39)
+  }
+  
+  .send-msPopup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin: 0px 0px 0px 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
+    -moz-box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
+    box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
+  }
+  
+  .is-active-whatsapp-popup {
+    display: flex;
+    animation: slideInRight .6s 0.0s both;    /*Lo muestra a la derecha y se demora esos segs en aparecer*/
+    background-color: #fafafa;
+  }
+  
+  input.whats-input[type=text] {
+    width: 250px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 0px solid #ffffff;
+    border-radius: 20px;
+    font-size: 1em;
+    background-color: #ffffff;
+    padding: 0px 0px 0px 10px;
+    -webkit-transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+    outline: none;
+    transition: .3s;
+  }
+  @media (max-width: 420px) {
+    input.whats-input[type=text] {
+      width: 225px;
+    }
+  }
+  input.whats-input::placeholder {
+    /* Most modern browsers support this now. */
+    color: rgba(68, 68, 68, 0.705);
+    opacity: 1;
+  }
+  input.whats-input[type=text]:focus {
+    background-color: #f8f8f8;
+    -webkit-transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+    transition: .3s;
+  }
+  
+  .icon-whatsapp-small {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .icon-whatsapp {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .icon-font-color {
+    color: #ffffff;
+  }
+  
+  .icon-font-color--black {
+    color: #333333;
+    width: 70%;
+}
+
 /*EDIT ADDRESSES*/
 main{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-h2{
+
+/* Llamar a una clase.h2{
     color: white;
     text-align: center;
     margin-top: 15px;
-}
+} */
 
 #content-edit-address {
     display: flex;
@@ -735,6 +1282,219 @@ h2{
     font-weight: 600;
 }
 
+/*contenedor de los productos*/
+#products{
+    width: 98%;
+}
+/*contenedor para la seccion de los filtros*/
+.filtro {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+#filter{
+    background-color: rgb(229, 221, 207);
+    margin-left: 0.2%;
+    height: 500px;
+    margin-top: 20px;
+}
+/*Botón marca*/
+.brand{
+    padding: 3px 10px;
+    font-size: 12px;
+    text-align: center;
+    background-color: #DD2330;
+    border:1px solid #DD2330;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+/*Botón precio*/
+.price{
+    padding: 3px 10px;
+    font-size: 12px;
+    text-align: center;
+    background-color: #DD2330;
+    border:1px solid #DD2330;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+/*Contenedor de todos los items*/
+#contents-filter{
+    display: grid;
+    grid-template-columns: 17% 82%;
+    grid-gap: 20px;
+    padding: 10px;
+}
+/*botón comprar*/
+.button-add{
+    font-size: 16px;
+    text-align: center;
+    background-color: #DD2330;
+    color: beige;
+    border: 2px solid #DD2330;
+    border-radius: 6px;
+    padding: 2px 6px;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    cursor: pointer;
+}
+.button-add:hover{
+    background-color: #BF202B;
+    color: black;
+}
+/*Botón detalles*/
+.button-ver{
+    font-size: 14px;
+    text-align: center;
+    color: rgb(12, 12, 12);
+    background-color: rgb(229, 221, 207);
+    border: 1px solid #DD2330;
+    border-radius: 4px;
+    padding: 1px 4px;
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    cursor: pointer;
+}
+.button-ver:hover{
+    background-color: #DD2330;
+    color: beige;
+} 
+/*Contenedor de los productos*/
+.discount {
+    display: flex;
+    flex-wrap: wrap;
+}
+/*Contenedor de cada uno de los productos*/
+.product-container:hover{
+    box-shadow: 0px 10px 20px 0 rgb(25, 25, 24);
+}
+.product-container{
+    margin: 20px;
+    padding: 2px 16px;
+    position: relative;
+    background-color: rgb(229, 221, 207);
+    box-shadow: 0px 4px 8px 0 rgba(249, 244, 244, 0.2);
+    border-radius: 8px;
+    width: 250px;
+    height: 330px;
+    box-sizing: border-box;
+}
+/*Estilos de la imagen de los productos*/
+.product-container img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 4px;
+    margin-top: 8px;
+}
+/*Estilos del precio del producto*/
+.product-container .precio-item { 
+    position: absolute;
+    bottom: 40px;
+    left: 60px;
+}
+/*Estilos del nombre del producto*/
+.product-container .titulo-item{
+    text-align: left;
+    margin-top: 6px;
+}
+/*Botón de lista de deseos*/
+.product-container .button-heart::before{
+     display: block;
+     margin: 30px 0;
+}
+.button-heart {
+    position: absolute;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    top: 5%;
+    right: 0%;
+    background-color: transparent;
+    border: 1px solid transparent;
+    color: #DD2330;
+    font-size: 16px;
+    cursor: pointer;
+    transition: all .4s ease-in-out;
+}
+.product-container .button-heart :hover{
+    transform: scale(1.2);
+}
+/*Botón de carrito de compras que esta en los div de los productos*/
+.product-container .button-car {
+    position: absolute;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    top: 15%;
+    right: 0%;
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-size: 16px;
+    cursor: pointer;
+}
+/*carrito de compras*/
+.header-carrito{
+    position: relative;
+}
+
+.container-carrito{
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    z-index: 1;
+    background-color:black ;
+    padding: 20px;
+    min-width: 200px;
+    height: 300px;
+    color: beige;
+    border: 1px solid rgb(45, 45, 44);
+    border-radius: 10px;
+}
+.cart-products{
+    height: 450px;
+    overflow-y: scroll;
+    
+
+}
+
+.header-carrito .btn-cart{
+    cursor: pointer;
+}
+.img-carrito{
+    width: 100px;
+    height: 100px;
+}
+#btn-finalizar-compra{
+    border-radius: 8px;
+    background-color: #DD2330;
+    color: beige;
+    border: 2px solid #DD2330;
+    cursor: pointer;
+}
+.button-delete {
+    background-color: rgb(229, 221, 207);
+    color: black;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+  }
+/* -------------------------------------------------------------------------- */
+/* ocultar carrito */
+.hidden{
+    display: none;
+    
+}
+
 /*Responsive para pantallas grandes*/
 @media screen and (min-width: 750px) {
     .menu-toggle {
@@ -778,21 +1538,40 @@ h2{
     }
 
     /*CONTACT FORM*/
-    .contact-form-title h2{
-        font-size: 55px;
+    h2.contact-form-title{
+        font-size: 30px;
     }
 
-    .contact-form-title h5{
-        font-size: 20px;
-        font-weight: 500;
+    h5.contact-form-title{
+        font-size: 16px;
     }
 
     .contact-form{
         width: 50%;
+        
+    }
+
+    .contact-form input{
+        min-width: 300px;
+        max-width: 800px;
+        
     }
     
     .contact-form input[type="submit"]{
         font-size: 18px;
+        margin-bottom: 12px;
+    }
+    
+    input.inline{
+        min-width: unset;
+        max-width: unset;
+        margin: 0 0.5em 0 0;
+        vertical-align: middle;
+    }
+
+    #more-info{
+        min-width: 300px;
+        max-width: 800px;
     }
 
     /*EDIT ADDRESS*/
@@ -812,3 +1591,4 @@ h2{
     }
     
 }
+

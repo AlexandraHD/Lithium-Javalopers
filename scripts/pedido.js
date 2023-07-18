@@ -29,8 +29,4 @@ function verificarPedido() {
             })
         }
     });
-    //recargar la pagina
-    /*setTimeout(function() {
-        location.reload();
-    }, 2000);*/
   }

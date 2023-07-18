@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lithium</title>
+    <link rel="stylesheet" href="/styles/people.css">
+    <link rel="icon" href="/img/logo.jpg" type="image/icon type">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+</head>
+
+<body>
+    <header>
+        <!--NAVBAR-->
+        <nav>
+                 <!--Logo-->
+                 <div class="navbar-logo">
+                    <img class="nav-img" src="/img/logo.jpg" alt="Logo">
+                    <a class="navbar-brand" href="/screens/indexSesion.html">Lithium</a>
+                </div>
+
+            <!--MENU TOGGLE-->
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="/screens/indexSesion.html" class="nav-link active">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/screens/perfilpersona.html" class="nav-link ">Perfil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/screens/carrito.html" class="nav-link ">Carrito</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#nosotros" class="nav-link ">Nosotros</a>
+                </li>
+            </ul>
+            <!--BUTTONS-->
+            <div class="btns menu-toggle2">
+                <a class="btn-us" type="button" href="#somos">Nosotros</a>
+
+                <i class="fa-solid fa-circle-user fa-xl" style="color: #ff0000;"></i>
+
+                <!--carrito de compras-->
+                <div class="header-carrito">
+                    <div id="header-carrito__btn">
+                        <a class="btn-cart" type="button" href="#"><i class="fa-solid fa-cart-shopping"
+                                style="color: #ff0000;"></i><span class="count-product">0</span> Carrito</a>
+                    </div>  
+                    
+                    <div id='container-carrito ' class= ' container-carrito  hidden'>
+                        <div class="cart-products  " id="products-id">
+                            <h3> Mi carrito</h3>
+                        </div>
+
+                        <div class='carrito-total'>
+                            <h3 >Total: <span class='carritoTotal__text'></span> </h3>
+                            <button id="btn-finalizar-compra">Finalizar compra</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <ul class="nav-list2">
+                <li class="nav-item">
+                    <a href="/screens/perfilpersona.html" class="nav-link ">Perfil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link " id="logout">Salir</a>
+                </li>
+            </ul>
+
+            </div>
+        </nav>
+    </header>
+ 
+    <!--Filtros-->
+    <div id="contents-filter">
+        <div id="filter">
+            <h2 class="title">Filtar por:</h2>
+            <!--boton desplegable-->
+            <div class="buttom-expand">
+                <button class="brand">Marca
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+            </div>
+            <!--contenido que esta dentro del boton de expander en la opcion de marca-->
+            <div class="contents-brand">
+                <div id="container-brand">
+                    <div class="filtro">
+                        <form class="">
+                            <label>
+                                <input type="checkbox" name="Samsung" value="Samsung">Samsung
+                            </label><br>
+                            <label>
+                                <input type="checkbox" name="Apple" value="Apple">Apple
+                            </label><br>
+                            <label>
+                                <input type="checkbox" name="Xiaomi" value="Xiaomi">Xiaomi
+                            </label><br>
+                            <label>
+                                <input type="checkbox" name="Huawei" value="Huawei">Huawei
+                            </label><br>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <!--boton para las opciones de precios-->
+            <div class="buttom-expand">
+                <button class="price">Precio
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+            </div>
+            <!--contenido que esta dentro del boton de expander en la opcion de precios-->
+            <div class="contents-price">
+                <div id="container-price">
+                    <div class="filtro">
+                        <form>
+                            <label>
+                                <input type="checkbox" name="opcion1" value="opcion1">Hasta $1.000.000
+                            </label><br>
+                            <label>
+                                <input type="checkbox" name="opcion2" value="opcion2">$1.000.000 a $2.000.000
+                            </label><br>
+                            <label>
+                                <input type="checkbox" name="opcion3" value="opcion3">$2.000.000 a $3.000.000
+                            </label><br>
+                            <label>
+                                <input type="checkbox" name="opcion4" value="opcion4">Más de $3.000.000
+                            </label><br>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--filtrar produsctos-->
+        <div id="products">
+            <div class="discount">
+
+            </div>
+
+
+        
+            
+        </div>
+    </div>
+    <!-- <script src="js/script.js"></script> -->
+    <script src='/scripts/data.js'></script>
+    <script src='/scripts/carrito.js'></script>
+    <script src="/scripts/index.js"></script>
+    <script src="https://kit.fontawesome.com/e8d0c66caa.js" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+</body>
+
+</html>
