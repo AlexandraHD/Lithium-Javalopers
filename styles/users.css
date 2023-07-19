@@ -19,20 +19,22 @@ body{
 nav{
     display: flex;
     height: 56px;
-    background-color: black;
+    background-color: rgb(145, 1, 1);
     justify-content: space-between;
     align-items: center;
     padding: 0 8px;
+    color: #fff;
 }
 
 .navbar-logo{
     display: flex;
     height: 56px;
+    gap: 8px;
     align-items: center;
 }
 
 .nav-img{
-    height: 50px;
+    height: 80px;
 }
 
 a{
@@ -41,7 +43,7 @@ a{
 }
 
 .navbar-brand{
-    color: red;
+    color: #fff;
     font-weight: 700;
     font-size: 20px;
     font-family: nunito;
@@ -49,7 +51,7 @@ a{
 
 /*Menu desplegable*/
 .menu-toggle {
-    color: rgb(255, 0, 0);
+    color: #fff;
     font-size: 1.5rem;
     position: absolute;
     top: 3%;       /*desplaza hacia abajo*/
@@ -130,6 +132,7 @@ a{
 
 /*Buscador */
 .search--div{
+    margin-top: 25px;
     display: flex;
     width: 100%;
     height: 3rem;
@@ -462,6 +465,7 @@ a{
     color: white;
 }
 .discount {
+    margin-top: 30px;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
@@ -483,7 +487,9 @@ a{
     width: 230px;
     height: 320px;
 }
-
+.button-add a{
+    color: #ffff;
+}
 .product-container img {
     width: 190px;
     height: 200px;
@@ -527,10 +533,14 @@ a{
     cursor: pointer;
 }
 .imperdibles {
-    background-color: black;
-    color: #ED2532;
+    margin-top: 30px;
+    margin-top: 25px;
+    font-size: 30px;
+    color: #fff;
     height: 40px;
+    text-align: center;
     padding-left: 20px;
+    text-shadow: 2px 2px 4px rgb(145, 1, 1);
 }
 
 .container-box{
@@ -568,6 +578,18 @@ a{
 
 
 /*CONTACT FORM*/
+.body-contact{
+    margin-top: 0;
+    padding: 0;
+    background: url(../img/fondo7.jpg) no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 130vh;
+}
+.form-body{
+    margin-left: auto;
+    margin-right: auto;
+}
 .contact-form-title{
     color: white;
     margin-bottom: 15px;
@@ -580,18 +602,21 @@ h5.contact-form-title{
 }
 
 .contact-form{
-    margin: 0 auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 35px;
+    margin-bottom: 40px;
     display: flex;
     justify-content: center;
-    background-color: rgba(255, 0, 0, 0.5);
+    background-color: black;
     border-radius: 20px;
-    width: 80%;
-    height: fit-content;
     color: white;
-    margin-bottom: 25px;
+    height: auto;
+    box-shadow: 0 0 30px #fff;
 }
 
 .contact-form input{
+   
     border-radius: 10px;
     min-width: 230px;
     max-width: 500px;
@@ -603,6 +628,7 @@ h5.contact-form-title{
 }
 .contact-form div {
     margin-top: 12px;
+    width: 500px;
 }
 
 .contact-form hr{
@@ -639,11 +665,13 @@ input.inline{
     padding: 6px 8px;
     width: 100%;
     height: 70px;
+    margin-bottom: 15px;
+    margin-top: 15px;
 }
 
 .contact-form hr{
     width: 70%;
-    border: 1px solid rgba(21, 20, 20, 0.4);
+    border: 1px solid rgba(250, 74, 74, 0.664);
 }
 
 #terms-and-conditions{
@@ -658,8 +686,21 @@ input.inline{
     color: rgba(0, 0, 0, 0.5);
     font-weight: 800;
 }
+#contact-submit{
+    background-color: #BF202B;
+    color: #fff;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    margin-bottom: 20px;
+}
+#contact-submit:hover{
+    background-color: #eb7d84;
+    color: black;
+}
 
 /*footer*/
+
 #container-footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -668,14 +709,16 @@ input.inline{
 }
 
 footer{
-    background-color: rgba(0, 0, 0);
+    background-color: rgb(145, 1, 1);
     color: #fff;
     padding: 20px;
-    height: 200px;
+    height: auto;
 }
 #somos h4{
-    font-size: 20px;
-    text-shadow: 1px 1px #DD2330;
+    font-size: 18px;
+    text-shadow: 1px 1px black;
+    color: #fff;
+    font-weight: normal;
 }
 .terms a{
     text-decoration: none;
@@ -683,31 +726,37 @@ footer{
     color: #f1fbff;
 }
 .terms h4{
-    text-shadow: 1px 1px #DD2330;
+    font-size: 18px;
+    text-shadow: 1px 1px black;
+    color: #fff;
+    font-weight: normal;
 }
+
 .social-media h4{
-    font-size: 20px;
+    font-size: 22px;
+    text-shadow: 1px 1px black;
+    color: #fff;
+    font-weight: normal;
     text-align: center;
-    text-shadow: 1px 1px #DD2330;
     
 }
 .social-icons {
     list-style: none;
-    margin-bottom: 5.4rem;
+    
     display: flex;
     justify-content: center;
 }
 
 .social-icons i {
     font-size: 1.5rem;
-    color: #DD2330;
+    color: #fff;
     padding: .8rem 2rem;
     
 }
 .accordion {
     width: 500px;
     color: white;
-    background-color: black;
+    background-color: rgb(145, 1, 1);
 
   }
   .accordion .container2{
@@ -726,7 +775,7 @@ footer{
   
   .accordion .label::before {
     content: '+';
-    color: rgb(255, 0, 0);
+    color: #fff;
     position: absolute;
     top: 50%;
     right: -5px;
@@ -736,7 +785,7 @@ footer{
   
   .accordion .content{
     position: relative;
-    background: black;
+    background: rgb(145, 1, 1);
     height: 0;
     font-size: 15px;
     text-align: justify;
@@ -747,18 +796,18 @@ footer{
   }
   .accordion .content2{
     position: relative;
-    background: black;
     height: 0;
     font-size: 15px;
     text-align: justify;
     width: 450px;
     overflow: hidden;
     transition: 0.5s;
+    background: rgb(145, 1, 1);
     
   }
   .accordion .content3{
     position: relative;
-    background: black;
+    background: rgb(145, 1, 1);
     height: 0;
     font-size: 15px;
     text-align: justify;
@@ -770,7 +819,7 @@ footer{
   .accordion hr {
     width: 100;
     margin-left: 0;
-    border: 1px solid rgb(255, 0, 0);
+    border: 1px solid #fff;
   }
   .seccion-we-are{
     padding: 15px;
@@ -783,7 +832,7 @@ footer{
     float: left;
     margin-right: 10px;
     height: 120px;
-    width: 140px;
+    width: 120px;
     margin-left: 10px;
   }
   .active .content{
@@ -793,7 +842,7 @@ footer{
     height: 250px;
   }
   .active .content3{
-    height: 150vh;
+    height: 130vh;
   }
 
   /*Formulario Login*/
@@ -1005,6 +1054,9 @@ footer{
 }
 
 /*WHATSAPP BUTTON*/
+#image-whatssap{
+    border-radius: 20px;
+}
 .float{
 	position:fixed;
 	width:60px;
@@ -1410,17 +1462,18 @@ footer{
     .btn-us {
         text-decoration: none;
         color: white;
-        font-weight: 400;
+        font-weight: bold;
         margin-right: 16px;
+        font-size: 19px;
     }
 
     .btn-register{
         padding: 5px 8px;
         margin-right: 16px;
-        background-color: red;
         color: white;
-        font-weight: 500;
-        border-color: 2px solid red;
+        font-weight: bold;
+        border: 2px solid red;
+        background-color: #000000;
         font-size: 18px;
         border-radius: 8px;
         font-family: nunito;
@@ -1435,7 +1488,7 @@ footer{
         padding: 4px 8px;
         background-color: black;
         color: white;
-        font-weight: 500;
+        font-weight: bold;
         border: 2px solid red;
         border-radius: 8px;
         font-size: 18px;
@@ -1449,7 +1502,6 @@ footer{
     
     .btn-cart{
         padding: 5px 8px;
-        background-color: black;
         color: white;
         font-weight: 500;
         border: none;
@@ -1458,22 +1510,20 @@ footer{
     }
 
     .btn-cart:hover{
-        color: rgb(223, 25, 39);
+        color: black;
     }
     
 
     /*CONTACT FORM*/
     h2.contact-form-title{
         font-size: 30px;
+        text-shadow: 2px 2px 4px red;
     }
-
     h5.contact-form-title{
         font-size: 16px;
     }
-
     .contact-form{
         width: 50%;
-        
     }
 
     .contact-form input{

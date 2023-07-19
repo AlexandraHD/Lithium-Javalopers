@@ -1,6 +1,6 @@
 function verificarPedido() {
     // Obtener el número de pedido ingresado por el usuario
-    var numeroPedido = document.getElementById('send').value;
+    let numeroPedido = document.getElementById('send').value;
     // Verificar si el número de pedido coincide con el pedido actual
     // Aquí asumimos que el número de pedido actual es "12345"
     const followOrder = document.getElementById('orderForm');
@@ -18,7 +18,7 @@ function verificarPedido() {
                 timer: 2000
                 //le colocamos la promesa then para que cada vez que se inicie sesion se rideccione a un cierto contenido
             })
-
+           
         } else {
             Swal.fire({
                 icon: 'error',
@@ -28,5 +28,6 @@ function verificarPedido() {
                 confirmButtonColor: 'red'
             })
         }
+        document.getElementById('send').value = '';
     });
   }

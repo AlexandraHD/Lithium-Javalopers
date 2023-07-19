@@ -16,7 +16,7 @@
                     <!--Logo-->
                     <div class="navbar-logo">
                         <img class="nav-img" src="/img/logo2.png" alt="Logo">
-                        <a class="navbar-brand" href="/screens/indexSesion.html">Lithium</a>
+                        <a class="navbar-brand" href="/screens/Index_Sesion.html">Lithium</a>
                     </div>
                     <!--MENU TOGGLE-->
                     <div class="menu-toggle">
@@ -28,13 +28,13 @@
                             <a href="/screens/indexSesion.html" class="nav-link active">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link ">Perfil</a>
+                            <a href="/screens/perfilpersona.html" class="nav-link ">Perfil</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link ">Carrito</a>
+                            <a href="/screens/carrito.html" class="nav-link ">Carrito</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#nosotros" class="nav-link ">Nosotros</a>
+                            <a href="/screens/index.html" class="nav-link ">Nosotros</a>
                         </li>
                     </ul>
                     <!--BUTTONS-->
@@ -44,40 +44,78 @@
                                 <li>
                                     <a class = "follow-order" href="#" type="button"><h2 class = "nav-text">Seguir pedido</a><br>
                                     <ul class="menu-vertical">
-                                        <li><a href="SeguirPedido.html">Rastrear pedido</a></li>
-                                        <li><a href="historialPedidos.html">Historial de pedidos</a></li>
+                                        <li><a href="/screens/SeguirPedido.html">Rastrear pedido</a></li>
+                                        <li><a href="/screens/historialPedidos.html">Historial de pedidos</a></li>
                                     </ul>
                                 </li>                
                             </ul>
                         </div>
-                        <a class="btn-us" type="button" href="#somos"><h2 class = "nav-text">Nosotros</h2></a>
-                        <i class="fa-solid fa-circle-user fa-xl" style="color: #fff;"></i>
-                        <a class="btn-cart" type="button" href="#"><i class="fa-solid fa-cart-shopping" style="color: #fff;"></i> Carrito</a>
+                        <a class="btn-us" type="button" href="/screens/Index_Sesion.html">
+                            <h2 class="nav-text">Nosotros</h2>
+                        </a>
+                        <div class="nav-follow2">
+                            <ul class="menu-horizontal">
+                                <li>
+                                    <a class="follow-order" href="#" type="button">
+                                        <h2 class="nav-perfil"><i class="fa-solid fa-circle-user fa-xl"
+                                                style="color: #fff;"></i>
+                                    </a><br>
+                                    <ul class="menu-vertical" id="menu-vertical2">
+                                        <li><a href="/screens/perfilpersona.html" class="content-perfil" ">Perfil</a></li>
+                                        <li><a href="/screens/index.html" class="content-perfil" id="logout">Salir</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <a class="btn-cart" type="button" href="/screens/carrito.html"><i class="fa-solid fa-cart-shopping" style="color: #fff;"></i> Carrito</a>
                     </div>
-                    <ul class="nav-list2">
-                        <li class="nav-item">
-                            <a href="#" class="nav-link ">Perfil</a>
-                        </li>
-                        <li class="nav-item">
-                            <a href="#" class="nav-link " id="logout">Salir</a>
-                        </li>
-                    </ul>
                 </nav>
         
     </header> 
 
-    <div class = "follow-transport">
-        <h4>Rastrear Pedido</h4>
-        <h5>Ingresa en este campo el ID de tu pedido</h5>
-        <form id="orderForm">
-            <label for="send">Rastrea tu pedido</label>
-            <input type="text" placeholder="Ejm: 1275835" id="send">
-            <button class = "track-order" onclick="verificarPedido()" type="submit">Rastrear</button>
-        </form><br>
-        <div class = "maps">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.39472143055!2d-74.27262448479921!3d4.648620642024533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoQ!5e0!3m2!1ses-419!2sco!4v1688131003808!5m2!1ses-419!2sco" width="1200" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <!--WHATSAPP BUTTON-->
+    <div class="nav-bottom">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <div class="popup-whatsapp fadeIn">
+            <div class="content-whatsapp -top"><button type="button" class="closePopup">
+                    <i class="material-icons icon-font-color">close</i>
+                </button>
+
+                <p> <img src="/img/logo.jpg" width="35" id="image-whatssap"> Hola, ¿cómo podemos ayudate? </p>
+
+            </div>
+            <div class="content-whatsapp -bottom">
+                <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
+                <button class="send-msPopup" id="send-btn" type="button">
+                    <i class="material-icons icon-font-color--black">send</i>
+                </button>
+
+            </div>
         </div>
+        <button type="button" id="whats-openPopup" class="whatsapp-button">
+            <div class="float">
+                <i class="fa fa-whatsapp my-float"></i>
+            </div>
+        </button>
+        <div class="circle-anime"></div>
     </div>
+
+    <main>
+        <div class = "body-main"><br>
+            <div class = "follow-transport">
+                <h4>Rastrear Pedido</h4>
+                <h5>Ingresa en este campo el ID de tu pedido</h5>
+                <form id="orderForm">
+                    <label for="send">Rastrea tu pedido</label>
+                    <input type="text" placeholder="Ejm: 1275835" id="send">
+                    <button class = "track-order" onclick="verificarPedido()" type="submit">Rastrear</button>
+                </form><br>
+                <div class = "maps">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d254508.39472143055!2d-74.27262448479921!3d4.648620642024533!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e3f9bfd2da6cb29%3A0x239d635520a33914!2zQm9nb3TDoQ!5e0!3m2!1ses-419!2sco!4v1688131003808!5m2!1ses-419!2sco" width="1200" height="550" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </main>
 
     <footer >
         
@@ -88,6 +126,7 @@
                     <a href="">Terminos y Condiciones</a><br><br>
                     <a href="">Tratamiento de datos</a><br><br>
                     <a href="">Politicas de privacidad</a><br><br>
+                    <a href="/screens/contactUs.html">Contacto</a><br><br>
                 </div>
             </div>
 
@@ -121,7 +160,8 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.all.min.js"></script>
     <script src="https://kit.fontawesome.com/e8d0c66caa.js" crossorigin="anonymous"></script> 
-    <script src = "/js/pedido.js"></script>
-    <script src="/scripts/index.js"></script>
+    <script src = "/scripts/pedido.js"></script>
+    <script src="/scripts/whats.js"></script>
+    <script src="/scripts/menuDesplegable.js"></script>
 </body>
 </html>
