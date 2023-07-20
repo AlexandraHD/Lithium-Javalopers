@@ -194,6 +194,7 @@ a{
       border-radius: 4rem;
       transform-style: preserve-3d;
     }
+
     .face {
       display: block;
       position: absolute;
@@ -219,6 +220,7 @@ a{
     }
     .card:hover .face--front {
       transform: rotateX(-180deg);
+      cursor: pointer;
     }
     .card:hover .face--back {
       transform: rotateX(0deg);
