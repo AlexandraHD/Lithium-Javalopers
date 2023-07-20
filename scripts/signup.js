@@ -19,9 +19,38 @@ signupForm.addEventListener('submit', (e) => {
     //Referenciar los datos
     const name = document.querySelector('#name').value
     const email = document.querySelector('#email').value
+    const telefono = document.querySelector('#telefono').value
+    const direccion = document.querySelector('#direccion').value
+    const imagen = document.querySelector('#imagePerfilPersona').value
     const password = document.querySelector('#password').value
     const passwordConf = document.querySelector('#password-confirm').value
 
+    const url = 'http://localhost:8080/User/crearUser';
+    let data ={
+      nameUser: name,
+      emailUser: email,
+      addressUser: direccion,
+      phoneUser:telefono,
+      passwordUser: password,
+      imageUser: imagen
+  }
+  let fetchData ={
+    method: 'POST',
+    body: JSON.stringify(data),
+    headers: {'Content-Type': 'application/json',}
+}
+
+// Realizar la solicitud fetch al servidor
+fetch(url, fetchData)
+.then(response => response.json())
+.then(data => {
+    console.log('Datos guardados con éxito:', data);
+    // Aquí puedes hacer lo que necesites con la respuesta del servidor (si aplica)
+  })
+  .catch(error => {
+    console.error('Error al guardar los datos:', error);
+    // Manejar el error (si aplica)
+  });
     //Trae los datos almacenados del arreglo que se nombra (users)
     //Nos convierte los datos en JSON en el localstorage
     const Users = JSON.parse(localStorage.getItem('users')) || []
