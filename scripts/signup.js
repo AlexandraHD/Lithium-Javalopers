@@ -25,7 +25,7 @@ signupForm.addEventListener('submit', (e) => {
     const password = document.querySelector('#password').value
     const passwordConf = document.querySelector('#password-confirm').value
 
-    const url = 'http://localhost:8080/User/crearUser';
+    const url = 'http://localhost:8080/CrudRepo/crearUser';
     let data ={
       nameUser: name,
       emailUser: email,

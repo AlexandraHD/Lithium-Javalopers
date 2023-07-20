@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ea06c7c0f7.js" crossorigin="anonymous"></script>
+    <title>Lithium</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <link rel="icon" href="/img/logo.jpg" type="image/icon type">
+    <link rel="stylesheet" href="/styles/pedido.css">
+</head>
+
+<body>
+    <header>
+        <!--NAVBAR-->
+        <nav>
+            <!--Logo-->
+            <div class="navbar-logo">
+                <img class="nav-img" src="/img/logo2.png" alt="Logo">
+                <a class="navbar-brand" href="/screens/Index_Sesion.html">Lithium</a>
+            </div>
+            <!--MENU TOGGLE-->
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="/screens/Index_Sesion.html" class="nav-link active">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/screens/perfilpersona.html" class="nav-link ">Perfil</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/screens/carrito.html" class="nav-link ">Carrito</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/screens/Index_Sesion.html" class="nav-link ">Nosotros</a>
+                </li>
+            </ul>
+            <!--BUTTONS-->
+            <div class="btns menu-toggle2">
+                <div class="nav-follow">
+                    <ul class="menu-horizontal">
+                        <li>
+                            <a class="follow-order" href="#" type="button">
+                                <h2 class="nav-text">Seguir pedido
+                            </a><br>
+                            <ul class="menu-vertical">
+                                <li><a href="/screens/SeguirPedido.html">Rastrear pedido</a></li>
+                                <li><a href="/screens/historialPedidos.html">Historial de pedidos</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <a class="btn-us" type="button" href="/screens/Index_Sesion.html">
+                    <h2 class="nav-text">Nosotros</h2>
+                </a>
+                <div class="nav-follow2">
+                    <ul class="menu-horizontal">
+                        <li>
+                            <a class="follow-order" href="#" type="button">
+                                <h2 class="nav-perfil"><i class="fa-solid fa-circle-user fa-xl"
+                                        style="color: #fff;"></i>
+                            </a><br>
+                            <ul class="menu-vertical">
+                                <li><a href="/screens/perfilpersona.html" class="content-perfil" ">Perfil</a></li>
+                                <li><a href=" /screens/index" class="content-perfil" id="logout">Salir</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </div>
+                <a class="btn-cart" type="button" href="/screens/carrito.html"><i class="fa-solid fa-cart-shopping"
+                        style="color: #fff;"></i> Carrito</a>
+            </div>
+
+        </nav>
+    </header>
+    <!--WHATSAPP BUTTON-->
+    <div class="nav-bottom">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <div class="popup-whatsapp fadeIn">
+            <div class="content-whatsapp -top"><button type="button" class="closePopup">
+                    <i class="material-icons icon-font-color">close</i>
+                </button>
+
+                <p> <img src="/img/logo.jpg" width="35" id="image-whatssap"> Hola, ¿cómo podemos ayudate? </p>
+
+            </div>
+            <div class="content-whatsapp -bottom">
+                <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
+                <button class="send-msPopup" id="send-btn" type="button">
+                    <i class="material-icons icon-font-color--black">send</i>
+                </button>
+
+            </div>
+        </div>
+        <button type="button" id="whats-openPopup" class="whatsapp-button">
+            <div class="float">
+                <i class="fa fa-whatsapp my-float"></i>
+            </div>
+        </button>
+        <div class="circle-anime"></div>
+    </div>
+
+    <main>
+        <div class="body-history">
+            <h4 class="title">Historial de Compras</h4>
+            <div class="product-history">
+                <img src="/img/imperdibles1.jpeg" alt="">
+                <div class="text-history">
+                    <h4>iPhone 12 Pro Max 256gb Grafito</h4>
+                    <h3>2500000</h3>
+                    <h2>Entregado</h2>
+                    <button class="buy-history button-history1"><a href="/screens/carrito.html">Volver a comprar</a></button>
+                </div>
+                <div class="text-history2">
+                    <h3>Llegó el 20 de Junio</h3>
+                    <h3>Vendido por</h3>
+                    <h3>Entregado por</h3>
+                </div>
+            </div><br>
+
+            <div class="product-history">
+                <img src="/img/imperdibles2.jpeg" alt="">
+                <div class="text-history">
+                    <h4>Laptop Asus Vivobook Pro 15 OLED quiet blue 15.6</h4>
+                    <h3>35000000</h3>
+                    <h2>Entregado</h2>
+                    <button class="buy-history button-history1"><a href="/screens/carrito.html">Volver a comprar</a></button>
+                </div>
+                <div class="text-history2">
+                    <h3>Llegó el 20 de Junio</h3>
+                    <h3>Vendido por</h3>
+                    <h3>Entregado por</h3>
+                </div>
+            </div><br>
+
+            <div class="product-history">
+                <img src="/img/imperdibles3.jpeg" alt="">
+                <div class="text-history">
+                    <h4>Televisor Samsung 55 Crystal Uhd 4k Cu8200</h4>
+                    <h3>5000000</h3>
+                    <h2>Entregado</h2>
+                    <button class="buy-history button-history1"><a href="/screens/carrito.html">Volver a comprar</a></button>
+                </div>
+                <div class="text-history2">
+                    <h3>Llegó el 20 de Junio</h3>
+                    <h3>Vendido por</h3>
+                    <h3>Entregado por</h3>
+                </div>
+            </div><br>
+
+            <div class="product-history">
+                <img src="/img/imperdibles4.jpeg" alt="">
+                <div class="text-history">
+                    <h4>Audífonos gamer Kotion Each G9000 black y blue con luz LED</h4>
+                    <h3>200000</h3>
+                    <h2>Entregado</h2>
+                    <button class="buy-history button-history1"><a href="/screens/carrito.html">Volver a comprar</a></button>
+                </div>
+                <div class="text-history2">
+                    <h3>Llegó el 20 de Junio</h3>
+                    <h3>Vendido por</h3>
+                    <h3>Entregado por</h3>
+                </div>
+            </div><br>
+        </div>
+
+    </main><br>
+
+    <footer>
+
+        <div id="container-footer">
+
+            <div class="column1">
+                <div class="terms">
+                    <h4>Sobre LITHIUM</h4><br>
+                    <a href="">Terminos y Condiciones</a><br><br>
+                    <a href="">Tratamiento de datos</a><br><br>
+                    <a href="">Politicas de privacidad</a><br><br>
+                    <a href="/screens/contactUs.html">Contacto</a><br><br>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="terms">
+                    <h4>Categorias</h4><br>
+                    <a href="">Productos</a><br><br>
+                    <a href="">Promociones y ofertas</a><br><br>
+                </div>
+            </div>
+        </div>
+        <div class="social-media">
+            <h4>Siguenos en redes</h4>
+            <ul class="social-icons">
+                <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+                </li>
+
+            </ul>
+        </div>
+        <p>&copy; 2023- Lithium</p>
+    </footer>
+    <script src="/scripts/menuDesplegable.js"></script>
+    <script src="/scripts/whats.js"></script>
+    <script src="https://kit.fontawesome.com/e8d0c66caa.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
