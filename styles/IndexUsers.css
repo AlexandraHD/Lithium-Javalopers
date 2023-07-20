@@ -1424,8 +1424,10 @@ form div{
     font-family: nunito;
 }
 .signup-form{
-    height: 400px;
+    padding: 35px 0;
+    height: fit-content;
     margin-top: 50px;
+    gap: 20px;
 }
 .signup-form input{
     border-radius: 12px;
