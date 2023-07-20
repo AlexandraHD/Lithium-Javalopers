@@ -427,6 +427,33 @@ a{
     width: 70%;
 }
 /*fin del whattsap*/
+/*estilos para los detalles del producto*/
+.btn-red {
+    background-color: rgb(145, 1, 1) !important;
+    color: white !important;
+  }
+
+  /* Personaliza el borde del SweetAlert */
+  .border-red {
+    border: 2px solid rgb(145, 1, 1) !important;
+    box-shadow: 0 0 15px #fff;
+  }
+  .icon-swal{
+    background-color: rgb(145, 1, 1) !important;
+    border: 2px solid rgb(145, 1, 1) !important;
+    color: white !important;
+  }
+  .custom-title {
+    color: black; 
+    font-size: 25px; 
+  }
+  .div-swal{
+    text-align: left;
+    margin-left: 10px;
+  }
+  .screen{
+    margin-bottom: 8px;
+  }
 
 /*contenedor de los productos*/
 /*estilos de los productos*/
@@ -553,6 +580,7 @@ a{
     height: 200px;
     margin-bottom: 4px;
     margin-top: 8px;
+    margin-left: 10px;
 }
 /*Estilos del precio del producto*/
 .product-container .precio-item { 
