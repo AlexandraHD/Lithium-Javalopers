@@ -56,7 +56,7 @@ loginForm.addEventListener('submit', (e) => {
         }
       }).then((result) => {//se usa el then para que despues de mostrar el pop up lo envie al index
         localStorage.setItem('login_success', JSON.stringify(validUser))
-        window.location.href='indexSesion.html'
+        window.location.href='index_Sesion.html'
       })
 })
 //Mostrar la contraseña

@@ -1,7 +1,4 @@
 const productos = [
-
-
-   
   {
     id: 1,//algo unico
     titulo: "iPhone 12 Pro Max 256gb Grafito",
@@ -12,7 +9,7 @@ const productos = [
         nombre: "celulares",
         
     },
-    precio:  4459999,
+    precio:  2500000,
   },
   {
     id: 2,//algo unico
@@ -24,7 +21,7 @@ const productos = [
         nombre: "laptos",
         
     },
-    precio:  2644900,
+    precio:  2500000,
   },
   {
     id: 3,//algo unico
@@ -36,7 +33,7 @@ const productos = [
         nombre: "televisores",
         
     },
-    precio:  2199900,
+    precio:  2500000,
   },
   {
     id: 4,//algo unico
@@ -49,7 +46,7 @@ const productos = [
         nombre: "accesorios",
         
     },
-    precio:  51443,
+    precio:  2500000,
   },
   {
     id: 5,//algo unico
@@ -61,7 +58,7 @@ const productos = [
         nombre: "tablets",
         
     },
-    precio:  529900,
+    precio:2500000,
   },
   {
     id: 6,//algo unico
@@ -73,7 +70,7 @@ const productos = [
         nombre: "celulares",
         
     },
-    precio:  849900,
+    precio:  2500000,
   },
   {
     id: 7,//algo unico
@@ -85,7 +82,7 @@ const productos = [
         nombre: "computadores",
         
     },
-    precio:  1286223,
+    precio:  2500000,
   },
   {
     id: 8,//algo unico
@@ -97,7 +94,7 @@ const productos = [
         nombre: "televisores",
         
     },
-    precio:  2599900,
+    precio:  2500000,
   },
   {
     id: 9,//algo unico
@@ -109,7 +106,7 @@ const productos = [
         nombre: "accesorios",
         
     },
-    precio:  132990,
+    precio: 2500000,
   },
   {
     id: 10,//algo unico
@@ -121,7 +118,7 @@ const productos = [
         nombre: "tablets",
         
     },
-    precio:  1584999,
+    precio:  2500000,
   },
   {
     id: 11,//algo unico
@@ -133,7 +130,7 @@ const productos = [
         nombre: "celulares",
         
     },
-    precio:  569900,
+    precio: 2500000,
   },
   {
     id: 12,//algo unico
@@ -145,8 +142,29 @@ const productos = [
         nombre: "celulares",
         
     },
-    precio:  1010676,
+    precio:  2500000,
   },
 
 ]
 
+//detalles del producto
+function mostrarDetalles(productoId) {
+  // Hacer una petición fetch para obtener los detalles del producto desde una API
+  fetch(`https://ejemplo-api.com/productos/${productoId}`)
+    .then(response => response.json())
+    .then(producto => {
+      // Mostrar los detalles del producto utilizando SweetAlert2
+      Swal.fire({
+        title: producto.nombre,
+        html: `
+          <p><strong>Precio:</strong> $${producto.precio}</p>
+          <p><strong>Stock:</strong> ${producto.stock}</p>
+        `,
+        icon: 'info',
+        confirmButtonText: 'Cerrar'
+      });
+    })
+    .catch(error => {
+      console.error('Error al obtener los detalles del producto:', error);
+    });
+}

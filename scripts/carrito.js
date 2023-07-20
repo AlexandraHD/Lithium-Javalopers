@@ -15,10 +15,9 @@ const renderizarCatalogo = (array) => {
       <img src="${producto.imagen}" alt="${producto.alt}" class="img-item">
       <span class="titulo-item">${producto.titulo}</span>
       <strong class="precio-item">$ ${producto.precio}</strong>
-      <button class="button-ver">Detalles</button>
-      <button class="button-add">Comprar</button>
-      <button class="button-heart" onclick='' ><i class="fa-regular fa-heart"></i></button>
-      <button class="button-car" onclick='agregaraCarrito(${producto.id})'  data-id="1"><i class="fa-solid fa-cart-shopping"></i></i></button>
+      <button class="button-ver" onclick="mostrarDetalles(${producto.id})">Detalles</button>
+      <button class="button-add" onclick='agregaraCarrito(${producto.id})' data-id="1">Comprar</button>
+      
     `
     product_card.innerHTML = productos_str;
     products_container.append(product_card)
@@ -101,7 +100,7 @@ const renderCarritoCompras = () => {
       <img class="img-carrito" src="${producto.imagen}" alt="${producto.alt}">
       <div class="item-content">
         <span>${producto.titulo}</span>
-        <strong class="cart-price">$${producto.precio}</strong>
+        <strong class="cart-price">$${producto.precio}</strong><br>
         <button class="button-delete" onclick="eliminarProducto(${producto.id})">Eliminar</button>
       </div>
     </div>
