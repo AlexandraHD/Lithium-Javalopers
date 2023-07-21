@@ -295,34 +295,6 @@ a{
     background-color: #4b0409;
 }
 
-/*Menu desplegable*/
-.menu-toggle {
-    color: rgb(255, 0, 0);
-    font-size: 1.5rem;
-    position: absolute;
-    top: 3%;       /*desplaza hacia abajo*/
-    transform: translateY(-15%);    /*Hacia arriba*/
-    right: 2.5rem;
-    cursor: pointer;        /*Cursor manita*/
-    z-index: 1500;
-}
-
-.nav-list {
-    list-style: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 40%;
-    height: 70vh;
-    background-color: rgba(21, 20, 20, 0.95);
-    padding: 4.4rem;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    z-index: 1250;
-    transform: translateX(-160%);
-}
-
 .nav::before {
     content: '';
     position: fixed;
