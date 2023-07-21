@@ -4,7 +4,7 @@ let productos_str = '';
 // Función para obtener los datos de los productos desde una API
 const obtenerProductos = async () => {
   try {
-    const response = await fetch('http://localhost:8080/CrudRepo/consultarProduct'); // Reemplaza 'URL_DE_LA_API' con la URL real de la API
+    const response = await fetch('http://localhost:8080/product/consultarProduct'); // Reemplaza 'URL_DE_LA_API' con la URL real de la API
     const data = await response.json();
     renderizarCatalogo(data);
   } catch (error) {
