@@ -6,6 +6,7 @@
     <script src="https://kit.fontawesome.com/ea06c7c0f7.js" crossorigin="anonymous"></script>
     <title>Lithium</title>
     <link rel="stylesheet" href="/styles/users.css">
+    <link rel="stylesheet" href="/styles/whatsapp.css">
     <link rel="icon" href="/img/logo.jpg" type="image/icon type">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 </head>
@@ -63,23 +64,23 @@
     
     <!--** CATEGORIES**-->
         <div class="container-card">
-        <div class="card">
+        <div class="card" onclick="goToCategory('Phones')">
             <div class="face face--front"><i class="fa-solid fa-mobile-retro"></i></div>
-            <div class="face face--back" id="text-mobile">Celulares</div>
+            <div class="face face--back" id="text-mobile" onclick="goToCategory('celulares')">Celulares</div>
         </div>
-        <div class="card">
+        <div class="card" onclick="goToCategory('PC')">
             <div class="face face--front"><i class="fa-solid fa-computer"></i></div>
             <div class="face face--back">PC's</div>
         </div>
-        <div class="card">
+        <div class="card" onclick="goToCategory('Tablets')">
             <div class="face face--front"><i class="fa-solid fa-tablet-screen-button"></i></div>
             <div class="face face--back">Tablets</div>
         </div>
-        <div class="card">
+        <div class="card" onclick="goToCategory('Televisores')">
             <div class="face face--front"><i class="fa-solid fa-tv"></i></div>
             <div class="face face--back">Tv's</div>
         </div>
-        <div class="card">
+        <div class="card" onclick="goToCategory('Accesorios')">
             <div class="face face--front"><i class="fa-solid fa-headphones"></i></div>
             <div class="face face--back" id="text-headphones">Accesorios</div>
         </div>
@@ -179,25 +180,27 @@
              <div class="content-whatsapp -top"><button type="button" class="closePopup">
                    <i class="material-icons icon-font-color">close</i>
                  </button> 
-               
                 <p> <img src="/img/logo.jpg" width="35" id="image-whatssap">  Hola, ¿cómo podemos ayudate? </p>
-                
              </div>
+
              <div class="content-whatsapp -bottom">
                <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
                  <button class="send-msPopup" id="send-btn" type="button">
                      <i class="material-icons icon-font-color--black">send</i>
                  </button>
-
              </div>
+
          </div>
+
          <button type="button" id="whats-openPopup" class="whatsapp-button">
              <div class="float" >
                 <i class="fa fa-whatsapp my-float"></i></div>
          </button>
+
          <div class="circle-anime"></div>
      </div>
 
+     
     <!--------FOOTER--------->
 	<footer>
 		<div id = "container-footer">

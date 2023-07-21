@@ -60,3 +60,8 @@ menuToggle2.addEventListener('click', function(){
     profile.classList.toggle('open');      //Abre el menu
     navList2.classList.toggle('open');
 });
+
+function goToCategory(category) {
+    const url = '/screens/catalogo.html?categoryName=' + encodeURIComponent(category)
+    window.location.href = url
+}
