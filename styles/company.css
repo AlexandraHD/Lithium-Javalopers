@@ -281,7 +281,7 @@ a{
     background: url(../img/fondo4.png) no-repeat center top;
     background-size: cover;
     font-family: sans-serif;
-    height: 100vh;
+    height: 120vh;
 }
 form{
     display: flex;
@@ -341,10 +341,11 @@ form div{
     font-family: nunito;
     margin-bottom: 20px;
     font-size: 25px;
+    margin-top: 20px;
     text-shadow: 2px 2px 4px red;
 }
 .signup-form{
-    height: 550px;
+    height: fit-content;
     box-shadow: 0 0 30px #fff;
 }
 .signup-form input  {
@@ -370,6 +371,7 @@ form div{
     font-weight: 800;
     cursor: pointer;
     background-color: white;
+    margin-bottom: 25px;
 }
 
 .signup-form input[type="submit"]:hover{

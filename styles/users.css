@@ -576,6 +576,33 @@ a{
     margin-top: 10px;
 }
 
+/*estilos para los detalles del producto*/
+.btn-red {
+    background-color: rgb(145, 1, 1) !important;
+    color: white !important;
+  }
+
+  /* Personaliza el borde del SweetAlert */
+  .border-red {
+    border: 2px solid rgb(145, 1, 1) !important;
+    box-shadow: 0 0 15px #fff;
+  }
+  .icon-swal{
+    background-color: rgb(145, 1, 1) !important;
+    border: 2px solid rgb(145, 1, 1) !important;
+    color: white !important;
+  }
+  .custom-title {
+    color: black; 
+    font-size: 25px; 
+  }
+  .div-swal{
+    text-align: left;
+    margin-left: 10px;
+  }
+  .screen{
+    margin-bottom: 8px;
+  }
 
 /*CONTACT FORM*/
 .body-contact{
@@ -698,6 +725,7 @@ input.inline{
     background-color: #eb7d84;
     color: black;
 }
+
 
 /*footer*/
 
@@ -974,7 +1002,6 @@ footer{
     border: 0;
     border-radius: .25em;
     background: initial;
-    background-color:  #ff000080;
     color: #fff;
     font-size: 1em;
 }
