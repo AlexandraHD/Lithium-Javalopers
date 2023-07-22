@@ -7,7 +7,9 @@ const productos = [
 
     categoria: {
         nombre: "celulares",
-        
+    },
+    marca:{
+      nombre: "Apple",
     },
     precio:  2500000,
   },
@@ -18,8 +20,11 @@ const productos = [
     alt: " Iphone max ",
 
     categoria: {
-        nombre: "laptos",
+        nombre: "laptops",
         
+    },
+    marca:{
+      nombre: "Asus",
     },
     precio:  2500000,
   },
@@ -32,6 +37,9 @@ const productos = [
     categoria: {
         nombre: "televisores",
         
+    },
+    marca:{
+      nombre: "Samsung",
     },
     precio:  2500000,
   },
@@ -46,6 +54,9 @@ const productos = [
         nombre: "accesorios",
         
     },
+    marca:{
+      nombre: "Otras marcas",
+    },
     precio:  2500000,
   },
   {
@@ -57,6 +68,9 @@ const productos = [
     categoria: {
         nombre: "tablets",
         
+    },
+    marca:{
+      nombre: "Otras marcas",
     },
     precio:2500000,
   },
@@ -70,6 +84,9 @@ const productos = [
         nombre: "celulares",
         
     },
+    marca:{
+      nombre: "Samsung",
+    },
     precio:  2500000,
   },
   {
@@ -81,6 +98,9 @@ const productos = [
     categoria: {
         nombre: "computadores",
         
+    },
+    marca:{
+      nombre: "Otras marcas",
     },
     precio:  2500000,
   },
@@ -94,6 +114,9 @@ const productos = [
         nombre: "televisores",
         
     },
+    marca:{
+      nombre: "Samsung",
+    },
     precio:  2500000,
   },
   {
@@ -105,6 +128,9 @@ const productos = [
     categoria: {
         nombre: "accesorios",
         
+    },
+    marca:{
+      nombre: "Lenovo",
     },
     precio: 2500000,
   },
@@ -118,6 +144,9 @@ const productos = [
         nombre: "tablets",
         
     },
+    marca:{
+      nombre: "Apple",
+    },
     precio:  2500000,
   },
   {
@@ -130,6 +159,9 @@ const productos = [
         nombre: "celulares",
         
     },
+    marca:{
+      nombre: "Huawei",
+    },
     precio: 2500000,
   },
   {
@@ -141,6 +173,9 @@ const productos = [
     categoria: {
         nombre: "celulares",
         
+    },
+    marca:{
+      nombre: "Lenovo",
     },
     precio:  2500000,
   },
