@@ -1,19 +1,19 @@
-const selectElement = function(element) {
-    return document.querySelector(element);     //selecciona los elementos
+const selectElement = function (element) {
+  return document.querySelector(element);     //selecciona los elementos
 }
 
 
 let menuToggle = selectElement('.menu-toggle');     //Selecciona el menu
 let body = selectElement('body');
 
-menuToggle.addEventListener('click', function(){        //Abre el menu
-    body.classList.toggle('open');
+menuToggle.addEventListener('click', function () {        //Abre el menu
+  body.classList.toggle('open');
 })
 
 const signupForm = document.querySelector('.signup-form')
 
 signupForm.addEventListener('submit', (e) => {
-    e.preventDefault()
+  e.preventDefault()
 
     //Referenciar los datos
     const name = document.querySelector('#name').value
