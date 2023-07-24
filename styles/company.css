@@ -947,7 +947,10 @@ form div{
     color: #fff;
 }
 
-
+.usuario .avatar .img{
+    width: 200px;
+    height: 200px;
+}
 
 /*Responsive para pantallas grandes*/
 @media screen and (min-width: 750px) {
@@ -1057,5 +1060,10 @@ form div{
     .usuario .info .button-dir{
         top: 190px;
         left: 335px;
+    }
+    .button-photo{
+        position: absolute;
+        top: 100px;
+        left: 60%;
     }
 }
