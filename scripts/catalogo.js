@@ -27,13 +27,13 @@ const renderizarCatalogo = (array) => {
       productos_str = `
         <img src="${producto.imageProduct}" alt="${producto.alt}" class="img-item">
         <span class="titulo-item">${producto.nameProduct}</span><br>
-        <h2 class = "price-product"><strong class="precio-item">git c ${precioFormateado}</strong></h2>
+        <h2 class = "price-product"><strong class="precio-item"> ${precioFormateado}</strong></h2>
         <button class="button-ver" data-product-id="${producto.idProduct}">Ver Producto</button>`;
       product_card.innerHTML = productos_str;
       products_container.append(product_card);
     });
 
-    // Asociar evento de clic para mostrar el popup al hacer clic en el botón "Ver Producto"
+  // Asociar evento de clic para mostrar el popup al hacer clic en el botón "Ver Producto"
   const dataVerProducto = document.querySelectorAll('.button-ver');
   console.log(dataVerProducto)
   dataVerProducto.forEach(button => {
