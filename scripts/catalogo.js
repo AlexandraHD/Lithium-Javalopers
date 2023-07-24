@@ -12,7 +12,7 @@ const obtenerProductosPorCategoria = async (category) => {
     }
   }
 
-  // Función para renderizar los productos del catálogo
+// Función para renderizar los productos del catálogo
 const renderizarCatalogo = (array) => {
     array.forEach(producto => {
       const product_card = document.createElement('div');
@@ -33,7 +33,7 @@ const renderizarCatalogo = (array) => {
       products_container.append(product_card);
     });
 
-    // Asociar evento de clic para mostrar el popup al hacer clic en el botón "Ver Producto"
+  // Asociar evento de clic para mostrar el popup al hacer clic en el botón "Ver Producto"
   const dataVerProducto = document.querySelectorAll('.button-ver');
   console.log(dataVerProducto)
   dataVerProducto.forEach(button => {

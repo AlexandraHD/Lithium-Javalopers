@@ -13,12 +13,17 @@
         <h1>¡Bienvenido Usuario!</h1>
         <div class="perfil">
             <div class="avatar">
-                <div><button class="button-img"><i class="fa-solid fa-pen"></i></button></div>
-                <img class="img" src="/img/perfilPersona.png" alt="Avatar">
+                <div><button class="button-photo"><i class="fa-solid fa-pen"></i></button></div>
+                <img class="img" src="" alt="Avatar" id="img-photoUser">
             </div>
+
+            <div id="popup-photoEdit" class="popup-infoEdit">
+                <!-- Content popup -->
+            </div>
+
             <div class="info1">
                 <div class="info">
-                    <h3>Nombre de usuario</h3>
+                    <h3 id="nombre-usuario">Nombre de usuario</h3>
                     <p>Documento</p>
                     <p>Correo electrónico: correo@example.com</p>
                     <p>Teléfono: 123-456-7890</p>
@@ -26,9 +31,13 @@
                 </div>
                 <div class="info">
                     <h3>Direcciones</h3>
-                    <p>direccion 1</p>
+                    <p id="direccion-usuario">direccion 1</p>
                     <p>direccion 2</p>
                     <div><button class="button-dir"><i class="fa-solid fa-pen"></i></button></div>
+                </div>
+
+                <div id="popup-addressEdit" class="popup-infoEdit">
+                    <!-- Content popup -->
                 </div>
 
                 <div class="info">
@@ -74,7 +83,11 @@
 
         </div>
     </div>
+    <script src="/scripts/loginprueba.js"></script>
+    <script src="/scripts/editAddress.js"></script>
+    <script src="/scripts/editProfPhoto.js"></script>
     <script src="https://kit.fontawesome.com/e8d0c66caa.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
 
 </html>
