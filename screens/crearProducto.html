@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ea06c7c0f7.js" crossorigin="anonymous"></script>
+    <title>Lithium</title>
+    <script src="https://kit.fontawesome.com/ea06c7c0f7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles/IndexUsers.css">
+    <link rel="icon" href="/img/logo.jpg" type="image/icon type">
+</head>
+
+<body>
+    <header>
+        <!--NAVBAR-->
+        <nav>
+            <!--Logo-->
+            <div class="navbar-logo">
+                <img class="nav-img" src="/img/logo2.png" alt="Logo">
+                <a class="navbar-brand" href="/screens/index.html">Lithium</a>
+            </div>
+            <!--MENU TOGGLE-->
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="/screens/index.html" class="nav-link active">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="bottonRI.html" class="nav-link ">Registrarse</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/screens/login.html" class="nav-link ">Inicia Sesion</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link ">Carrito</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#" class="nav-link ">Nosotros</a>
+                </li>
+            </ul>
+            <!--BUTTONS-->
+            <div class="btns">
+                <a class="btn-login" type="button" href="/screens/login.html">Inicia Sesión</a>
+            </div>
+        </nav>
+    </header>
+    
+    <div class="sign-in"><br>
+        <section>
+                <form action="" class="signup-form" id="signup-form">
+                    <div>
+                        <label for="name">Nombre Producto</label>
+                        <input type="text" id="name" placeholder="Nombre del producto" required>
+                    </div>
+                    <div>
+                        <label for="email">Categoria</label>
+                        <input type="text" name="" id="categoria" placeholder="Clasifica tu producto">
+                    </div>
+                    <div>
+                        <label for="telefono">Precio</label>
+                        <input type="telefono" name="" id="precio" placeholder="Indique el precio del producto">
+                    </div>
+                        
+                    <div>
+                        <label for="direccion">Cantidad</label>
+                        <input type="text" id="cantidad" placeholder="Cantidad que tienes a la venta" required>
+                    </div>
+                    <div>
+                        <label for="name"> Descripción</label>
+                        <textarea name="descripcion" id="descripcion" cols="30" rows="10" placeholder="Describe tu producto"></textarea>
+                    </div>
+                    <div>
+                        <label for="password">Imagen del Producto</label>
+                        <input type="text" id="imagenProducto" placeholder="URL de la imagen" required>
+                    </div>
+                    <div>
+                        <label for="name"> Id vendedor</label>
+                        <input type="text" id="vendedor" placeholder="id">
+                    </div>
+
+                    <div>
+                        <input type="submit" onvalue="Publicar">
+                    </div>
+                </form>
+
+                
+            </form>
+        </section>
+    
+    <script src="/scripts/crearProducto.js"></script>
+
+</body>
+</html>
