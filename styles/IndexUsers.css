@@ -54,7 +54,7 @@ a {
     color: #fff;
     font-size: 1.5rem;
     position: absolute;
-    top: 5%;
+    top: 3.5%;
     /*desplaza hacia abajo*/
     transform: translateY(-15%);
     /*Hacia arriba*/
@@ -468,7 +468,9 @@ a {
     bottom: 10px;
     cursor: pointer;
 }
-
+.button-add a{
+    color: #fff;
+}
 .button-add:hover {
     background-color: #BF202B;
     color: white;
@@ -518,33 +520,6 @@ a {
     display: block;
     margin: 30px 0;
 }
-
-.button-heart {
-    position: absolute;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    overflow: hidden;
-    top: 5%;
-    right: 0%;
-    background-color: transparent;
-    border: 1px solid transparent;
-    cursor: pointer;
-}
-
-.button-car {
-    position: absolute;
-    border-radius: 50%;
-    width: 30px;
-    height: 30px;
-    overflow: hidden;
-    top: 15%;
-    right: 0%;
-    background-color: transparent;
-    border: 1px solid transparent;
-    cursor: pointer;
-}
-
 .imperdibles {
     margin-top: 30px;
     margin-top: 25px;
@@ -589,13 +564,51 @@ a {
     font-size: 16px;
     margin-top: 10px;
 }
+/*estilos para los detalles del producto*/
+.btn-red {
+    background-color: rgb(145, 1, 1) !important;
+    color: white !important;
+  }
 
+  /* Personaliza el borde del SweetAlert */
+  .border-red {
+    border: 2px solid rgb(145, 1, 1) !important;
+    box-shadow: 0 0 15px #fff;
+  }
+  .icon-swal{
+    background-color: rgb(145, 1, 1) !important;
+    border: 2px solid rgb(145, 1, 1) !important;
+    color: white !important;
+  }
+  .custom-title {
+    color: black; 
+    font-size: 25px; 
+  }
+  .div-swal{
+    text-align: left;
+    margin-left: 10px;
+  }
+  .screen{
+    margin-bottom: 8px;
+  }
 /*CONTACT FORM*/
+.body-contact-sesion{
+    margin-top: 0;
+    padding: 0;
+    background: url(../img/fondo8.png) no-repeat center top;
+    background-size: cover;
+    font-family: sans-serif;
+    height: 140vh;
+}
 .contact-form-title {
     color: white;
     margin-bottom: 15px;
     margin-top: 15px;
     text-align: center;
+}
+.form-body{
+    margin-left: auto;
+    margin-right: auto;
 }
 
 h5.contact-form-title {
@@ -603,18 +616,19 @@ h5.contact-form-title {
 }
 
 .contact-form {
+    
+    box-shadow: 0 0 30px #fff;
     margin: 0 auto;
     display: flex;
     justify-content: center;
-    background-color: rgba(255, 0, 0, 0.5);
     border-radius: 20px;
-    width: 80%;
     height: fit-content;
     color: white;
     margin-bottom: 25px;
 }
 
 .contact-form input {
+    margin-top: 5px;
     border-radius: 10px;
     min-width: 230px;
     max-width: 500px;
@@ -627,10 +641,15 @@ h5.contact-form-title {
 
 .contact-form div {
     margin-top: 12px;
+    width: 500px;
 }
 
 .contact-form hr {
     margin-top: 12px;
+}
+.contact-form label{
+    margin-bottom: 10px;
+    
 }
 
 .contact-form input[type="submit"] {
@@ -642,10 +661,14 @@ h5.contact-form-title {
     transition: 0.3s;
     font-size: 16px;
     margin-top: 32px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 15px;
+    width: 500px;
 }
 
 .contact-form input[type="submit"]:hover {
-    background-color: rgba(0, 0, 0, 0.5);
+    background-color: rgb(145, 1, 1);
     color: white;
 }
 
@@ -663,6 +686,7 @@ input.inline {
     padding: 6px 8px;
     width: 100%;
     height: 70px;
+    margin-top: 8px;
 }
 
 .contact-form hr {
@@ -848,7 +872,7 @@ footer {
 .main-login{
     margin-top: 0;
     padding: 0;
-    background: url(../img/bg.jpeg) no-repeat center top;
+    background: url(../img/fonodo9.png) no-repeat center top;
     background-size: cover;
     font-family: sans-serif;
     height: 100vh;
@@ -1011,7 +1035,7 @@ form div{
     background: url(../img/fondo3.png) no-repeat center top;
     background-size: cover;
     font-family: sans-serif;
-    height: 100vh;
+    height: 120vh;
 }
 .h1-regis{
     color: white;
@@ -1412,7 +1436,6 @@ form div{
     padding: 1.25em;
     border: none;
     border-radius: 5px;
-    background:rgb(143, 3, 3);
     font-family: nunito;
     font-size: 1rem;
     
@@ -1525,6 +1548,12 @@ form div{
         margin-right: 16px;
         margin-top: 16px;
     }
+    .fa-building {
+        margin-top: 8px;
+        font-size: 25px;
+        margin-right: 16px;
+        margin-left: 10px;
+    }
 
     .btn-cart {
         padding: 5px 8px;
@@ -1572,8 +1601,10 @@ form div{
         border: 2px solid rgb(223, 25, 39);
     }
     /*CONTACT FORM*/
+    
     h2.contact-form-title{
         font-size: 30px;
+        text-shadow: 2px 2px 4px red;
     }
 
     h5.contact-form-title{
@@ -1582,20 +1613,19 @@ form div{
 
     .contact-form{
         width: 50%;
+        background-color: #000000;
+        
         
     }
-
     .contact-form input{
         min-width: 300px;
         max-width: 800px;
         
     }
-    
     .contact-form input[type="submit"]{
         font-size: 18px;
         margin-bottom: 12px;
     }
-    
     input.inline{
         min-width: unset;
         max-width: unset;
