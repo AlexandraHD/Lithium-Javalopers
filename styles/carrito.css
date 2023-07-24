@@ -1,0 +1,771 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Wix+Madefor+Text:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: verdana;
+    font-family: nunito;
+}
+
+body{
+    background-color: #000000 ;
+}
+
+.btns{
+    display: none;   
+}
+
+nav{
+    display: flex;
+    height: 56px;
+    background-color: rgb(145, 1, 1);
+    color: #fff;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 8px;
+}
+
+.navbar-logo{
+    display: flex;
+    gap: 8px;
+    height: 56px;
+    align-items: center;
+}
+
+.nav-img{
+    height: 80px;
+}
+
+a{
+    text-decoration: none;
+    font-family: nunito;
+}
+
+.navbar-brand{
+    color: #fff;
+    font-weight: 700;
+    font-size: 20px;
+    font-family: nunito;
+}
+
+/*Menu desplegable*/
+.menu-toggle {
+    color: #fff;
+    font-size: 1.5rem;
+    position: absolute;
+    top: 5%;       /*desplaza hacia abajo*/
+    transform: translateY(-15%);    /*Hacia arriba*/
+    right: 2.5rem;
+    cursor: pointer;        /*Cursor manita*/
+    z-index: 1500;
+}
+.menu-toggle2 h2 {
+    font-size: 18px;
+    font-weight: 10px;
+}
+.fa-circle-user{
+    cursor: pointer;
+}
+.nav-text:hover {
+    color: black;
+}
+.nav-text{
+    margin-bottom: 5px;
+}
+.nav-list {
+    list-style: none;
+    position: fixed;
+    top: 10%;
+    left: 0;
+    width: 70%;
+    height: 60vh;
+    background-color: rgba(21, 20, 20, 0.95);
+    padding: 4.4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    z-index: 1250;
+    transform: translateX(-110%);
+}
+/*menu de seguir pedido*/
+.menu-horizontal {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    z-index: 2;
+}
+
+.nav-follow {
+    margin: auto;
+    margin-top: 6px;
+    margin-right: 25px;
+}
+
+.follow-order {
+    text-decoration: none;
+    color: #fff;
+}
+
+.menu-vertical {
+    font-size: 15px;
+    position: absolute;
+    display: none;
+    list-style: none;
+    width: 110px;
+    background-color: #BF202B;
+}
+
+.menu-horizontal li:hover .menu-vertical {
+    display: block;
+}
+
+.menu-vertical li:hover {
+    background-color: #ff868e;
+}
+
+.menu-vertical li a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 15px 15px 15px 20px;
+}
+
+.nav::before {
+    content: '';
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(255, 0, 0, 0.5);
+    z-index: 2000;
+    opacity: 0;
+    transform: scale(0);
+    transition: opacity .5s;
+
+}
+
+.menu-toggle .fa-times{
+    display: none;
+}
+
+.open.fa-times {
+    display: block;
+}
+
+.open.fa-bars {
+    display: none;
+}
+
+.open.nav-list {
+    transform: translateX(0);
+}
+
+.open.nav-list2{
+    transform: translateX(0);
+}
+
+.open .nav::before{
+    opacity: 1;
+    transform: scale(1);
+}
+
+.nav-item {
+    width: 10rem;
+    border-bottom: 2px solid rgba(255, 0, 0, .7);
+}
+
+.nav-link {
+    display: block;
+    color: #fff;
+    font-size: 1.2rem;
+    letter-spacing: 2px;
+    margin-right: -2px;
+}
+
+.nav-link:hover {
+    color: rgb(223, 25, 39);
+    font-weight: bold;
+}
+
+/*WHATSAPP BUTTON*/
+#image-whatssap{
+    border-radius: 20px;
+}
+.float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom: 15px;
+    right: 16px;
+	background-color:#4cc370;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+    font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+    z-index:100;
+}
+.float:hover {
+    background-color:#3d9e5a;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
+/* offset-x > | offset-y ^| blur-radius | spread-radius | color */
+@keyframes pulse {
+    0% {
+      transform: scale(1, 1);
+    }
+    50% {
+      opacity: 0.3;
+    }
+    100% {
+      transform: scale(1.45);
+      opacity: 0;
+    }
+  }
+  .pulse {
+    -webkit-animation-name: pulse;
+    animation-name: pulse;
+  }
+  
+  .nav-bottom {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-content: flex-end;
+    width: auto;
+    height: auto;
+    position: fixed;
+    z-index: 8;
+    bottom: 0px;
+    right: 0px;
+    padding: 5px;
+    margin: 0px;
+  }
+  @media (max-width: 360px) {
+    .nav-bottom {
+      width: 320px;
+    }
+  }
+  
+  .whatsapp-button {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 60px;
+    height: 60px;
+    z-index: 8;
+    transition: .3s;
+    margin: 10px;
+    padding: 7px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    border-radius: 50%;
+    background-color: black;
+    /* offset-x > | offset-y ^| blur-radius | spread-radius | color */
+    -webkit-box-shadow: 1px 1px 6px 0px rgba(68, 68, 68, 0.705);
+    -moz-box-shadow: 1px 1px 6px 0px rgba(68, 68, 68, 0.705);
+    box-shadow: 1px 1px 6px 0px rgba(68, 68, 68, 0.705);
+  }
+  
+  .circle-anime {
+    display: flex;
+    position: absolute;
+    justify-content: center;
+    align-content: center;
+    width: 60px;
+    height: 60px;
+    top: 15px;
+    right: 15px;
+    border-radius: 50%;
+    transition: .3s;
+    background-color: #77bb4a;
+    animation: pulse 1.2s 4.0s ease 4;
+  }
+  
+  .popup-whatsapp {
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    bottom: 85px;
+    right: 6px;
+    transition: .5s;
+    border-radius: 10px;
+    background-color: white;
+    /* offset-x > | offset-y ^| blur-radius | spread-radius | color */
+    -webkit-box-shadow: 2px 1px 6px 0px rgba(68, 68, 68, 0.705);
+    -moz-box-shadow: 2px 1px 6px 0px rgba(68, 68, 68, 0.705);
+    box-shadow: 2px 1px 6px 0px rgba(68, 68, 68, 0.705);
+    animation: slideInRight .6s 0.0s both;
+  }
+  .popup-whatsapp > div {
+    margin: 5px;
+  }
+  @media (max-width: 680px) {
+    .popup-whatsapp p {
+      font-size: 0.9em;
+    }
+  }
+  .popup-whatsapp > .content-whatsapp.-top {
+    display: flex;
+    flex-direction: column;
+  }
+  .popup-whatsapp > .content-whatsapp.-top p {
+    margin-top: 15px;
+    color: #585858;
+    font-family: nunito;
+    font-weight: 400;
+    font-size: 1.0em;
+  }
+  .popup-whatsapp > .content-whatsapp.-bottom {
+    display: flex;
+    flex-direction: row;
+  }
+  
+  .closePopup {
+    display: flex;
+    position: absolute;
+    right: 15px;
+    width: 25px;
+    height: 25px;
+    margin: 0 0 15px 0;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    background-color: red;
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
+    -moz-box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
+    box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
+  }
+  .closePopup:hover {
+    background-color: rgb(223, 25, 39)
+  }
+  
+  .send-msPopup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #ffffff;
+    margin: 0px 0px 0px 5px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    -webkit-box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
+    -moz-box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
+    box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
+  }
+  
+  .is-active-whatsapp-popup {
+    display: flex;
+    animation: slideInRight .6s 0.0s both;    /*Lo muestra a la derecha y se demora esos segs en aparecer*/
+    background-color: #fafafa;
+  }
+  
+  input.whats-input[type=text] {
+    width: 250px;
+    height: 40px;
+    box-sizing: border-box;
+    border: 0px solid #ffffff;
+    border-radius: 20px;
+    font-size: 1em;
+    background-color: #ffffff;
+    padding: 0px 0px 0px 10px;
+    -webkit-transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+    outline: none;
+    transition: .3s;
+  }
+  @media (max-width: 420px) {
+    input.whats-input[type=text] {
+      width: 225px;
+    }
+  }
+  input.whats-input::placeholder {
+    /* Most modern browsers support this now. */
+    color: rgba(68, 68, 68, 0.705);
+    opacity: 1;
+  }
+  input.whats-input[type=text]:focus {
+    background-color: #f8f8f8;
+    -webkit-transition: width 0.3s ease-in-out;
+    transition: width 0.3s ease-in-out;
+    transition: .3s;
+  }
+  
+  .icon-whatsapp-small {
+    width: 24px;
+    height: 24px;
+  }
+  
+  .icon-whatsapp {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .icon-font-color {
+    color: #ffffff;
+  }
+  
+  .icon-font-color--black {
+    color: #333333;
+    width: 70%;
+}
+/*fin del whattsap*/
+/*estilos para los detalles del producto*/
+.btn-red {
+    background-color: rgb(145, 1, 1) !important;
+    color: white !important;
+  }
+
+  /* Personaliza el borde del SweetAlert */
+  .border-red {
+    border: 2px solid rgb(145, 1, 1) !important;
+    box-shadow: 0 0 15px #fff;
+  }
+  .icon-swal{
+    background-color: rgb(145, 1, 1) !important;
+    border: 2px solid rgb(145, 1, 1) !important;
+    color: white !important;
+  }
+  .custom-title {
+    color: black; 
+    font-size: 25px; 
+  }
+  .div-swal{
+    text-align: left;
+    margin-left: 10px;
+  }
+  .screen{
+    margin-bottom: 8px;
+  }
+
+/*contenedor de los productos*/
+/*estilos de los productos*/
+.products-title-car h1{
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    margin: 25px;
+    text-shadow: 2px 2px 4px red;
+}
+.discount {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: black;
+    margin: 1312px, 64px, 932px, 64px;
+}
+
+#products{
+    width: 98%;
+}
+/*contenedor para la seccion de los filtros*/
+.filtro {
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+#filter{
+    background-color: rgb(229, 221, 207);
+    margin-left: 0.2%;
+    height: 500px;
+    margin-top: 20px;
+}
+/*Botón marca*/
+.brand{
+    padding: 3px 10px;
+    font-size: 12px;
+    text-align: center;
+    background-color: #DD2330;
+    border:1px solid #DD2330;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+/*Botón precio*/
+.price{
+    padding: 3px 10px;
+    font-size: 12px;
+    text-align: center;
+    background-color: #DD2330;
+    border:1px solid #DD2330;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-left: 8px;
+}
+/*Contenedor de todos los items*/
+#contents-filter{
+    display: grid;
+    grid-template-columns: 17% 82%;
+    grid-gap: 20px;
+    padding: 10px;
+}
+/*botón comprar*/
+.button-add{
+    font-size: 16px;
+    text-align: center;
+    background-color: #DD2330;
+    color: beige;
+    border: 2px solid #DD2330;
+    border-radius: 6px;
+    padding: 2px 6px;
+    position: absolute;
+    right: 20px;
+    bottom: 10px;
+    cursor: pointer;
+}
+.button-add:hover{
+    background-color: #BF202B;
+    color: black;
+}
+/*Botón detalles*/
+.button-ver{
+    font-size: 14px;
+    text-align: center;
+    color: rgb(12, 12, 12);
+    background-color: rgb(229, 221, 207);
+    border: 1px solid #DD2330;
+    border-radius: 4px;
+    padding: 1px 4px;
+    position: absolute;
+    left: 15px;
+    bottom: 10px;
+    cursor: pointer;
+}
+.button-ver:hover{
+    background-color: #DD2330;
+    color: beige;
+} 
+/*Contenedor de los productos*/
+.discount {
+    display: flex;
+    flex-wrap: wrap;
+}
+/*Contenedor de cada uno de los productos*/
+.product-container:hover{
+    box-shadow: 0px 10px 20px 0 rgb(25, 25, 24);
+}
+.product-container{
+    margin: 20px;
+    padding: 2px 16px;
+    position: relative;
+    background-color: rgb(229, 221, 207);
+    box-shadow: 0px 4px 8px 0 rgba(249, 244, 244, 0.2);
+    border-radius: 8px;
+    width: 250px;
+    height: 330px;
+    box-sizing: border-box;
+    z-index: 1;
+}
+/*Estilos de la imagen de los productos*/
+.product-container img {
+    width: 200px;
+    height: 200px;
+    margin-bottom: 4px;
+    margin-top: 8px;
+    margin-left: 10px;
+}
+/*Estilos del precio del producto*/
+.product-container .precio-item { 
+    position: absolute;
+    bottom: 40px;
+    left: 60px;
+}
+/*Estilos del nombre del producto*/
+.product-container .titulo-item{
+    text-align: left;
+    margin-top: 6px;
+}
+
+/*Botón de carrito de compras que esta en los div de los productos*/
+.product-container .button-car {
+    position: absolute;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
+    top: 15%;
+    right: 0%;
+    background-color: transparent;
+    border: 1px solid transparent;
+    cursor: pointer;
+    font-size: 16px;
+    cursor: pointer;
+}
+/*carrito de compras*/
+.header-carrito{
+    position: relative;
+}
+
+.container-carrito{
+ 
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    z-index: 2;
+    background-color:black ;
+    padding: 20px;
+    min-width: 200px;
+    height: 300px;
+    color: beige;
+    border: 1px solid rgb(45, 45, 44);
+    border-radius: 10px;
+    width: 300px;
+    margin-top: 20px;
+    text-align: center;
+}
+.carrito-total{
+    margin-top: 20px;
+}
+.carrito-total h3{
+    font-size: 20px;
+    font-weight: normal;
+    margin-bottom: 10px;
+}
+.cart-products{
+    height: 450px;
+    overflow-y: scroll;
+    margin-bottom: 20px;
+}
+.card-items{
+    margin-bottom: 25px;
+}
+.header-carrito .btn-cart{
+    cursor: pointer;
+}
+.img-carrito{
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+}
+#btn-finalizar-compra{
+    border-radius: 8px;
+    background-color: #DD2330;
+    color: beige;
+    border: 2px solid #DD2330;
+    cursor: pointer; 
+    width: 130px;
+}
+#btn-finalizar-compra a{
+    color: #fff;
+    font-size: 14px;
+}
+.button-delete {
+    background-color: #DD2330;
+    color: #fff;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 6px;
+    margin: 10px 0px;
+  }
+/* -------------------------------------------------------------------------- */
+/* ocultar carrito */
+.hidden{
+    display: none;
+    
+}
+
+  /*footer*/
+  #container-footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+footer{
+    background-color: rgb(145, 1, 1);
+    color: #fff;
+    padding: 20px;
+    height: 390px;
+}
+footer p{
+    font-size: 15px;
+    padding: 8px;
+    text-align: center;
+    margin-top: 30px;
+
+}
+footer a{
+    color: #fff;
+}
+
+.social-media h4{
+    font-size: 20px;
+    text-align: center;
+    text-shadow: 1px 1px #DD2330;
+    
+}
+.social-icons {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+.social-icons i {
+    font-size: 1.5rem;
+    color: #fff;
+    padding: .8rem 2rem;
+    
+}
+/*Responsive para pantallas grandes*/
+@media screen and (min-width: 750px) {
+    .menu-toggle {
+        display: none;
+    }
+
+    .nav-list {
+        display: none;
+    }
+
+    .btns{
+        display: flex;
+    }
+
+    .btn-us {
+        text-decoration: none;
+        color: white;
+        font-weight: 400;
+        margin-right: 20px;
+        margin-top: 6px;
+    }
+
+    .fa-circle-user{
+        display: flex;
+        margin-right: 16px;
+        margin-top: 16px;
+    }
+    
+    .btn-cart{
+        padding: 5px 8px;
+        color: white;
+        font-weight: 500;
+        border: none;
+        font-size: 20px;
+        font-family: nunito;
+    }
+
+    .btn-cart:hover{
+        color: rgb(223, 25, 39);
+    }    
+}
+

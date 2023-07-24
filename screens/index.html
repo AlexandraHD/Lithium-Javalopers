@@ -8,6 +8,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
     <link rel="stylesheet" href="/styles/users.css">
+    <link rel="stylesheet" href="/styles/whatsapp.css">
     <link rel="icon" href="/img/logo.jpg" type="image/icon type">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
 </head>
@@ -18,8 +19,8 @@
                 <nav>
                     <!--Logo-->
                     <div class="navbar-logo">
-                        <img class="nav-img" src="/img/logo.jpg" alt="Logo">
-                        <a class="navbar-brand" href="#">Lithium</a>
+                        <img class="nav-img" src="/img/logo2.png" alt="Logo">
+                        <a class="navbar-brand" href="/screens/index.html">Lithium</a>
                     </div>
                     <!--MENU TOGGLE-->
                     <div class="menu-toggle">
@@ -28,26 +29,27 @@
                     </div>
                     <ul class="nav-list">
                         <li class="nav-item">
-                            <a href="#" class="nav-link active">Inicio</a>
+                            <a href="/screens/index.html" class="nav-link active">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link ">Registrarse</a>
+                            <a href="bottonRI.html" class="nav-link ">Registrarse</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link ">Inicia Sesion</a>
+                            <a href="login.html" class="nav-link ">Inicia Sesion</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link ">Carrito</a>
+                            <a href="/screens/login.html" class="nav-link ">Carrito</a>
                         </li>
                         <li class="nav-item">
-                            <a href="#" class="nav-link ">Nosotros</a>
+                            <a href="#somos" class="nav-link ">Nosotros</a>
                         </li>
                     </ul>
                     <!--BUTTONS-->
                     <div class="btns">
-                        <a class="btn-register" type="button" href="#">Registrarse</a>
-                        <a class="btn-login" type="button" href="#">Inicia Sesión</a>
-                        <a class="btn-cart" type="button" href="#"><i class="fa-solid fa-cart-shopping" style="color: #ff0000;"></i> Carrito</a>
+                        <a class="btn-us" type="button" href="#somos">Nosotros</a>
+                        <a class="btn-register" type="button" href="bottonRI.html">Registrarse</a>
+                        <a class="btn-login" type="button" href="login.html">Inicia Sesión</a>
+                        <a class="btn-cart" type="button" href="/screens/catalogo.html"><i class="fa-solid fa-cart-shopping" style="color: #fff;"></i> Carrito</a>
                     </div>
                 </nav>
     </header>
@@ -57,30 +59,30 @@
         <input  class = "search--bar" type="text"  placeholder= "Buscar..."name="Texto" required>
        <div class="icon-search"> <i class="fa-solid fa-magnifying-glass" style="color: #FF4533;"></i> 
         <div class="space-search"></div>
-        </div>   
+       </div>   
     </div>
     <!--*****SEARCH-BAR END*****-->
 
     
     <!--** CATEGORIES**-->
         <div class="container-card">
-        <div class="card">
+        <div class="card" onclick="goToCategory('Phones')">
             <div class="face face--front"><i class="fa-solid fa-mobile-retro"></i></div>
-            <div class="face face--back" id="text-mobile">Celulares</div>
+            <div class="face face--back" id="text-mobile" onclick="goToCategory('celulares')">Celulares</div>
         </div>
-        <div class="card">
+        <div class="card" onclick="goToCategory('PC')">
             <div class="face face--front"><i class="fa-solid fa-computer"></i></div>
             <div class="face face--back">PC's</div>
         </div>
-        <div class="card">
+        <div class="card" onclick="goToCategory('Tablets')">
             <div class="face face--front"><i class="fa-solid fa-tablet-screen-button"></i></div>
             <div class="face face--back">Tablets</div>
         </div>
-        <div class="card">
+        <div class="card" onclick="goToCategory('Televisores')">
             <div class="face face--front"><i class="fa-solid fa-tv"></i></div>
             <div class="face face--back">Tv's</div>
         </div>
-        <div class="card">
+        <div class="card" onclick="goToCategory('Accesorios')">
             <div class="face face--front"><i class="fa-solid fa-headphones"></i></div>
             <div class="face face--back" id="text-headphones">Accesorios</div>
         </div>
@@ -88,76 +90,36 @@
     <!--** CATEGORIES END**-->
 
 	<!--Banner-->
-	<div class="carrousel">
-		<div class="conteCarrousel">
-			<div class="itemCarrousel" id="itemCarrousel-1">
-				<div class="itemCarrouselTarjeta">
-					<div class = "content2">
-						<h2 class = "title">BLACKDAYS</h2>
-						<p class = "text">¡Descubre el poder y la elegancia de los celulares Samsung! Encuentra el tuyo y sé parte de la revolución tecnológica.</p>
-					</div> 
-				</div>
-				<div class="itemCarrouselArrows">
-					<a href="#itemCarrousel-3">
-						<i class="fas fa-chevron-left"></i>
-					</a>
-					<a href="#itemCarrousel-2">
-						<i class="fas fa-chevron-right"></i>
-					</a> 
-                    <div class="itemCarrouselArrows2">
-                        <div class = "content2">
-                            <button class = "button-banner">Ver Más</button>
-                        </div>
-                    </div>
-				</div>
-			</div>
-			<div class="itemCarrousel" id="itemCarrousel-2">
-				<div class="itemCarrouselTarjeta">
-					<div class =  "content3">
-						<h2 class = "title">BLACKDAYS</h2>
-						<p class = "text">Descubre nuestras increíbles ofertas y encuentra los dispositivos que harán tu vida más fácil y emocionante.</p>
-					</div>
-				</div>
-				<div class="itemCarrouselArrows">
-					<a href="#itemCarrousel-1">
-						<i class="fas fa-chevron-left"></i>
-					</a>
-					<a href="#itemCarrousel-3">
-						<i class="fas fa-chevron-right"></i>
-					</a>
-                    <div class="itemCarrouselArrows2">
-                        <div class = "content3">
-                            <button class = "button-banner">Ver Más</button>
-                        </div>
-                    </div> 
-				</div>
-			</div>
-			<div class="itemCarrousel" id="itemCarrousel-3">
-				<div class="itemCarrouselTarjeta">
-					<div class="content4">
-						<h2 class = "title">BLACKDAYS</h2>
-						<p class = "text">¡Descubre la perfección en cada detalle con los increíbles iPhones de Apple! Sumérgete en un mundo de innovación y estilo.</p>
-						
-					</div>
-				</div>
-				<div class="itemCarrouselArrows">
-					<a href="#itemCarrousel-2">
-						<i class="fas fa-chevron-left"></i>
-					</a>
-					<a href="#itemCarrousel-1">
-						<i class="fas fa-chevron-right"></i>
-					</a>
-                    <div class="itemCarrouselArrows2">
-                        <div class = "content4">
-                            <button class = "button-banner">Ver Más</button>
-                        </div>
-                    </div>
-				</div>
-			</div>
-		</div>
-		
-	</div>
+    <div class="contenedor">
+        <div class="slider-contenedor">
 
+            <section class="contenido-slider">
+                <div class = "content-slider">
+                    <h2 class = "title" id="title">BLACKDAYS</h2><br>
+                    <p class = "text1">¡Descubre el poder y la elegancia de los celulares Samsung! Encuentra el tuyo y sé parte de la revolución tecnológica.</p>
+                    <button class = "button-banner" id="button-samsung">Ver Más <a href="#"></a></button>
+                </div>
+            </section>
+
+            <section class="contenido-slider">
+                <div class = "content-slider">
+                    <h2 class = "title" id="title">BLACKDAYS</h2><br>
+                    <p class = "text1">¡Descubre la perfección en cada detalle con los increíbles iPhones de Apple! Sumérgete en un mundo de innovación y estilo.</p>
+                    <button class = "button-banner">Ver Más <a href="#"></a></button>
+                </div>  
+            </section>
+
+            <section class="contenido-slider">
+                <div class = "content-slider">
+                    <h2 class = "title">BLACKDAYS</h2><br>
+                    <p class = "text1" id="text2">Descubre nuestras increíbles ofertas y encuentra los dispositivos que harán tu vida más fácil y emocionante.</p>
+                    <button class = "button-banner" id="button-iphone">Ver Más <a href="#"></a></button>
+                </div>
+            </section>
+        </div>
+    </div>
+	
+    <!--productos- seccion de ventajas-->
     <div class="container-box">
 
         <div class="box box1">
@@ -177,49 +139,71 @@
         </div>
 
     </div>
-
-    <h3>Imperdibles</h3>
+    <!--seccion de los imperdible de los productos-->
+    <h3 class = "imperdibles">Imperdibles</h3>
 
     <div class="discount">
         <div class="product-container">
             <img src="/img/imperdibles1.jpeg" alt="">
             <h5>iPhone 12 Pro Max 256gb 15% dto</h5>
             <h4>$1.325.263</h4>
-            <button class="button-ver">Detalles</button>
-            <button class="button-add">Comprar</button>
-            <div><button class="button-heart"><i class="fa-regular fa-heart"></i></button></div>
-            <div><button class="button-car"><i class="fa-solid fa-cart-shopping"></i></i></button></div>
+            <button class="button-ver" onclick="mostrarDetalles(1)">Detalles</button>
+            <button class="button-add"><a href="/screens/login.html">Comprar</a></button>
+    
         </div>
         
         <div class="product-container">
             <img src="/img/imperdibles2.jpeg" alt="">
             <h5>Laptop Asus Vivobook Pro 15 25%dto</h5>
             <h4>$1.325.263</h4>
-            <button class="button-ver">Detalles</button>
-            <button class="button-add">Comprar</button>
-            <div><button class="button-heart"><i class="fa-regular fa-heart"></i></button></div>
-            <div><button class="button-car"><i class="fa-solid fa-cart-shopping"></i></i></button></div>
+            <button class="button-ver" onclick="mostrarDetalles(2)">Detalles</button>
+            <button class="button-add"><a href="/screens/login.html">Comprar</a></button>
         </div>
         <div class="product-container">
             <img src="/img/imperdibles3.jpeg" alt="">
             <h5>Televisor Samsung 55 Crystal Uhd 4k 10%dto</h5>
             <h4>$1.325.263</h4>
-            <button class="button-ver">Detalles</button>
-            <button class="button-add">Comprar</button>
-            <div><button class="button-heart"><i class="fa-regular fa-heart"></i></button></div>
-            <div><button class="button-car"><i class="fa-solid fa-cart-shopping"></i></i></button></div>
+            <button class="button-ver" onclick="mostrarDetalles(3)">Detalles</button>
+            <button class="button-add"><a href="/screens/login.html">Comprar</a></button>
         </div>
         <div class="product-container">
             <img src="/img/imperdibles4.jpeg" alt="">
             <h5>Audífonos gamer Kotion G2000 15%dto</h5>
             <h4>$1.325.263</h4>
-            <button class="button-ver">Detalles</button>
-            <button class="button-add">Comprar</button>
-            <div><button class="button-heart"><i class="fa-regular fa-heart"></i></button></div>
-            <div><button class="button-car"><i class="fa-solid fa-cart-shopping"></i></i></button></div>
+            <button class="button-ver" onclick="mostrarDetalles(4)">Detalles</button>
+            <button class="button-add"><a href="/screens/login.html">Comprar</a></button>
         </div>
     </div><br>
 
+    <!--WHATSAPP BUTTON-->
+    <div class="nav-bottom">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+         <div class="popup-whatsapp fadeIn">
+             <div class="content-whatsapp -top"><button type="button" class="closePopup">
+                   <i class="material-icons icon-font-color">close</i>
+                 </button> 
+                <p> <img src="/img/logo.jpg" width="35" id="image-whatssap">  Hola, ¿cómo podemos ayudate? </p>
+             </div>
+
+             <div class="content-whatsapp -bottom">
+               <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
+                 <button class="send-msPopup" id="send-btn" type="button">
+                     <i class="material-icons icon-font-color--black">send</i>
+                 </button>
+             </div>
+
+         </div>
+
+         <button type="button" id="whats-openPopup" class="whatsapp-button">
+             <div class="float" >
+                <i class="fa fa-whatsapp my-float"></i></div>
+         </button>
+
+         <div class="circle-anime"></div>
+     </div>
+
+     
+    <!--------FOOTER--------->
 	<footer>
 		<div id = "container-footer">
 
@@ -227,17 +211,16 @@
 
 				<div class = "terms">
 					<h4>Sobre LITHIUM</h4><br>
-					<a href="">Terminos y Condiciones</a><br><br>
-					<a href="">Tratamiento de datos</a><br><br>
-					<a href="">Politicas de privacidad</a><br><br>
-					<a href=""></a>
-					<a href="">Contacto</a><br><br>
+					<a href="#">Terminos y Condiciones</a><br><br>
+					<a href="#">Tratamiento de datos</a><br><br>
+					<a href="#">Politicas de privacidad</a><br><br>
+					<a href="/screens/contactUs.html">Contacto</a><br><br>
 				</div>
 
 				<div class = "terms">
 					<h4>Categorias</h4><br>
-					<a href="">Productos</a><br><br>
-					<a href="">Promociones y ofertas</a><br><br>
+					<a href="/screens/carrito.html">Productos</a><br><br>
+					<a href="#">Promociones y ofertas</a><br><br>
 				</div>
 			</div>
 
@@ -288,12 +271,12 @@
                                 <a href="https://www.linkedin.com/in/alexandrahernandez-dev/?originalSubdomain=co">www.linkedin.com/in/</a>
                               </div><br><br>
                       
-                              <div class = "row">
-                                <img src="/img/Luis.jpeg"><br>
-                                <h4 class="name1">Luis Espitia</h4><br>
-                                <h5>(Desarrollador Full Stack Java)</h5><br>
-                                <a href="https://www.linkedin.com/feed/">www.linkedin.com/in/</a>
-                              </div><br><br>
+                             <div class = "row">
+                                 <img src="/img/Luis.jpeg"><br>
+                                 <h4 class="name1">Luis Espitia</h4><br>
+                                 <h5>(Desarrollador Full Stack Java)</h5><br>
+                                 <a href="https://www.linkedin.com/feed/">www.linkedin.com/in/</a>
+                             </div><br><br>
                               
                               <div class = "row">
                                 <img src="/img/Karen.jpeg"><br>
@@ -343,45 +326,12 @@
 			</ul>
 		</div>
     </footer>
-    <!--Script para el despliegue de Nosotros en el footer-->
-	<script>
-        const accordion = document.getElementsByClassName('container2');
-        for (i=0; i<accordion.length; i++) {
-            accordion[i].addEventListener('click', function () {
-                this.classList.toggle('active')
-            })
-        }
-        const accordion3 = document.getElementsByClassName('content2');
-        for (i=0; i<accordion3.length; i++) {
-        accordion3[i].addEventListener('click', function () {
-            this.classList.toggle('active')
-        })
-        }
-        const accordion4 = document.getElementsByClassName('content3');
-
-        for (i=0; i<accordion4.length; i++) {
-        accordion4[i].addEventListener('click', function () {
-            this.classList.toggle('active')
-        })
-        }
-    </script>
-
-    <!--Script para el menu desplegable-->
-    <script>
-
-        const selectElement = function(element) {
-            return document.querySelector(element);     //selecciona los elementos
-        }
-
-
-        let menuToggle = selectElement('.menu-toggle');     //Selecciona el menu
-        let body = selectElement('body');
-
-        menuToggle.addEventListener('click', function(){        //Abre el menu
-            body.classList.toggle('open');
-        })
-
-    </script>
-
+    <!--Script for menu toggle-->
+    <script src="/scripts/index.js"></script>
+    <!--Script for whatsapp button-->
+    <script src="/scripts/whats.js"></script>
+    <script src="https://kit.fontawesome.com/e8d0c66caa.js" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.0.20/dist/sweetalert2.all.min.js"></script>
+    <script src="/scripts/data.js"></script>
 </body>
 </html>

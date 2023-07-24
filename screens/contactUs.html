@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/ea06c7c0f7.js" crossorigin="anonymous"></script>
+    <title>Lithium</title>
+    <script src="https://kit.fontawesome.com/ea06c7c0f7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="/styles/users.css">
+    <link rel="icon" href="/img/logo.jpg" type="image/icon type">
+</head>
+
+<body>
+    <header>
+        <!--NAVBAR-->
+        <nav>
+            <!--Logo-->
+            <div class="navbar-logo">
+                <img class="nav-img" src="/img/logo2.png" alt="Logo">
+                <a class="navbar-brand" href="/screens/index.html">Lithium</a>
+            </div>
+            <!--MENU TOGGLE-->
+            <div class="menu-toggle">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-times"></i>
+            </div>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="/screens/index.html" class="nav-link active">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/screens/signup.html" class="nav-link ">Registrarse</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/screens/login.html" class="nav-link ">Inicia Sesion</a>
+                </li>
+                <li class="nav-item">
+                    <a href="/screens/login.html" class="nav-link ">Carrito</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#somos" class="nav-link ">Nosotros</a>
+                </li>
+            </ul>
+            <!--BUTTONS-->
+            <div class="btns">
+                <a class="btn-register" type="button" href="/screens/signup.html">Registrarse</a>
+                <a class="btn-login" type="button" href="/screens/login.html">Inicia Sesión</a>
+                <a class="btn-cart" type="button" href="/screens/login.html"><i class="fa-solid fa-cart-shopping"
+                        style="color: #fff;"></i> Carrito</a>
+            </div>
+        </nav>
+    </header>
+
+    <!--FORM-->
+    <div class="body-contact"><br>
+        <main class="contact-form">
+
+            <form action="https://formspree.io/f/xdovrwll" method="POST" id="contact-form">
+                <h2 class="contact-form-title">Contáctanos</h2>
+                <h5 class="contact-form-title">Envíanos tus comentarios y solicitudes. Responderemos en el menor tiempo posible</h5><br>
+                <div class = "form-body">
+                    <div>
+                        <label for="name">Nombre</label>
+                        <input type="text" id="name" placeholder="Tu nombre completo" name="name" required>
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" name="email" id="email" placeholder="example@mail.com">
+                    </div>
+                    <div>
+                        <label for="phone">Teléfono</label>
+                        <input type="text" id="phone" name="phone" placeholder="Numero de contacto">
+                    </div>
+                    <hr>
+                    <div class="contact-type">
+                        <label for="contact-type">¿Cómo podemos ayudarte?</label>
+                        <label for="congrats"><input id="contact-type" type="radio" name="contact-type"
+                                class="inline" />Felicitaciones</label>
+                        <label for="complain"><input id="contact-type" type="radio" name="contact-type"
+                                class="inline" />Queja</label>
+                        <label for="dispute"><input id="contact-type" type="radio" name="contact-type"
+                                class="inline" />Reclamo</label>
+                    </div>
+                    <hr>
+                    <div>
+                        <label for="more-info">Detalles de tu petición
+                            <textarea id="more-info" name="moreinfo"
+                                placeholder="Escribe los detalles de tu petición..."></textarea>
+                        </label>
+                    </div>
+                    <div>
+                        <label for="terms-and-conditions">
+                            <input id="terms-and-conditions" type="checkbox" required name="terms-and-conditions"
+                                class="inline" /> Acepto los <a class="terms-link" href="">Términos y Condiciones</a>
+                        </label>
+                    </div>
+                    <input type="submit" value="Enviar" id="contact-submit" />
+                </div>
+            </form><br>
+        </main>
+    </div>
+
+
+    <footer>
+
+        <div id="container-footer">
+
+            <div class="column1">
+                <div class="terms">
+                    <h4>Sobre LITHIUM</h4><br>
+                    <a href="">Terminos y Condiciones</a><br><br>
+                    <a href="">Tratamiento de datos</a><br><br>
+                    <a href="">Politicas de privacidad</a><br><br>
+                    <a href="/screens/contactUs.html">Contacto</a><br><br>
+                </div>
+            </div>
+
+            <div class="column">
+                <div class="terms">
+                    <h4>Categorias</h4><br>
+                    <a href="">Productos</a><br><br>
+                    <a href="">Promociones y ofertas</a><br><br>
+                </div>
+            </div>
+        </div>
+        <div class="social-media">
+            <h4>Siguenos en redes</h4>
+            <ul class="social-icons">
+                <li>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-facebook-square"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fab fa-pinterest"></i></a>
+                </li>
+                <li>
+                    <a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+                </li>
+            </ul>
+        </div>
+    </footer>
+
+    <!--WHATSAPP BUTTON-->
+    <div class="nav-bottom">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <div class="popup-whatsapp fadeIn">
+            <div class="content-whatsapp -top"><button type="button" class="closePopup">
+                    <i class="material-icons icon-font-color">close</i>
+                </button>
+
+                <p> <img src="/img/logo.jpg" width="50" id="image-whatssap"> Hola, ¿cómo podemos ayudate? </p>
+
+            </div>
+            <div class="content-whatsapp -bottom">
+                <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
+
+
+
+
+                <button class="send-msPopup" id="send-btn" type="button">
+                    <i class="material-icons icon-font-color--black">send</i>
+                </button>
+
+            </div>
+        </div>
+        <button type="button" id="whats-openPopup" class="whatsapp-button">
+            <div class="float">
+                <i class="fa fa-whatsapp my-float"></i>
+            </div>
+        </button>
+        <div class="circle-anime"></div>
+    </div>
+
+    <!--Script for menu toggle-->
+    <script src="/scripts/menuDesplegable.js"></script>
+    <!--Script for whatsapp button-->
+    <script src="/scripts/whats.js"></script>
+
+    <body>
+
+    </body>
+
+</html>

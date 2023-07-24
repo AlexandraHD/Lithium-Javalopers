@@ -1,0 +1,153 @@
+-- MySQL Workbench Forward Engineering
+
+SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0;
+SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0;
+SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='ONLY_FULL_GROUP_BY,STRICT_TRANS_TABLES,NO_ZERO_IN_DATE,NO_ZERO_DATE,ERROR_FOR_DIVISION_BY_ZERO,NO_ENGINE_SUBSTITUTION';
+
+-- -----------------------------------------------------
+-- Schema lithium
+-- -----------------------------------------------------
+
+-- -----------------------------------------------------
+-- Schema lithium
+-- -----------------------------------------------------
+CREATE SCHEMA IF NOT EXISTS `lithium` DEFAULT CHARACTER SET utf8mb3 ;
+USE `lithium` ;
+
+-- -----------------------------------------------------
+-- Table `lithium`.`user`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `lithium`.`user` (
+  `id_User` INT NOT NULL AUTO_INCREMENT,
+  `name_User` VARCHAR(45) NOT NULL,
+  `email_User` VARCHAR(45) NOT NULL,
+  `address_User` VARCHAR(45) NULL DEFAULT NULL,
+  `phone_User` VARCHAR(20) NOT NULL,
+  `password_User` VARCHAR(45) NOT NULL,
+  `image_User` LONGTEXT NULL DEFAULT NULL,
+  `reg_Date_User` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id_User`))
+ENGINE = InnoDB
+AUTO_INCREMENT = 8
+DEFAULT CHARACTER SET = utf8mb3;
+
+
+-- -----------------------------------------------------
+-- Table `lithium`.`cart`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `lithium`.`cart` (
+  `id_Cart` INT NOT NULL AUTO_INCREMENT,
+  `total` DOUBLE NOT NULL,
+  `user_id_User` INT NOT NULL,
+  PRIMARY KEY (`id_Cart`),
+  INDEX `fk_cart_user1_idx` (`user_id_User` ASC) VISIBLE,
+  CONSTRAINT `fk_cart_user1`
+    FOREIGN KEY (`user_id_User`)
+    REFERENCES `lithium`.`user` (`id_User`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb3;
+
+
+-- -----------------------------------------------------
+-- Table `lithium`.`seller`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `lithium`.`seller` (
+  `id_Seller` INT NOT NULL AUTO_INCREMENT,
+  `name_Seller` VARCHAR(45) NOT NULL,
+  `activity_Seller` VARCHAR(45) NOT NULL,
+  `address_Seller` VARCHAR(45) NULL DEFAULT NULL,
+  `email_Seller` VARCHAR(45) NOT NULL,
+  `phone_Seller` VARCHAR(20) NOT NULL,
+  `password_Seller` VARCHAR(45) NOT NULL,
+  `image_Company` LONGTEXT NULL DEFAULT NULL,
+  `reg_Date_Seller` TIMESTAMP NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  PRIMARY KEY (`id_Seller`))
+ENGINE = InnoDB
+AUTO_INCREMENT = 4
+DEFAULT CHARACTER SET = utf8mb3;
+
+
+-- -----------------------------------------------------
+-- Table `lithium`.`order`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `lithium`.`order` (
+  `id_Order` INT NOT NULL AUTO_INCREMENT,
+  `total` DOUBLE NOT NULL,
+  `user_id_User` INT NOT NULL,
+  `seller_id_Seller` INT NOT NULL,
+  PRIMARY KEY (`id_Order`, `user_id_User`, `seller_id_Seller`),
+  INDEX `fk_order_user1_idx` (`user_id_User` ASC) VISIBLE,
+  INDEX `fk_order_seller1_idx` (`seller_id_Seller` ASC) VISIBLE,
+  CONSTRAINT `fk_order_seller1`
+    FOREIGN KEY (`seller_id_Seller`)
+    REFERENCES `lithium`.`seller` (`id_Seller`),
+  CONSTRAINT `fk_order_user1`
+    FOREIGN KEY (`user_id_User`)
+    REFERENCES `lithium`.`user` (`id_User`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb3;
+
+
+-- -----------------------------------------------------
+-- Table `lithium`.`payment_method`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `lithium`.`payment_method` (
+  `id_Payment_method` INT NOT NULL AUTO_INCREMENT,
+  `type` VARCHAR(45) NOT NULL,
+  `expiration_Date` DATE NOT NULL,
+  `user_idUser` INT NOT NULL,
+  PRIMARY KEY (`id_Payment_method`, `user_idUser`),
+  INDEX `fk_payment_method_user1_idx` (`user_idUser` ASC) VISIBLE,
+  CONSTRAINT `fk_payment_method_user1`
+    FOREIGN KEY (`user_idUser`)
+    REFERENCES `lithium`.`user` (`id_User`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb3;
+
+
+-- -----------------------------------------------------
+-- Table `lithium`.`product`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `lithium`.`product` (
+  `id_Product` INT NOT NULL AUTO_INCREMENT,
+  `name_Product` VARCHAR(50) NOT NULL,
+  `category` VARCHAR(45) NULL DEFAULT NULL,
+  `price` DOUBLE NOT NULL,
+  `quantity` INT NOT NULL,
+  `description` VARCHAR(100) NULL DEFAULT NULL,
+  `image_Product` LONGTEXT NOT NULL,
+  `cart_id_Cart` INT NOT NULL,
+  `seller_id_Seller` INT NOT NULL,
+  PRIMARY KEY (`id_Product`, `seller_id_Seller`),
+  INDEX `fk_product_cart1_idx` (`cart_id_Cart` ASC) VISIBLE,
+  INDEX `fk_product_seller1_idx` (`seller_id_Seller` ASC) VISIBLE,
+  CONSTRAINT `fk_product_cart1`
+    FOREIGN KEY (`cart_id_Cart`)
+    REFERENCES `lithium`.`cart` (`id_Cart`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb3;
+
+
+-- -----------------------------------------------------
+-- Table `lithium`.`product_has_order`
+-- -----------------------------------------------------
+CREATE TABLE IF NOT EXISTS `lithium`.`product_has_order` (
+  `id_product_order` INT NOT NULL AUTO_INCREMENT,
+  `product_id_Product` INT NOT NULL,
+  `order_id_Order` INT NOT NULL,
+  PRIMARY KEY (`id_product_order`, `product_id_Product`, `order_id_Order`),
+  INDEX `fk_product_has_order_order1_idx` (`order_id_Order` ASC) VISIBLE,
+  INDEX `fk_product_has_order_product1_idx` (`product_id_Product` ASC) VISIBLE,
+  CONSTRAINT `fk_product_has_order_order1`
+    FOREIGN KEY (`order_id_Order`)
+    REFERENCES `lithium`.`order` (`id_Order`),
+  CONSTRAINT `fk_product_has_order_product1`
+    FOREIGN KEY (`product_id_Product`)
+    REFERENCES `lithium`.`product` (`id_Product`))
+ENGINE = InnoDB
+DEFAULT CHARACTER SET = utf8mb3;
+
+
+SET SQL_MODE=@OLD_SQL_MODE;
+SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS;
+SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS;

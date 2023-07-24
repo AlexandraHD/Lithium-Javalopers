@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/e8d0c66caa.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/ea06c7c0f7.js" crossorigin="anonymous"></script>
+    <title>Lithium</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.16.6/dist/sweetalert2.all.min.js"></script>
+    <link rel="icon" href="/img/logo.jpg" type="image/icon type">
+    <link rel="stylesheet" href="/styles/catalogo.css">
+</head>
+<body>
+    <header>		
+        <!--NAVBAR-->
+                <nav>
+                    <!--Logo-->
+                    <div class="navbar-logo">
+                        <img class="nav-img" src="/img/logo2.png" alt="Logo">
+                        <a class="navbar-brand" href="/screens/index.html">Lithium</a>
+                    </div>
+                    <!--MENU TOGGLE-->
+                    <div class="menu-toggle">
+                        <i class="fas fa-bars"></i>
+                        <i class="fas fa-times"></i>
+                    </div>
+                    <ul class="nav-list">
+                        <li class="nav-item">
+                            <a href="/screens/index.html" class="nav-link active">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="bottonRI.html" class="nav-link ">Registrarse</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="login.html" class="nav-link ">Inicia Sesion</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="/screens/login.html" class="nav-link ">Carrito</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#somos" class="nav-link ">Nosotros</a>
+                        </li>
+                    </ul>
+                    <!--BUTTONS-->
+                    <div class="btns">
+                        <a class="btn-us" type="button" href="#somos">Nosotros</a>
+                        <a class="btn-register" type="button" href="bottonRI.html">Registrarse</a>
+                        <a class="btn-login" type="button" href="login.html">Inicia Sesión</a>
+                        <a class="btn-cart" type="button" href="/screens/carrito.html"><i class="fa-solid fa-cart-shopping" style="color: #fff;"></i> Carrito</a>
+                    </div>
+                </nav>
+    </header>
+    <!--WHATSAPP BUTTON-->
+    <div class="nav-bottom">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+         <div class="popup-whatsapp fadeIn">
+             <div class="content-whatsapp -top"><button type="button" class="closePopup">
+                   <i class="material-icons icon-font-color">close</i>
+                 </button> 
+               
+                <p> <img src="/img/logo.jpg" width="35" id="image-whatssap">  Hola, ¿cómo podemos ayudate? </p>
+                
+             </div>
+             <div class="content-whatsapp -bottom">
+               <input class="whats-input" id="whats-in" type="text" Placeholder="Enviar mensaje..." />
+                 <button class="send-msPopup" id="send-btn" type="button">
+                     <i class="material-icons icon-font-color--black">send</i>
+                 </button>
+
+             </div>
+         </div>
+         <button type="button" id="whats-openPopup" class="whatsapp-button">
+             <div class="float" >
+                <i class="fa fa-whatsapp my-float"></i></div>
+         </button>
+         <div class="circle-anime"></div>
+     </div>
+
+     
+    <!--Render Product-->
+    <main>
+        <div id="products">
+            <div class="discount"></div>
+        </div>
+
+        <div class="popup-productDetail">
+            <!-- Content popup -->
+        </div>
+    </main>
+
+
+    <footer >
+        
+        <div id = "container-footer">
+            <div class = "column1">
+                <div class = "terms">
+                    <h4>Sobre LITHIUM</h4><br>
+                    <a href="">Terminos y Condiciones</a><br><br>
+                    <a href="">Tratamiento de datos</a><br><br>
+                    <a href="">Politicas de privacidad</a><br><br>
+                    <a href="/screens/contactUs.html">Contacto</a><br><br>
+                </div>
+            </div>
+
+            <div class = "column">
+                <div class = "terms">
+                    <h4>Categorias</h4><br>
+                    <a href="">Productos</a><br><br>
+                    <a href="">Promociones y ofertas</a><br><br>
+                </div>
+            </div>
+        </div>
+        <div class="social-media">
+			<h4>Siguenos en redes</h4>
+			<ul class="social-icons">
+				<li>
+					<a href="#"><i class="fab fa-twitter"></i></a>
+				</li>
+				<li>
+					<a href="#"><i class="fab fa-facebook-square"></i></a>
+				</li>
+				<li>
+					<a href="#"><i class="fab fa-pinterest"></i></a>
+				</li>
+				<li>
+					<a href="#"><i class="fa-brands fa-square-whatsapp"></i></a>
+				</li>
+
+			</ul>
+		</div>
+        <p>&copy; 2023- Lithium</p>
+    </footer>
+    <script src="/scripts/catalogo.js"></script>
+    <script src="/scripts/whats.js"></script>
+    <script src="/scripts/index.js"></script>
+</body>
+</html>

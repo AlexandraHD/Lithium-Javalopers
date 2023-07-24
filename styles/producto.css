@@ -340,10 +340,14 @@ main {
 }
 
 .text-description,.text-additional-information,.text-reviews {
-	font-size: 13px;
+	font-size: 15px;
 	color: white;
 	line-height: 22px;
 	margin-top: 25px;
+}
+.product-characteristics{
+    margin-left: 30px;
+    font-size: 15px;
 }
 /*estilos a la parte de contacto*/
 .container-social {
@@ -566,4 +570,15 @@ footer p{
     .btn-cart:hover{
         color: rgb(223, 25, 39);
     } 
+}
+@media screen and (max-width: 767px) {
+    /*estilo al main (informacion del producto)*/
+    main {
+	display: block;
+    }
+    /*estilos a todo el contenedor de las imagenes del producto*/
+    .container-img {
+    margin-left: 40px;
+    text-align: center;
+}
 }
