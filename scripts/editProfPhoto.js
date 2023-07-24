@@ -2,7 +2,7 @@ const saveChangePhoto = async (e) => {
     const newPhoto = document.getElementById('new-photo').value;
     const usr = localStorage.getItem("user")
     const user = JSON.parse(usr)
-    user.addressUser = newPhoto
+    user.imageUser = newPhoto
 
     try {
         const response = await fetch(`http://localhost:8080/CrudRepo/modificarUser`, {
