@@ -21,7 +21,7 @@ signupForm.addEventListener('submit', (e) => {
     const email = document.querySelector('#email').value
     const telefono = document.querySelector('#telefono').value
     const direccion = document.querySelector('#direccion').value
-    const imagen = document.querySelector('#imagenProducto').value
+    const imagen = document.querySelector('#imagePerfilEmpresa').value
     const password = document.querySelector('#password').value
     //const passwordConf = document.querySelector('#password-confirm').value
 
