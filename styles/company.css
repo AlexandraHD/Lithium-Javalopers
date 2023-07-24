@@ -70,7 +70,7 @@
 }
 .usuario .info .button-dir{
     position: absolute;
-    left: 360px;
+    left: 350px;
     top: 530px;
     background-color: transparent;
     color: white;
@@ -106,7 +106,7 @@
     font-size: 16px;
     position: absolute;
     top: 260px;
-    right: 280px;
+    right: 300px;
     border: solid 2px #DD2330;
     background-color: #DD2330;
     cursor: pointer;
@@ -439,4 +439,54 @@ form div{
     }
     
 
+}
+@media screen and (max-width: 940px ) {
+    .usuario h1 {
+        position: absolute;
+        left: 25%;
+    }
+    .img{
+        position: absolute;
+        top: 10%;
+        left: 37%;
+
+    }
+    .usuario .info .button-edit{
+        position: absolute;
+        top: 30px;
+        left: 90%;
+
+    }
+    .info1{
+        position: absolute;
+        left: 29%;
+        top: 300px;
+    }
+    .usuario .pago {
+        top: 600px;
+        left: 30%;
+    }
+    .usuario .store{
+        top: 770px;
+        left: 43%;
+
+    }
+    .usuario .grupo1{
+        top: 900px;
+        left: 25%;
+        width: 200px;
+
+    }
+    .usuario .grupo2 {
+        top: 900px;
+        right: 25%;
+    }
+
+    .usuario .grupo1 p{
+        text-align: center;
+    }
+    .usuario .info .button-dir{
+        top: 190px;
+        left: 335px;
+    }
 }
