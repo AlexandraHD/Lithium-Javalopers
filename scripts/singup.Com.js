@@ -51,5 +51,15 @@ fetch(url, fetchData)
   .catch(error => {
     console.error('Error al guardar los datos:', error);    
     // Manejar el error (si aplica)
+
+
+  });
+  Swal.fire({
+    icon: 'success',
+    title: 'Tu perfil fue creado!',
+    showConfirmButton: false,
+    timer: 1500
+  }).then(function() {
+    window.location = "perfilEmpresa.html";
   });
 });

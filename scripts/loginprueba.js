@@ -1,4 +1,4 @@
-const usr = localStorage.getItem("user")
+const usr = localStorage.getItem("seller")
 const user = JSON.parse(usr)
 // Mostrar los detalles del usuario en el HTML
 document.getElementById('nombre-usuario').textContent = user.nameUser;
