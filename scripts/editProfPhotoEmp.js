@@ -1,8 +1,8 @@
 const saveChangePhoto = async (e) => {
     const newPhoto = document.getElementById('new-photo').value;
-    const usr = localStorage.getItem("user")
-    const user = JSON.parse(usr)
-    user.imageUser = newPhoto
+    const slr = localStorage.getItem("seller")
+    const seller = JSON.parse(slr)
+    seller.imageSeller = newPhoto
 
     try {
         const response = await fetch(`http://localhost:8080/CrudRepo/modificarUser`, {
@@ -10,13 +10,13 @@ const saveChangePhoto = async (e) => {
         headers: {
             'Content-Type': 'application/json', // Indicamos que estamos enviando datos en formato JSON
         },
-        body: JSON.stringify(user), // Convertimos los datos a formato JSON
+        body: JSON.stringify(seller), // Convertimos los datos a formato JSON
         })
         
         const closePopupPhoto = document.getElementById('popup-photoEdit');
         closePopupPhoto.style.display = 'none';
 
-        window.localStorage.setItem("user", JSON.stringify(user));
+        window.localStorage.setItem("seller", JSON.stringify(seller));
 
         Swal.fire({
             icon: 'success',
@@ -24,7 +24,7 @@ const saveChangePhoto = async (e) => {
             showConfirmButton: false,
             timer: 1500
           }).then(function() {
-            window.location = "perfilpersona.html";
+            window.location = "perfilEmpresa.html";
           });
     } catch {
 
