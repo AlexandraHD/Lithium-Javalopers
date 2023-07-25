@@ -5,9 +5,11 @@
 
 /* -------------------------------------------------------------------------- */
 let products_container = document.querySelector('.discount');
+//const filter_buttons = document.querySelector('.filter-buttons');
 let productos_str = ''
 //funcion renderizar los productos del catalogo
 const renderizarCatalogo = (array) => {
+  products_container.innerHTML = '';
   array.forEach(producto => {
     const product_card = document.createElement('div')
     product_card.classList.add('product-container')
@@ -24,9 +26,45 @@ const renderizarCatalogo = (array) => {
   });
 }
 renderizarCatalogo(productos)
+
 /* -------------------------------------------------------------------------- */
+// Función para filtrar los productos por categoría
+function filtrarProductos(categoria) {
+  let productosFiltrados = [];
 
+  if (categoria === 0) {
+    productosFiltrados = productos;
+  } else {
+    productosFiltrados = productos.filter(producto => producto.categoria.nombre === categoria);
+  }
+  renderizarCatalogo (productosFiltrados);
+}
+// Mostrar todos los productos al cargar la página
+filtrarProductos('todos');
+function mostrarTodos(){
+  productosFiltrados = productos;
+  renderizarCatalogo (productosFiltrados);
+}
+mostrarTodos();
+//funcion para filtrar productos por marca
+function filtrarMarca(marca) {
+  let productosFiltrados = [];
 
+  if (marca === 0) {
+    productosFiltrados = productos;
+  } else {
+    productosFiltrados = productos.filter(producto => producto.marca.nombre === marca);
+  }
+  renderizarCatalogo (productosFiltrados);
+}
+// Mostrar todos los productos al cargar la página
+filtrarProductos('todos');
+function mostrarTodos(){
+  productosFiltrados = productos;
+  renderizarCatalogo (productosFiltrados);
+}
+mostrarTodos();
+/* -------------------------------------------------------------------------- */
 /* ---------------------- mostrar y ocultar el carrito ---------------------- */
 
 const hidden = (elemento) => {

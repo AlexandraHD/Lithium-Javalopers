@@ -485,31 +485,27 @@ a{
     margin-left: 0.2%;
     height: 500px;
     margin-top: 20px;
+    border: 2px solid rgb(145, 1, 1);
+    box-shadow: 2px 2px 4px rgba(219, 219, 219, 0.3);
 }
-/*Botón marca*/
-.brand{
-    padding: 3px 10px;
-    font-size: 12px;
+.title-filter{
+    margin-top: 10px;
     text-align: center;
-    background-color: #DD2330;
-    border:1px solid #DD2330;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: 8px;
 }
-/*Botón precio*/
-.price{
-    padding: 3px 10px;
-    font-size: 12px;
-    text-align: center;
-    background-color: #DD2330;
-    border:1px solid #DD2330;
-    color: #fff;
-    border-radius: 5px;
-    cursor: pointer;
-    margin-left: 8px;
+.filter-container{
+    margin-top: 10px;
+    margin-left: 15px;
 }
+.filter-container ul{
+    font-size: 17px;
+    list-style: none;
+    cursor: pointer;
+}
+.category{
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
 /*Contenedor de todos los items*/
 #contents-filter{
     display: grid;

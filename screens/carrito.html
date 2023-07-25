@@ -103,33 +103,28 @@
     <!--Filtros-->
     <div id="contents-filter">
         <div id="filter">
-            <h2 class="title">Filtar por:</h2>
-            <!--boton desplegable-->
-            <div class="buttom-expand">
-                <button class="brand">Marca
-                    <i class="fa-solid fa-chevron-down"></i>
-                </button>
+            <h2 class="title-filter">Filtar por:</h2>
+            <h3 class = "category">Categoria</h3>
+            <div class="filter-container">
+                <ul>
+                  <li onclick="mostrarTodos()">Todos</li>
+                  <li onclick="filtrarProductos('celulares')">Celulares</li>
+                  <li onclick="filtrarProductos('laptops')">Laptops</li>
+                  <li onclick="filtrarProductos('televisores')">Televisores</li>
+                  <li onclick="filtrarProductos('accesorios')">Accesorios</li>
+                  <li onclick="filtrarProductos('tablets')">Tablets</li>
+                </ul>
             </div>
-            <!--contenido que esta dentro del boton de expander en la opcion de marca-->
-            <div class="contents-brand">
-                <div id="container-brand">
-                    <div class="filtro">
-                        <form class="">
-                            <label>
-                                <input type="checkbox" name="Samsung" value="Samsung">Samsung
-                            </label><br>
-                            <label>
-                                <input type="checkbox" name="Apple" value="Apple">Apple
-                            </label><br>
-                            <label>
-                                <input type="checkbox" name="Xiaomi" value="Xiaomi">Xiaomi
-                            </label><br>
-                            <label>
-                                <input type="checkbox" name="Huawei" value="Huawei">Huawei
-                            </label><br>
-                        </form>
-                    </div>
-                </div>
+            <h3 class = "category">Marca</h3>  
+            <div class="filter-container">
+                <ul>
+                  <li onclick="filtrarMarca('Apple')">Apple</li>
+                  <li onclick="filtrarMarca('Asus')">Asus</li>
+                  <li onclick="filtrarMarca('Samsung')">Samsung</li>
+                  <li onclick="filtrarMarca('Huawei')">Huawei</li>
+                  <li onclick="filtrarMarca('Lenovo')">Lenovo</li>
+                  <li onclick="filtrarMarca('Otras marcas')">Otras marcas</li>
+                </ul>
             </div>
         </div>
         <!--filtrar produsctos-->

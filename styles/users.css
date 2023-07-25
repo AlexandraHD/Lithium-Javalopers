@@ -251,6 +251,9 @@ a{
     flex-shrink: 0;
     color: #fff;
 }
+.button-banner a{
+    color: #fff;
+}
 .contenido-slider:first-child{
     background-image: url(/img/samsun2.png);
     background-repeat: no-repeat;

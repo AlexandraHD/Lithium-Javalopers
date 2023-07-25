@@ -348,6 +348,24 @@ main .title{
     font-weight: bold;
 }
 
+/*estilos para el pop up*/
+
+/* Personaliza el borde del SweetAlert */
+.border-red {
+  border: 2px solid rgb(145, 1, 1) !important;
+  box-shadow: 0 0 15px #fff;
+}
+.btn-red {
+  background-color: rgb(145, 1, 1) !important;
+  color: white !important;
+}
+
+.custom-title {
+  color: black; 
+  font-size: 25px; 
+}
+
+
 /*WHATSAPP BUTTON*/
 #image-whatssap{
     border-radius: 20px;
