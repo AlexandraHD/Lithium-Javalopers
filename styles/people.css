@@ -24,7 +24,7 @@
 }
 .usuario .img{
     border-radius: 50%;
-    
+    border: 2px solid crimson;
 }
 .usuario .avatar .button-img{
     position: absolute;
@@ -37,6 +37,7 @@
 }
 .usuario .avatar{
     margin-left: 50px;
+   
 }
 .usuario .info1{
     padding-top: 10px;
@@ -58,6 +59,11 @@
     color: white;
     border: 0;
     cursor: pointer;
+}
+.usuario .avatar .img{
+    width: 200px;
+    height: 200px;
+   
 }
 .usuario .info .button-dir{
     position: absolute;
@@ -145,6 +151,66 @@
     text-decoration: none;
     font-family: nunito;
 }
+
+@media screen and (max-width: 940px ) {
+    .usuario h1 {
+        position: absolute;
+        left: 25%;
+    }
+    .img{
+        position: absolute;
+        top: 10%;
+        left: 37%;
+
+    }
+    .usuario .info .button-edit{
+        position: absolute;
+        top: 30px;
+        left: 90%;
+
+    }
+    .info1{
+        position: absolute;
+        left: 29%;
+        top: 300px;
+    }
+    .usuario .pago {
+        top: 600px;
+        left: 30%;
+    }
+    .usuario .store{
+        top: 870px;
+        left: 43%;
+
+    }
+    .usuario .grupo1{
+        top: 900px;
+        left: 25%;
+        width: 200px;
+
+    }
+    .usuario .grupo2 {
+        top: 900px;
+        right: 25%;
+    }
+
+    .usuario .grupo1 p{
+        text-align: center;
+    }
+    .usuario .info .button-dir{
+        top: 190px;
+        left: 335px;
+    }
+    .button-photo{
+      
+        position: absolute;
+        top: 100px;
+        left: 60%;
+    }
+    
+   
+}
+
 
 body{
     background-color: #000000 ;

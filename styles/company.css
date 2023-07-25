@@ -672,6 +672,11 @@ footer{
 }
 .usuario .img{
     border-radius: 50%;
+    border: 2px solid crimson;
+}
+.usuario .avatar .img{
+    width: 200px;
+    height: 200px; 
 }
 .usuario .avatar .button-img{
     position: absolute;
@@ -717,7 +722,7 @@ footer{
 }
 .usuario .info .button-dir{
     position: absolute;
-    left: 360px;
+    left: 350px;
     top: 530px;
     background-color: transparent;
     color: white;
@@ -753,7 +758,7 @@ footer{
     font-size: 16px;
     position: absolute;
     top: 260px;
-    right: 280px;
+    right: 300px;
     border: solid 2px #DD2330;
     background-color: #DD2330;
     cursor: pointer;
@@ -1024,6 +1029,10 @@ form div{
 }
 
 
+.usuario .avatar .img{
+    width: 200px;
+    height: 200px;
+}
 
 /*Responsive para pantallas grandes*/
 @media screen and (min-width: 750px) {
@@ -1048,89 +1057,95 @@ form div{
         font-size: 19px;
     }
 
-    .fa-circle-user{
-        display: flex;
+    .btn-register:hover{
+        background-color: rgb(223, 25, 39);
+    }
+    
+    .btn-login{
         margin-right: 16px;
-        margin-top: 16px;
+        padding: 4px 8px;
+        background-color: black;
+        color: white;
+        font-weight: 500;
+        border: 2px solid red;
+        border-radius: 8px;
+        font-size: 18px;
+        font-family: nunito;
     }
 
-    .nav-list2 {
-        display: none;
+    .btn-login:hover{
+        background-color: rgb(223, 25, 39);
+        border: 2px solid rgb(223, 25, 39);
+    }
+    
+    .btn-cart{
+        padding: 5px 8px;
+        background-color: black;
+        color: white;
+        font-weight: 500;
+        border: none;
+        font-size: 20px;
+        font-family: nunito;
+    }
+
+    .btn-cart:hover{
+        color: rgb(223, 25, 39);
     }
     
 
 }
+@media screen and (max-width: 940px ) {
+    .usuario h1 {
+        position: absolute;
+        left: 25%;
+    }
+    .img{
+        position: absolute;
+        top: 10%;
+        left: 37%;
 
-/*responsive para pantallas grandes*/
-@media (min-width: 1500px){
-    /*Ajuste de los textos del banner*/
-    .text1{
-        margin-right: 70rem; 
     }
-    .text2{
-        margin-right: 80rem;  
-    }
-    #button-samsung{
-        margin-left: 190px;
-    }
-}
-/*responsive para media pantalla*/
-@media screen and (max-width: 767px) {
-    .contenido-slider{
-        display: block;
-    }
-    .content-slider{
-        margin-left: 40px;
-        margin-bottom: 900px;
-    }
-    .title{
-        margin-top: 30px;
-    }
-    .text1{
-        margin-left: 61%;
-        margin-right: 10px;
-    }
-    .button-banner{
-        margin-top: 30px;
-        margin-left: 450px;
-    }
-    #text2, #button-iphone{
-        display: none;
-    }
-    
-    .accordion {
-        width: 300px;
-    }
-    .accordion .content{
-        width: 250px; 
-    }
-    .accordion .content2{
-        width: 250px;
-    }
-    .accordion .content3{
-        width: 300px;
-    }
-    .active .content{
-        height: 170px;
-    }
-    .active .content2{
-        height: 350px;
-    }
-    .active .content3{
-        height: 230vh;
-      }
-    .seccion-we-are{
-        padding:0;
-        text-align:left;
-        margin-left: 50px;
-    }
-    .seccion-we-are img{
-        float: none;
-    }
-}
+    .usuario .info .button-edit{
+        position: absolute;
+        top: 30px;
+        left: 90%;
 
-@media screen and (max-width: 600px) {
-    #icon-eye{
-        transform: translateY(-130%) translateX(84%);
-     }    
+    }
+    .info1{
+        position: absolute;
+        left: 29%;
+        top: 300px;
+    }
+    .usuario .pago {
+        top: 600px;
+        left: 30%;
+    }
+    .usuario .store{
+        top: 770px;
+        left: 43%;
+
+    }
+    .usuario .grupo1{
+        top: 900px;
+        left: 25%;
+        width: 200px;
+
+    }
+    .usuario .grupo2 {
+        top: 900px;
+        right: 25%;
+    }
+
+    .usuario .grupo1 p{
+        text-align: center;
+    }
+    .usuario .info .button-dir{
+        top: 190px;
+        left: 335px;
+    }
+    .button-photo{
+        position: absolute;
+        top: 100px;
+        left: 60%;
+    }
 }
