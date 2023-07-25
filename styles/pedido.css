@@ -693,9 +693,14 @@ footer a{
     .product-history{
         grid-template-columns: 200px 1fr 1fr;
         margin-left: 50px;
+        height: fit-content;
+        margin-bottom: 20px;
     }
     .text-history2{
         display: none;
+    }
+    .button-history1{
+      margin-bottom: 20px;
     }
 
 

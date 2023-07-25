@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&family=Wix+Madefor+Text:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700;1,800&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,15 +8,15 @@
     font-family: nunito;
 }
 
-body{
-    background-color: #000000 ;
+body {
+    background-color: #000000;
 }
 
-.btns{
-    display: none;   
+.btns {
+    display: none;
 }
 
-nav{
+nav {
     display: flex;
     height: 56px;
     background-color: rgb(145, 1, 1);
@@ -26,23 +26,23 @@ nav{
     padding: 0 8px;
 }
 
-.navbar-logo{
+.navbar-logo {
     display: flex;
     gap: 8px;
     height: 56px;
     align-items: center;
 }
 
-.nav-img{
+.nav-img {
     height: 80px;
 }
 
-a{
+a {
     text-decoration: none;
     font-family: nunito;
 }
 
-.navbar-brand{
+.navbar-brand {
     color: #fff;
     font-weight: 700;
     font-size: 20px;
@@ -54,25 +54,33 @@ a{
     color: #fff;
     font-size: 1.5rem;
     position: absolute;
-    top: 5%;       /*desplaza hacia abajo*/
-    transform: translateY(-15%);    /*Hacia arriba*/
+    top: 5%;
+    /*desplaza hacia abajo*/
+    transform: translateY(-15%);
+    /*Hacia arriba*/
     right: 2.5rem;
-    cursor: pointer;        /*Cursor manita*/
+    cursor: pointer;
+    /*Cursor manita*/
     z-index: 1500;
 }
+
 .menu-toggle2 h2 {
     font-size: 18px;
     font-weight: 10px;
 }
-.fa-circle-user{
+
+.fa-circle-user {
     cursor: pointer;
 }
+
 .nav-text:hover {
     color: black;
 }
-.nav-text{
+
+.nav-text {
     margin-bottom: 5px;
 }
+
 .nav-list {
     list-style: none;
     position: fixed;
@@ -88,6 +96,7 @@ a{
     z-index: 1250;
     transform: translateX(-110%);
 }
+
 /*menu de seguir pedido*/
 .menu-horizontal {
     list-style: none;
@@ -147,7 +156,7 @@ a{
 
 }
 
-.menu-toggle .fa-times{
+.menu-toggle .fa-times {
     display: none;
 }
 
@@ -163,11 +172,11 @@ a{
     transform: translateX(0);
 }
 
-.open.nav-list2{
+.open.nav-list2 {
     transform: translateX(0);
 }
 
-.open .nav::before{
+.open .nav::before {
     opacity: 1;
     transform: scale(1);
 }
@@ -191,50 +200,55 @@ a{
 }
 
 /*WHATSAPP BUTTON*/
-#image-whatssap{
+#image-whatssap {
     border-radius: 20px;
 }
-.float{
-	position:fixed;
-	width:60px;
-	height:60px;
-	bottom: 15px;
+
+.float {
+    position: fixed;
+    width: 60px;
+    height: 60px;
+    bottom: 15px;
     right: 16px;
-	background-color:#4cc370;
-	color:#FFF;
-	border-radius:50px;
-	text-align:center;
-    font-size:30px;
-	box-shadow: 2px 2px 3px #999;
-    z-index:100;
-}
-.float:hover {
-    background-color:#3d9e5a;
+    background-color: #4cc370;
+    color: #FFF;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    box-shadow: 2px 2px 3px #999;
+    z-index: 100;
 }
 
-.my-float{
-	margin-top:16px;
+.float:hover {
+    background-color: #3d9e5a;
+}
+
+.my-float {
+    margin-top: 16px;
 }
 
 /* offset-x > | offset-y ^| blur-radius | spread-radius | color */
 @keyframes pulse {
     0% {
-      transform: scale(1, 1);
+        transform: scale(1, 1);
     }
+
     50% {
-      opacity: 0.3;
+        opacity: 0.3;
     }
+
     100% {
-      transform: scale(1.45);
-      opacity: 0;
+        transform: scale(1.45);
+        opacity: 0;
     }
-  }
-  .pulse {
+}
+
+.pulse {
     -webkit-animation-name: pulse;
     animation-name: pulse;
-  }
-  
-  .nav-bottom {
+}
+
+.nav-bottom {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -247,14 +261,15 @@ a{
     right: 0px;
     padding: 5px;
     margin: 0px;
-  }
-  @media (max-width: 360px) {
+}
+
+@media (max-width: 360px) {
     .nav-bottom {
-      width: 320px;
+        width: 320px;
     }
-  }
-  
-  .whatsapp-button {
+}
+
+.whatsapp-button {
     display: flex;
     justify-content: center;
     align-content: center;
@@ -273,9 +288,9 @@ a{
     -webkit-box-shadow: 1px 1px 6px 0px rgba(68, 68, 68, 0.705);
     -moz-box-shadow: 1px 1px 6px 0px rgba(68, 68, 68, 0.705);
     box-shadow: 1px 1px 6px 0px rgba(68, 68, 68, 0.705);
-  }
-  
-  .circle-anime {
+}
+
+.circle-anime {
     display: flex;
     position: absolute;
     justify-content: center;
@@ -288,9 +303,9 @@ a{
     transition: .3s;
     background-color: #77bb4a;
     animation: pulse 1.2s 4.0s ease 4;
-  }
-  
-  .popup-whatsapp {
+}
+
+.popup-whatsapp {
     display: none;
     position: absolute;
     flex-direction: column;
@@ -309,32 +324,37 @@ a{
     -moz-box-shadow: 2px 1px 6px 0px rgba(68, 68, 68, 0.705);
     box-shadow: 2px 1px 6px 0px rgba(68, 68, 68, 0.705);
     animation: slideInRight .6s 0.0s both;
-  }
-  .popup-whatsapp > div {
+}
+
+.popup-whatsapp>div {
     margin: 5px;
-  }
-  @media (max-width: 680px) {
+}
+
+@media (max-width: 680px) {
     .popup-whatsapp p {
-      font-size: 0.9em;
+        font-size: 0.9em;
     }
-  }
-  .popup-whatsapp > .content-whatsapp.-top {
+}
+
+.popup-whatsapp>.content-whatsapp.-top {
     display: flex;
     flex-direction: column;
-  }
-  .popup-whatsapp > .content-whatsapp.-top p {
+}
+
+.popup-whatsapp>.content-whatsapp.-top p {
     margin-top: 15px;
     color: #585858;
     font-family: nunito;
     font-weight: 400;
     font-size: 1.0em;
-  }
-  .popup-whatsapp > .content-whatsapp.-bottom {
+}
+
+.popup-whatsapp>.content-whatsapp.-bottom {
     display: flex;
     flex-direction: row;
-  }
-  
-  .closePopup {
+}
+
+.closePopup {
     display: flex;
     position: absolute;
     right: 15px;
@@ -349,12 +369,13 @@ a{
     -webkit-box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
     -moz-box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
     box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
-  }
-  .closePopup:hover {
+}
+
+.closePopup:hover {
     background-color: rgb(223, 25, 39)
-  }
-  
-  .send-msPopup {
+}
+
+.send-msPopup {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -369,15 +390,16 @@ a{
     -webkit-box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
     -moz-box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
     box-shadow: 1px 1px 2px 0px rgba(68, 68, 68, 0.705);
-  }
-  
-  .is-active-whatsapp-popup {
+}
+
+.is-active-whatsapp-popup {
     display: flex;
-    animation: slideInRight .6s 0.0s both;    /*Lo muestra a la derecha y se demora esos segs en aparecer*/
+    animation: slideInRight .6s 0.0s both;
+    /*Lo muestra a la derecha y se demora esos segs en aparecer*/
     background-color: #fafafa;
-  }
-  
-  input.whats-input[type=text] {
+}
+
+input.whats-input[type=text] {
     width: 250px;
     height: 40px;
     box-sizing: border-box;
@@ -390,80 +412,89 @@ a{
     transition: width 0.3s ease-in-out;
     outline: none;
     transition: .3s;
-  }
-  @media (max-width: 420px) {
+}
+
+@media (max-width: 420px) {
     input.whats-input[type=text] {
-      width: 225px;
+        width: 225px;
     }
-  }
-  input.whats-input::placeholder {
+}
+
+input.whats-input::placeholder {
     /* Most modern browsers support this now. */
     color: rgba(68, 68, 68, 0.705);
     opacity: 1;
-  }
-  input.whats-input[type=text]:focus {
+}
+
+input.whats-input[type=text]:focus {
     background-color: #f8f8f8;
     -webkit-transition: width 0.3s ease-in-out;
     transition: width 0.3s ease-in-out;
     transition: .3s;
-  }
-  
-  .icon-whatsapp-small {
+}
+
+.icon-whatsapp-small {
     width: 24px;
     height: 24px;
-  }
-  
-  .icon-whatsapp {
+}
+
+.icon-whatsapp {
     width: 45px;
     height: 45px;
-  }
-  
-  .icon-font-color {
+}
+
+.icon-font-color {
     color: #ffffff;
-  }
-  
-  .icon-font-color--black {
+}
+
+.icon-font-color--black {
     color: #333333;
     width: 70%;
 }
+
 /*fin del whattsap*/
 /*estilos para los detalles del producto*/
 .btn-red {
     background-color: rgb(145, 1, 1) !important;
     color: white !important;
-  }
+}
 
-  /* Personaliza el borde del SweetAlert */
-  .border-red {
+/* Personaliza el borde del SweetAlert */
+.border-red {
     border: 2px solid rgb(145, 1, 1) !important;
     box-shadow: 0 0 15px #fff;
-  }
-  .icon-swal{
+}
+
+.icon-swal {
     background-color: rgb(145, 1, 1) !important;
     border: 2px solid rgb(145, 1, 1) !important;
     color: white !important;
-  }
-  .custom-title {
-    color: black; 
-    font-size: 25px; 
-  }
-  .div-swal{
+}
+
+.custom-title {
+    color: black;
+    font-size: 25px;
+}
+
+.div-swal {
     text-align: left;
     margin-left: 10px;
-  }
-  .screen{
+}
+
+.screen {
     margin-bottom: 8px;
-  }
+}
 
 /*contenedor de los productos*/
 /*estilos de los productos*/
-.products-title-car h1{
+.products-title-car h1 {
     color: #fff;
     font-size: 25px;
     text-align: center;
     margin: 25px;
     text-shadow: 2px 2px 4px red;
 }
+
 .discount {
     display: flex;
     flex-wrap: wrap;
@@ -472,15 +503,17 @@ a{
     margin: 1312px, 64px, 932px, 64px;
 }
 
-#products{
+#products {
     width: 98%;
 }
+
 /*contenedor para la seccion de los filtros*/
 .filtro {
     margin-bottom: 20px;
     margin-left: 10px;
 }
-#filter{
+
+#filter {
     background-color: rgb(229, 221, 207);
     margin-left: 0.2%;
     height: 500px;
@@ -488,33 +521,38 @@ a{
     border: 2px solid rgb(145, 1, 1);
     box-shadow: 2px 2px 4px rgba(219, 219, 219, 0.3);
 }
-.title-filter{
+
+.title-filter {
     margin-top: 10px;
     text-align: center;
 }
-.filter-container{
+
+.filter-container {
     margin-top: 10px;
     margin-left: 15px;
 }
-.filter-container ul{
+
+.filter-container ul {
     font-size: 17px;
     list-style: none;
     cursor: pointer;
 }
-.category{
+
+.category {
     margin-left: 10px;
     margin-top: 10px;
 }
 
 /*Contenedor de todos los items*/
-#contents-filter{
+#contents-filter {
     display: grid;
     grid-template-columns: 17% 82%;
     grid-gap: 20px;
     padding: 10px;
 }
+
 /*botón comprar*/
-.button-add{
+.button-add {
     font-size: 16px;
     text-align: center;
     background-color: #DD2330;
@@ -527,12 +565,14 @@ a{
     bottom: 10px;
     cursor: pointer;
 }
-.button-add:hover{
+
+.button-add:hover {
     background-color: #BF202B;
     color: black;
 }
+
 /*Botón detalles*/
-.button-ver{
+.button-ver {
     font-size: 14px;
     text-align: center;
     color: rgb(12, 12, 12);
@@ -545,20 +585,24 @@ a{
     bottom: 10px;
     cursor: pointer;
 }
-.button-ver:hover{
+
+.button-ver:hover {
     background-color: #DD2330;
     color: beige;
-} 
+}
+
 /*Contenedor de los productos*/
 .discount {
     display: flex;
     flex-wrap: wrap;
 }
+
 /*Contenedor de cada uno de los productos*/
-.product-container:hover{
+.product-container:hover {
     box-shadow: 0px 10px 20px 0 rgb(25, 25, 24);
 }
-.product-container{
+
+.product-container {
     margin: 20px;
     padding: 2px 16px;
     position: relative;
@@ -570,6 +614,7 @@ a{
     box-sizing: border-box;
     z-index: 1;
 }
+
 /*Estilos de la imagen de los productos*/
 .product-container img {
     width: 200px;
@@ -578,14 +623,16 @@ a{
     margin-top: 8px;
     margin-left: 10px;
 }
+
 /*Estilos del precio del producto*/
-.product-container .precio-item { 
+.product-container .precio-item {
     position: absolute;
     bottom: 40px;
     left: 60px;
 }
+
 /*Estilos del nombre del producto*/
-.product-container .titulo-item{
+.product-container .titulo-item {
     text-align: left;
     margin-top: 6px;
 }
@@ -605,19 +652,20 @@ a{
     font-size: 16px;
     cursor: pointer;
 }
+
 /*carrito de compras*/
-.header-carrito{
+.header-carrito {
     position: relative;
 }
 
-.container-carrito{
- 
+.container-carrito {
+
     display: flex;
     flex-direction: column;
     position: absolute;
     right: 0;
     z-index: 2;
-    background-color:black ;
+    background-color: black;
     padding: 20px;
     min-width: 200px;
     height: 300px;
@@ -628,42 +676,51 @@ a{
     margin-top: 20px;
     text-align: center;
 }
-.carrito-total{
+
+.carrito-total {
     margin-top: 20px;
 }
-.carrito-total h3{
+
+.carrito-total h3 {
     font-size: 20px;
     font-weight: normal;
     margin-bottom: 10px;
 }
-.cart-products{
+
+.cart-products {
     height: 450px;
     overflow-y: scroll;
     margin-bottom: 20px;
 }
-.card-items{
+
+.card-items {
     margin-bottom: 25px;
 }
-.header-carrito .btn-cart{
+
+.header-carrito .btn-cart {
     cursor: pointer;
 }
-.img-carrito{
+
+.img-carrito {
     width: 100px;
     height: 100px;
     margin: 0 auto;
 }
-#btn-finalizar-compra{
+
+#btn-finalizar-compra {
     border-radius: 8px;
     background-color: #DD2330;
     color: beige;
     border: 2px solid #DD2330;
-    cursor: pointer; 
+    cursor: pointer;
     width: 130px;
 }
-#btn-finalizar-compra a{
+
+#btn-finalizar-compra a {
     color: #fff;
     font-size: 14px;
 }
+
 .button-delete {
     background-color: #DD2330;
     color: #fff;
@@ -672,45 +729,49 @@ a{
     cursor: pointer;
     border-radius: 6px;
     margin: 10px 0px;
-  }
-/* -------------------------------------------------------------------------- */
-/* ocultar carrito */
-.hidden{
-    display: none;
-    
 }
 
-  /*footer*/
-  #container-footer {
+/* -------------------------------------------------------------------------- */
+/* ocultar carrito */
+.hidden {
+    display: none;
+
+}
+
+/*footer*/
+#container-footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 20px;
     padding: 20px;
 }
 
-footer{
+footer {
     background-color: rgb(145, 1, 1);
     color: #fff;
     padding: 20px;
     height: 390px;
 }
-footer p{
+
+footer p {
     font-size: 15px;
     padding: 8px;
     text-align: center;
     margin-top: 30px;
 
 }
-footer a{
+
+footer a {
     color: #fff;
 }
 
-.social-media h4{
+.social-media h4 {
     font-size: 20px;
     text-align: center;
     text-shadow: 1px 1px #DD2330;
-    
+
 }
+
 .social-icons {
     list-style: none;
     display: flex;
@@ -721,8 +782,9 @@ footer a{
     font-size: 1.5rem;
     color: #fff;
     padding: .8rem 2rem;
-    
+
 }
+
 /*Responsive para pantallas grandes*/
 @media screen and (min-width: 750px) {
     .menu-toggle {
@@ -733,7 +795,7 @@ footer a{
         display: none;
     }
 
-    .btns{
+    .btns {
         display: flex;
     }
 
@@ -745,13 +807,13 @@ footer a{
         margin-top: 6px;
     }
 
-    .fa-circle-user{
+    .fa-circle-user {
         display: flex;
         margin-right: 16px;
         margin-top: 16px;
     }
-    
-    .btn-cart{
+
+    .btn-cart {
         padding: 5px 8px;
         color: white;
         font-weight: 500;
@@ -760,8 +822,17 @@ footer a{
         font-family: nunito;
     }
 
-    .btn-cart:hover{
+    .btn-cart:hover {
         color: rgb(223, 25, 39);
-    }    
+    }
 }
 
+@media (min-width: 600px) and (max-width: 1024px) {
+    
+    /*Contenedor de todos los items*/
+    #contents-filter {
+        display: grid;
+        grid-template-columns: 30% 52%;
+        padding: 15px;
+    }
+}
