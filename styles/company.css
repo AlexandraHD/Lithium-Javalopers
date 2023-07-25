@@ -672,6 +672,11 @@ footer{
 }
 .usuario .img{
     border-radius: 50%;
+    border: 2px solid crimson;
+}
+.usuario .avatar .img{
+    width: 200px;
+    height: 200px; 
 }
 .usuario .avatar .button-img{
     position: absolute;

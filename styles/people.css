@@ -24,7 +24,7 @@
 }
 .usuario .img{
     border-radius: 50%;
-    
+    border: 2px solid crimson;
 }
 .usuario .avatar .button-img{
     position: absolute;
@@ -202,6 +202,7 @@
         left: 335px;
     }
     .button-photo{
+      
         position: absolute;
         top: 100px;
         left: 60%;
