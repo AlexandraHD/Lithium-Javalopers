@@ -947,6 +947,82 @@ form div{
     color: #fff;
 }
 
+/*EDIT ADDRESSES*/
+.fa-times {
+    color: #ea0606;
+    width: 20px;
+    height: 20px;
+    z-index: 1200;
+}
+
+.popup-infoEdit {
+    display: none;
+    position: fixed;
+    top: 40%;
+    left: 20%;
+    width: 30%;
+    height: fit-content;
+    border-radius: 10px;
+    background-color: #fff;
+    z-index: 1000;
+    box-shadow: 2px 2px 10px rgba(255, 0, 0, .7);
+}
+
+.close-popup {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.new-info {
+    margin-top: 40px;
+    margin-left: 8px;
+    display: flex;
+    flex-direction: column;
+}
+
+.new-info label {
+    font-size: 18px;
+    font-weight: 500;
+
+}
+
+.new-info input {
+    width: 80%;
+    height: 25px;
+    margin-left: 8px;
+    padding: 8px;
+    border: none;
+    border: 1px solid rgb(12, 12, 12);
+    border-radius: 5px;
+}
+
+.bconfirm {
+    display: flex;
+    justify-content: end;
+    margin-right: 24px;
+    margin-bottom: 16px;
+}
+
+.confirm-change {
+    font-size: 16px;
+    background-color: red;
+    color: #fff;
+    font-weight: 400;
+    border: none;
+    border-radius: 5px;
+    padding: 4px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+.confirm-change:hover {
+    background-color: #BF202B;
+}
+
 
 
 /*Responsive para pantallas grandes*/

@@ -10,7 +10,7 @@
 
 <body>
     <div class="usuario">
-        <h1 id="nombre-usuarioBienvenida">¡Bienvenido </h1>
+        <h1 id="nombre-usuarioBienvenida"> </h1>
         <div class="perfil">
             <div class="avatar">
                 <div><button class="button-photo"><i class="fa-solid fa-pen"></i></button></div>
@@ -27,8 +27,13 @@
                     <p>Documento</p>
                     <p id="email-usuario">Correo electrónico: correo@example.com</p>
                     <p id="telefono-usuario">Teléfono: 123-456-7890</p>
-                    <div><button class="button-edit"><i class="fa-solid fa-pen"></i></button></div>
+                    <div><button class="button-email"><i class="fa-solid fa-pen"></i></button></div>
                 </div>
+
+                <div id="popup-emailPhoneEdit" class="popup-infoEdit">
+                    <!-- Content popup -->
+                </div>
+
                 <div class="info">
                     <h3>Direcciones</h3>
                     <p id="direccion-usuario">direccion 1</p>
@@ -86,6 +91,7 @@
     <script src="/scripts/loginprueba.js"></script>
     <script src="/scripts/editAddress.js"></script>
     <script src="/scripts/editProfPhoto.js"></script>
+    <script src="/scripts/editEmailPhone.js"></script>
     <script src="https://kit.fontawesome.com/e8d0c66caa.js" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 </body>
